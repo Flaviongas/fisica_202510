@@ -11,7 +11,7 @@ format:
 
 La posición de un objeto en el espacio se puede definir como un vector que va desde un punto de referencia hasta el objeto.
 
-::: {style="text-align:center; width:1000px; margin-left: auto; margin-right: auto;"}
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
 ![](https://s1.significados.com/foto/posicion-sistema-de-coordenadas.jpg?class=article)
 :::
 
