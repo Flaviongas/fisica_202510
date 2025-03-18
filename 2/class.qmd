@@ -116,11 +116,12 @@ $$
 \vec{r} = -4.9 \hspace{0.3em} t^2 \hspace{0.3em} \hat{ȷ} + \vec{r}_0 \hspace{0.3em} \left [ m \right ]
 $$
 
-Recordemos que la manzana se deja caer desde una altura de 20 m, por lo que $$\vec{r}_0 = 0\hspace{0.3em} \hat{ı}-20\hspace{0.3em} \hat{ȷ} \hspace{0.3em} \left [ m \right ]$$
+Recordemos que la manzana se deja caer desde una altura de 20 m, pero el sistema de referencia está ubicado en el techo del edificio, por lo que la posición inicial es 0
+$$\vec{r}_0 = 0\hspace{0.3em} \hat{ı}+0\hspace{0.3em} \hat{ȷ} \hspace{0.3em} \left [ m \right ]$$
 
 Entonces la función posición es:
 $$
-\vec{r} = -4.9 \hspace{0.3em} t^2 \hspace{0.3em} \hat{ȷ} -20\hspace{0.3em} \hat{ȷ} \hspace{0.3em} \left [ m \right ]
+\vec{r} = -4.9 \hspace{0.3em} t^2 \hspace{0.3em} \hat{ȷ} \hspace{0.3em} \left [ m \right ]
 $$
 
 
