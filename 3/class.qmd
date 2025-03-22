@@ -1,0 +1,188 @@
+---
+title: Lanzamiento de proyectil
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+
+## Velocidad media y aceleración media
+
+La velocidad media es el promedio de la velocidad a lo largo de un intervalo de distancia y de tiempo.
+$$
+\vec{v}_{\text{media}} = \frac{\Delta \vec{r}}{\Delta t}
+$$
+$$
+\vec{v}_{\text{media}} = \frac{\vec{r}_f - \vec{r}_0}{t_f - t_0}
+$$
+
+#### Aceleración media
+Misma definición que la velocidad media, pero con la aceleración.
+$$
+\vec{a}_{\text{media}} = \frac{\Delta \vec{v}}{\Delta t}
+$$
+$$
+\vec{a}_{\text{media}} = \frac{\vec{v}_f - \vec{v}_0}{t_f - t_0}
+$$
+
+## Ejemplo 1
+Una deportista corre en línea recta. En el instante $t = 3$ s, su posición es $13 m$. En el instante final $t_f = 7$ s, su posición es $35 m$. Calcular la velocidad media.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+##
+
+Para calcular la velocidad media, se utiliza la fórmula:
+
+$$
+\vec{v}_{\text{media}} = \frac{\vec{r}_f - \vec{r}_0}{t_f - t_0}
+$$
+
+Sustituyendo los valores:
+
+$$
+\vec{v}_{\text{media}} = \frac{35 m - 13 m}{7 s - 3 s}
+$$
+
+$$
+\vec{v}_{\text{media}} = \frac{22 m}{4 s}
+$$
+
+$$
+\vec{v}_{\text{media}} = 5.5 m/s
+$$
+
+## Ejercicio 1
+Una moto parte desde su reposo y al transcurrir 5 s, adquiere una velocidad de 65 km/h. Calcular la aceleración media en m/s².
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./3.png)
+:::
+
+##
+
+Para calcular la aceleración media, se utiliza la fórmula:
+
+$$
+\vec{a}_{\text{media}} = \frac{\vec{v}_f - \vec{v}_0}{t_f - t_0}
+$$
+
+Sustituyendo los valores:
+
+$$
+\vec{a}_{\text{media}} = \frac{65 km/h}{5 s}
+$$
+
+$$
+\vec{a}_{\text{media}} = \frac{65 km/h}{5 s} \cdot \frac{1000 m}{1 km} \cdot \frac{1 h}{3600 s}
+$$
+
+$$
+\vec{a}_{\text{media}} = \frac{65 \cdot 1000}{5 \cdot 3600} m/s²
+$$
+
+$$
+\vec{a}_{\text{media}} = 3.61 m/s²
+$$
+
+## Ejercicio 2
+Un vehículo se encuentra en el extremo $B$ de su trayecto recorrido al transcurrir $30 s$ y en el extremo $C$, $45 s$ después, estos fueron contados al momento en que el vehículo comenzó su trayectoria. El tramo de $B$ a $C$ es de $115 m$. Calcular la velocidad media.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./4.webp)
+:::
+
+## 
+
+Para calcular la velocidad media, se utiliza la fórmula:
+
+$$
+\vec{v}_{\text{media}} = \frac{\vec{r}_f - \vec{r}_0}{t_f - t_0}
+$$
+
+Sustituyendo los valores (el trayecto se nos da, por lo que no es necesario calcular la resta de las posiciones):
+
+$$
+\vec{v}_{\text{media}} = \frac{115 m}{45 s - 30 s}
+$$
+
+$$
+\vec{v}_{\text{media}} = \frac{115 m}{15 s}
+$$
+
+$$
+\vec{v}_{\text{media}} = 7.67 m/s
+$$
+
+## Ejercicio 3
+
+- A) Si tu velocidad media es de 7.5 m/s y corres 100 m, ¿cuánto tiempo tardaste?
+- B) Si sabemos que un auto ha ido a una velocidad media de 80 km/h durante 2 horas, ¿cuántos metros recorrió?
+
+## A)
+
+Podemos utilizar la fórmula de la velocidad media para despejar el tiempo:
+
+$$
+\vec{v}_{\text{media}} = \frac{\vec{r}_f - \vec{r}_0}{t_f - t_0}
+$$
+
+Despejando el tiempo:
+
+$$
+t_f = \frac{\vec{r}_f - \vec{r}_0}{\vec{v}_{\text{media}}}
+$$
+
+Sustituyendo los valores:
+
+$$
+t_f = \frac{100 m}{7.5 m/s}
+$$
+
+$$
+t_f = 13.33 s
+$$
+
+## B)
+
+Podemos utilizar la fórmula de la velocidad media para despejar la distancia:
+
+$$
+\vec{v}_{\text{media}} = \frac{\vec{r}_f - \vec{r}_0}{t_f - t_0}
+$$
+
+Despejando la distancia:
+
+$$
+\vec{r}_f = \vec{v}_{\text{media}} \cdot (t_f - t_0)
+$$
+
+Sustituyendo los valores:
+
+$$
+\vec{r}_f = 80 \left [ \frac{km}{h} \right ] \cdot 2 h
+$$
+
+$$
+\vec{r}_f = 160 km
+$$
+
+$$
+\vec{r}_f = 160 \cdot 1000 m
+$$
+
+$$
+\vec{r}_f = 160,000 m
+$$
+
