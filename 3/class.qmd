@@ -2,17 +2,7 @@
 title: Velocidad Media, Aceleración Media y Lanzamiento de proyectil
 author: "Flavio Jara L."
 format:
-  revealjs:
-      theme: simple
-      transition: concave
-      html-math-method: katex
-include-in-header:
-  - text: |
-      <style>
-      p,ul {
-        font-size: 0.70em;
-      }
-      </style>
+  html
 ---
 
 
