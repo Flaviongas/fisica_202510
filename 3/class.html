@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.6">
 
   <meta name="author" content="Flavio Jara L.">
-  <title>Lanzamiento de proyectil</title>
+  <title>Velocidad Media, Aceleración Media y Lanzamiento de proyectil</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -148,7 +148,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lanzamiento de proyectil</h1>
+  <h1 class="title">Velocidad Media, Aceleración Media y Lanzamiento de proyectil</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -173,8 +173,8 @@ Flavio Jara L.
 \vec{a}_{\text{media}} = \frac{\vec{v}_f - \vec{v}_0}{t_f - t_0}
 </span></p>
 </section>
-<section id="ejemplo-1" class="slide level2">
-<h2>Ejemplo 1</h2>
+<section id="ejemplo" class="slide level2">
+<h2>Ejemplo</h2>
 <p>Una deportista corre en línea recta. En el instante <span class="math inline">t = 3</span> s, su posición es <span class="math inline">13 m</span>. En el instante final <span class="math inline">t_f = 7</span> s, su posición es <span class="math inline">35 m</span>. Calcular la velocidad media.</p>
 <div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./2.png"></p>
@@ -252,7 +252,7 @@ Flavio Jara L.
 <h2>Ejercicio 3</h2>
 <ul>
 <li><ol type="A">
-<li>Si tu velocidad media es de 7.5 m/s y corres 100 m, ¿cuánto tiempo tardaste?</li>
+<li>Si tu velocidad media es de 7.5 m/s y corres 100 m, ¿cuánto tiempo tardaste (en segundos)?</li>
 </ol></li>
 <li><ol start="2" type="A">
 <li>Si sabemos que un auto ha ido a una velocidad media de 80 km/h durante 2 horas, ¿cuántos metros recorrió?</li>
@@ -295,11 +295,257 @@ t_f = 13.33 s
 \vec{r}_f = 160 km
 </span></p>
 <p><span class="math display">
-\vec{r}_f = 160 \cdot 1000 m
+\vec{r}_f = 160 \cdot 1000 m = 160\hspace{1mm}000 m
+</span></p>
+</section>
+<section id="lanzamiento-de-proyectiles" class="slide level2">
+<h2>Lanzamiento de proyectiles</h2>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./1.png"></p>
+</div>
+</section>
+<section id="ejemplo-1" class="slide level2">
+<h2>Ejemplo</h2>
+<p>Se lanza hacia arriba un cuerpo con una velocidad inicial de <span class="math inline">5 m/s</span>. Calcula la altura máxima que alcanza y el tiempo que tarda en llegar a ella.</p>
+<div style="text-align:center; width:35%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./5.jpg"></p>
+</div>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p>Necesitamos modelar la ecuación de aceleración, para posteriormente integrarla y obtener la ecuación de la velocidad y la posición.</p>
+<p><span class="math display">
+\vec{a} = -g = -9.8 \hspace{0.5mm} \hat{ȷ} \hspace{3mm} \left [ \frac{m}{s^2} \right ]
 </span></p>
 <p><span class="math display">
-\vec{r}_f = 160,000 m
+\vec{v} = \int \vec{a} dt = -9.8t \hspace{0.5mm} \hat{ȷ} + C \hspace{3mm} \left [ \frac{m}{s} \right ]
 </span></p>
+<p>Recordemos que la C es el vector velocidad inicial, por lo que <span class="math inline">C =\vec{v}_0 = 5 \hat{ȷ}</span></p>
+<p><span class="math display">
+\vec{v} = ( -9.8t \hspace{0.5mm} + 5 ) \hspace{0.5mm} \hat{ȷ} \hspace{3mm} \left [ \frac{m}{s} \right ]
+</span></p>
+<p>Integramos nuevamente para obtener la posición:</p>
+<p><span class="math display">
+\vec{r} = \int \vec{v} dt = \int ( -9.8t \hspace{0.5mm} + 5 ) dt
+</span></p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><span class="math display">
+\vec{r} = ( -4.9t^2 + 5t )\hspace{1mm}\hat{ȷ}+ C  \hspace{3mm} \left [ m \right ]
+</span></p>
+<p>La C es la posición inicial, por lo que <span class="math inline">C = \vec{r}_0 = 0</span></p>
+<p><span class="math display">
+\vec{r} = ( -4.9t^2 + 5t ) \hspace{1mm}\hat{ȷ}  \hspace{3mm} \left [ m \right ]</span></p>
+<p>Para obtener la altura máxima, primero debemos encontrar el tiempo en que la velocidad es cero, usando la ecuación de la velocidad:</p>
+<p><span class="math display">
+\vec{v} = -9.8t + 5 = 0
+</span></p>
+<p><span class="math display">
+0 = -9.8t + 5
+</span></p>
+<p><span class="math display">
+t = \frac{5}{9.8} s
+</span></p>
+<p><span class="math display">
+t = 0.51 s
+</span></p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p>Ya que tenemos el tiempo, podemos encontrar la altura máxima simplemente sustituyendo el tiempo en la ecuación de la posición:</p>
+<p><span class="math display">
+\vec{r} = -4.9(0.51)^2 + 5(0.51) \hspace{1mm} \hat{ȷ} \hspace{3mm} \left [ m \right ]
+</span></p>
+<p><span class="math display">
+\vec{r} = -4.9(0.2601) + 2.55 \hspace{1mm} \hat{ȷ} \hspace{3mm} \left [ m \right ]
+</span></p>
+<p><span class="math display">
+\vec{r} = -1.27449 + 2.55 \hspace{1mm} \hat{ȷ} \hspace{3mm} \left [ m \right ]
+</span></p>
+<p><span class="math display">
+\vec{r} = 1.275 \hspace{1mm} \hat{ȷ} \hspace{3mm} \left [ m \right ]
+</span></p>
+</section>
+<section id="ejercicio-4" class="slide level2">
+<h2>Ejercicio 4</h2>
+<p>Se lanza verticalmente hacia arriba una piedra, alcanzando una altura máxima de <span class="math inline">35 m</span>. Calcular la velocidad inicial con la que fue lanzada y el tiempo que tarda en llegar a la altura máxima.</p>
+<div style="text-align:center; width:30%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./6.png"></p>
+</div>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p>En primer lugar, modelemos la situación con las ecuaciones de movimiento:</p>
+<p><span class="math display">
+\vec{a} = -g = -9.8 \hspace{0.5mm} \hat{ȷ} \hspace{3mm} \left [ \frac{m}{s^2} \right ]
+</span></p>
+<p><span class="math display">
+\vec{v} = \int \vec{a} dt = -9.8t \hspace{0.5mm} \hat{ȷ} + \vec{v}_0 \hspace{3mm} \left [ \frac{m}{s} \right ]
+</span></p>
+<p>Sabemos que el ejercicio solo considera el eje y, por lo que la velocidad inicial es un escalar. Integrando la velocidad para obtener la posición:</p>
+<p><span class="math display">
+\vec{r} = \int \vec{v} dt = \int ( -9.8t \hspace{0.5mm} + v_0 ) dt
+</span></p>
+<p><span class="math display">
+\vec{r} = ( -4.9t^2 + v_0t )\hspace{1mm}\hat{ȷ}+ \vec{r}_0  \hspace{3mm} \left [ m \right ]
+</span></p>
+<p>No hay posición inicial, por lo que <span class="math inline">\vec{r}_0 = 0</span></p>
+<p><span class="math display">
+\vec{r} = ( -4.9t^2 + v_0t ) \hspace{1mm}\hat{ȷ}  \hspace{3mm} \left [ m \right ]
+</span></p>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p>Para encontrar la velocidad inicial, debemos recordar que la velocidad en la altura máxima es cero, por lo que:</p>
+<p><span class="math display">
+\vec{v} = -9.8t + v_0 = 0
+</span></p>
+<p><span class="math display">
+0 = -9.8t + v_0
+</span></p>
+<p><span class="math display">
+v_0 = 9.8t
+</span></p>
+<p>Despejando el tiempo:</p>
+<p><span class="math display">
+t = \frac{v_0}{9.8} \hspace{3mm} \left [ \dfrac{\frac{m}{s}}{\frac{m}{s^2}} \right ]
+</span></p>
+<p>Ahora podemos reemplazar esta expresión en la ecuación de la posición para encontrar la velocidad inicial.</p>
+<p><span class="math display">
+35 m = -4.9 \left( \frac{v_0}{9.8} \right)^2 + v_0 \left( \frac{v_0}{9.8} \right)
+</span></p>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p><span class="math display">
+35 m = -4.9 \left( \frac{v_0^2}{9.8^2} \right) + \frac{v_0^2}{9.8}
+</span></p>
+<p><span class="math display">
+35 m = -4.9 \left( \frac{v_0^2}{96.04} \right) + \frac{v_0^2}{9.8}
+</span></p>
+<p><span class="math display">
+35 m = -0.051 m \cdot v_0^2 + 0.102 m \cdot v_0^2
+</span></p>
+<p><span class="math display">
+35 m = 0.051 m \cdot v_0^2
+</span></p>
+<p><span class="math display">
+v_0^2 = \frac{35 m}{0.051 m}
+</span></p>
+<p><span class="math display">
+v_0 = \sqrt{\frac{35 m}{0.051 m}}
+</span></p>
+<p><span class="math display">
+v_0 = 26.19 m/s
+</span></p>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<p>Teniendo la velocidad inicial, podemos encontrar el tiempo que tarda en llegar a la altura máxima reemplazando en la ecuación de la velocidad:</p>
+<p><span class="math display">
+0 = -9.8t + 26.19
+</span></p>
+<p><span class="math display">
+9.8t = 26.19
+</span></p>
+<p><span class="math display">
+t = \frac{26.19}{9.8} s
+</span></p>
+<p><span class="math display">
+t = 2.67 s
+</span></p>
+</section>
+<section id="ejercicio-5" class="slide level2">
+<h2>Ejercicio 5</h2>
+<p>Desde el balcón de un edificio a <span class="math inline">14.1 m</span> de altura, se lanza una pelota hacia arriba con una velocidad de <span class="math inline">10 m/s</span>. Calcular el tiempo que tarda en llegar al suelo y la altura máxima que alcanza.</p>
+<div style="text-align:center; width:45%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./7.png"></p>
+</div>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p>Modelemos:</p>
+<p><span class="math display">
+\vec{a} = -g = -9.8 \hspace{0.5mm} \hat{ȷ} \hspace{3mm} \left [ \frac{m}{s^2} \right ]
+</span></p>
+<p><span class="math display">
+\vec{v} = \int \vec{a} dt = -9.8t \hspace{0.5mm} \hat{ȷ} + \vec{v}_0 \hspace{3mm} \left [ \frac{m}{s} \right ]
+</span></p>
+<p>Sabemos que la velocidad inicial son <span class="math inline">10 m/s</span> hacia arriba, reemplazando:</p>
+<p><span class="math display">
+\vec{v} = ( -9.8t + 10 )\hspace{1.5mm} \hat{ȷ} \hspace{3mm} \left [ \frac{m}{s} \right ]
+</span></p>
+<p>Integrando para obtener la posición:</p>
+<p><span class="math display">
+\vec{r} = \int \vec{v} dt = \int ( -9.8t \hspace{0.5mm} + 10 ) dt
+</span></p>
+<p><span class="math display">
+\vec{r} = ( -4.9t^2 + 10t )\hspace{1mm}\hat{ȷ}+ \vec{r}_0  \hspace{3mm} \left [ m \right ]
+</span></p>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p>La posición inicial es <span class="math inline">14.1 m</span>, por lo que <span class="math inline">\vec{r}_0 = 14.1 \hspace{1.5mm}\hat{ȷ}\hspace{2mm} \left [ m \right ]</span></p>
+<p><span class="math display">
+\vec{r} = ( -4.9t^2 + 10t + 14.1 ) \hspace{1mm}\hat{ȷ}  \hspace{3mm} \left [ m \right ]
+</span></p>
+<p>Para calcular el tiempo que tarda en llegar al suelo, debemos recordar que la posición final es cero, por lo que:</p>
+<p><span class="math display">
+0 = -4.9t^2 + 10t + 14.1
+</span></p>
+<p>Resolviendo la ecuación cuadrática:</p>
+<p><span class="math display">
+t = \frac{-10 \pm \sqrt{10^2 - 4(-4.9)(14.1)}}{2(-4.9)}
+</span></p>
+<p><span class="math display">
+t = \frac{-10 \pm \sqrt{100 + 276.36}}{-9.8}
+</span></p>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<p><span class="math display">
+t = \frac{-10 \pm \sqrt{376.36}}{-9.8}
+</span></p>
+<p><span class="math display">
+t = \frac{-10 \pm 19.4}{-9.8}
+</span></p>
+<p>Esto da dos soluciones, una positiva y otra negativa. La solución negativa no tiene sentido físico, por lo que la solución es:</p>
+<p><span class="math display">
+t = \frac{-10 - 19.4}{-9.8}
+</span></p>
+<p><span class="math display">
+t = 3 s
+</span></p>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<p>Finalmente, para encontrar la altura máxima, debemos recordar que la velocidad en la altura máxima es cero, por lo que:</p>
+<p><span class="math display">
+\vec{v} = -9.8t + 10 = 0
+</span></p>
+<p><span class="math display">
+0 = -9.8t + 10
+</span></p>
+<p><span class="math display">
+t = \frac{10}{9.8} s
+</span></p>
+<p><span class="math display">
+t = 1.02 s
+</span></p>
+<p>Evaluando este tiempo en la ecuación de la posición:</p>
+<p><span class="math display">
+\vec{r} = -4.9(1.02)^2 + 10(1.02) + 14.1 \hspace{1mm} \hat{ȷ} \hspace{3mm} \left [ m \right ]
+</span></p>
+<p><span class="math display">
+\vec{r} = -4.9(1.0404) + 10.2 + 14.1 \hspace{1mm} \hat{ȷ} \hspace{3mm} \left [ m \right ]
+</span></p>
+<p><span class="math display">
+\vec{r} = 19.2\hspace{1mm} \hat{ȷ} \hspace{3mm} \left [ m \right ]
+</span></p>
+</section>
+<section id="gracias-por-su-atención" class="title-slide slide level1 center">
+<h1>Gracias por su atención</h1>
 
 </section>
     </div>
@@ -462,7 +708,7 @@ t_f = 13.33 s
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'zoom',
+        transition: 'concave',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
