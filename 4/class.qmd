@@ -1,0 +1,117 @@
+---
+title: Movimiento Rectilíneo Acelerado y Lanzamiento de Proyectiles
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+## Ejemplo 1
+Un vehiculo que marcha a una velocidad de 15 m/s aumenta su velocidad a razón de 1 m/s cada segundo.
+
+- A) Calcular la distancia recorrida en 6 segundos.
+- B) Si disminuye su velocidad a razón de 1 m/s cada segundo, calcular la distancia recorrida en 6 segundos y el tiempo que demora en detenerse.
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./1.png)
+:::
+
+## A)
+
+Modelemos la aceleración:
+
+$$
+\vec{a} = 1 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+$$
+
+Integrando:
+
+$$
+\vec{v} = t \hspace{0.1cm} \hat{ı} + \vec{v}_0  \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+La velocidad inicial es de 15 m/s, por lo que $\vec{v}_0 = 15 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]$
+
+$$
+\vec{v} = t \hspace{0.1cm} \hat{ı} + 15 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+##
+
+Integrando nuevamente:
+
+$$
+\vec{r} = \left( \frac{1}{2} t^2 + 15t \right) \hspace{0.1cm} \hat{ı} + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
+$$
+
+No hay posición inicial, por lo que $\vec{r}_0 = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]$
+
+$$
+\vec{r} = \left( \frac{1}{2} t^2 + 15t \right) \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+$$
+
+Para calcular la distancia recorrida en 6 segundos, reemplazamos $t = 6 \hspace{0.1cm} s$:
+
+$$
+\vec{r} = \left( \frac{1}{2} (6)^2 + 15(6) \right) \hspace{0.1cm} \hat{ı} = 108 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+$$
+
+## B)
+
+Modelemos la aceleración:
+
+$$
+\vec{a} = -1 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+$$
+
+Integrando:
+
+$$
+\vec{v} = -t \hspace{0.1cm} \hat{ı} + \vec{v}_0  \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+La velocidad inicial es de 15 m/s, por lo que $\vec{v}_0 = 15 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]$
+
+$$
+\vec{v} = \left( -t + 15 \right ) \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+##
+
+Integrando nuevamente:
+
+$$
+\vec{r} = \left( -\frac{1}{2} t^2 + 15t \right) \hspace{0.1cm} \hat{ı} + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
+$$
+
+Nuevamente no hay posición inicial, por lo que $\vec{r}_0 = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]$
+
+$$
+\vec{r} = \left( -\frac{1}{2} t^2 + 15t \right) \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+$$
+
+Para calcular la distancia recorrida en 6 segundos, reemplazamos $t = 6 \hspace{0.1cm} s$:
+
+$$
+\vec{r} = \left( -\frac{1}{2} (6)^2 + 15(6) \right) \hspace{0.1cm} \hat{ı} = 72 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+$$
+
+##
+
+Para calcular el tiempo que demora en detenerse, igualamos la velocidad a cero:
+
+$$
+-t + 15 = 0 \Rightarrow t = 15 \hspace{0.1cm} s
+$$
+
+Por lo que el tiempo que demora en detenerse es de 15 segundos.
+
