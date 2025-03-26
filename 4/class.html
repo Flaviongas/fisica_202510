@@ -241,6 +241,83 @@ Flavio Jara L.
 -t + 15 = 0 \Rightarrow t = 15 \hspace{0.1cm} s
 </span></p>
 <p>Por lo que el tiempo que demora en detenerse es de 15 segundos.</p>
+</section>
+<section id="ejercicio-1" class="slide level2">
+<h2>Ejercicio 1</h2>
+<p>A la salida de una ciudad un automóvil está estacionado, al lado pasa un camión con velocidad constante de 72 km/h.Justo cuando el camión pasa al lado del automóvil, este arranca con una aceleración constante de 2.5 m/s² en el mismo sentido del camión. ¿Cuánto tiempo tardará el automóvil en alcanzar al camión y a qué distancia de la ciudad lo hará? Además, ¿cuál será la velocidad del automóvil en ese instante?</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./2.png"></p>
+</div>
+</section>
+<section id="camión" class="slide level2">
+<h2>Camión</h2>
+<p>Modelemos la aceleración del camión: <span class="math display">
+\vec{a}_{\text{camión}} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+</span></p>
+<p>Integrando: <span class="math display">
+\vec{v}_{\text{camión}} = C = \vec{v}_0 \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+<p>La velocidad inicial del camión es de 72 km/h, por lo que <span class="math inline">\vec{v}_0 = 72 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ]</span> <span class="math display">
+\vec{v}_{\text{camión}} = 72 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ]
+</span> Pasandolo a metros por segundo: <span class="math display">
+\vec{v}_{\text{camión}} = 72 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ] \cdot \frac{1000 \hspace{0.1cm} m}{1 \hspace{0.1cm} km} \cdot \frac{1 \hspace{0.1cm} h}{3600 \hspace{0.1cm} s} = 20 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p>Integrando nuevamente: <span class="math display">
+\vec{r}_{\text{camión}} = 20t \hspace{0.1cm} \hat{ı} + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
+</span> No hay posición inicial, por lo que <span class="math inline">\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]</span> <span class="math display">
+\vec{r}_{\text{camión}} = 20t \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span></p>
+</section>
+<section id="automóvil" class="slide level2">
+<h2>Automóvil</h2>
+<p>Modelemos la aceleración del automóvil: <span class="math display">
+\vec{a}_{\text{auto}} = 2.5 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+</span> Integrando: <span class="math display">
+\vec{v}_{\text{auto}} = 2.5t + \vec{v}_{0} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> La velocidad inicial del automóvil es de 0 m/s, por lo que <span class="math inline">\vec{v}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]</span> <span class="math display">
+\vec{v}_{\text{auto}} = 2.5t \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p>Integrando nuevamente: <span class="math display">
+\vec{r}_{\text{auto}} = 1.25t^2 + \vec{r}_{0} \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span> No hay posición inicial, por lo que <span class="math inline">\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]</span></p>
+<p><span class="math display">
+\vec{r}_{\text{auto}} = 1.25t^2 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span></p>
+</section>
+<section id="tiempo-en-alcanzar-al-camión" class="slide level2">
+<h2>Tiempo en alcanzar al camión</h2>
+<p>Igualamos las posiciones del camión y del automóvil: <span class="math display">
+\vec{r}_{\text{camión}} = \vec{r}_{\text{auto}}
+</span> <span class="math display">
+20t = 1.25t^2
+</span> Despejamos <span class="math inline">t</span>: <span class="math display">
+1.25t^2 - 20t = 0
+</span> <span class="math display">
+t(1.25t - 20) = 0
+</span> <span class="math display">
+t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = \frac{20}{1.25} = 16 \hspace{0.1cm} s
+</span></p>
+<p><span class="math inline">t = 0</span> es trivial, no lo consideramos como solución. Por lo que el tiempo que tarda en alcanzar al camión es de 16 segundos.</p>
+</section>
+<section id="distancia-de-la-ciudad-distancia-recorrida" class="slide level2">
+<h2>Distancia de la ciudad (Distancia recorrida)</h2>
+<p>Reemplazamos <span class="math inline">t = 16 \hspace{0.1cm} s</span> en la posición del automóvil</p>
+<p><span class="math display">
+\vec{r}_{\text{auto}} = 1.25(16)^2 \hspace{0.1cm} \hat{ı} = 320 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span></p>
+</section>
+<section id="velocidad-del-automóvil" class="slide level2">
+<h2>Velocidad del automóvil</h2>
+<p>Reemplazamos <span class="math inline">t = 16 \hspace{0.1cm} s</span> en la velocidad del automóvil:</p>
+<p><span class="math display">
+\vec{v}_{\text{auto}} = 2.5(16) \hspace{0.1cm} \hat{ı} = 40 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
 
 </section>
     </div>
