@@ -219,3 +219,6 @@ Reemplazamos $t = 16 \hspace{0.1cm} s$ en la velocidad del automóvil:
 $$
 \vec{v}_{\text{auto}} = 2.5(16) \hspace{0.1cm} \hat{ı} = 40 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 $$
+
+## Ejercicio 2
+Una patrulla de policia que viaja a 36 km/h es rebasada por una camioneta a exceso de velocidad también con velocidad constante 90 km/h. Exactamente al ser rebasado, la patrulla comienza a acelerar a 2 m/s² para alcanzar a la camioneta. ¿Cuánto tiempo tardará en alcanzarla y a qué distancia de la patrulla lo hará? Además, ¿cuál será la velocidad de la patrulla en ese instante?
