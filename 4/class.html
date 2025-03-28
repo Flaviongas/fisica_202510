@@ -318,6 +318,76 @@ t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = \frac{20}{1.25
 <p><span class="math display">
 \vec{v}_{\text{auto}} = 2.5(16) \hspace{0.1cm} \hat{ı} = 40 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span></p>
+</section>
+<section id="ejercicio-2" class="slide level2">
+<h2>Ejercicio 2</h2>
+<p>Una patrulla de policia que viaja a 36 km/h es rebasada por una camioneta a exceso de velocidad también con velocidad constante 90 km/h. Exactamente 1 segundo después de ser rebasada, la patrulla comienza a acelerar a 2 m/s² para alcanzar a la camioneta. ¿Cuánto tiempo tardará la patrulla en alcanzarla? Además, ¿cuál será la velocidad de la patrulla en ese instante (en metros por segundo)?</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./3.png"></p>
+</div>
+</section>
+<section id="patrulla-de-policía" class="slide level2">
+<h2>Patrulla de policía</h2>
+<p>Dado que el ejercicio pregunta por el tiempo del punto de encuentro, no es necesario modelar la posición de la patrulla antes de acelerar.</p>
+<p>Modelemos la aceleración de la patrulla: <span class="math display">
+\vec{a}_{\text{patrulla}} = 2 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+</span> Integrando: <span class="math display">
+\vec{v}_{\text{patrulla}} = 2t \hspace{0.1cm} \hat{ı} + \vec{v}_{0} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> La velocidad inicial de la patrulla es de 36 km/h, por lo que <span class="math inline">\vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ]</span> Pero antes, pasamos la velocidad inicial a m/s:</p>
+<p><span class="math display">
+\vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ] \cdot \frac{1000 \hspace{0.1cm} m}{1 \hspace{0.1cm} km} \cdot \frac{1 \hspace{0.1cm} h}{3600 \hspace{0.1cm} s} = 10 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p><span class="math display">
+\vec{v}_{\text{patrulla}} = ( 2t + 10 ) \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> Integrando nuevamente: <span class="math display">
+\vec{r}_{\text{patrulla}} = t^2 + 10t + \vec{r}_{0} \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span> No hay posición inicial, por lo que <span class="math inline">\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]</span> <span class="math display">
+\vec{r}_{\text{patrulla}} = t^2 + 10t \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span></p>
+</section>
+<section id="camioneta" class="slide level2">
+<h2>Camioneta</h2>
+<p>No tiene aceleración: <span class="math display">
+\vec{a}_{\text{camioneta}} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+</span> Integrando: <span class="math display">
+\vec{v}_{\text{camioneta}} = C = \vec{v}_{0} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> Recordemos que la velocidad de la camioneta es de 90 km/h, por lo que <span class="math inline">\vec{v}_{0} = 90 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ]</span> Pasamos la velocidad a m/s: <span class="math display">
+\vec{v}_{\text{camioneta}} = 90 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ] \cdot \frac{1000 \hspace{0.1cm} m}{1 \hspace{0.1cm} km} \cdot \frac{1 \hspace{0.1cm} h}{3600 \hspace{0.1cm} s} = 25 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><span class="math display">
+\vec{v}_{\text{camioneta}} = 25 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> Integrando nuevamente: <span class="math display">
+\vec{r}_{\text{camioneta}} = 25t + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
+</span> No hay posición inicial, por lo que <span class="math inline">\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]</span> <span class="math display">
+\vec{r}_{\text{camioneta}} = 25t \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span></p>
+</section>
+<section id="tiempo-en-alcanzar-a-la-camioneta" class="slide level2">
+<h2>Tiempo en alcanzar a la camioneta</h2>
+<p>Igualamos las posiciones de la patrulla y de la camioneta: <span class="math display">
+\vec{r}_{\text{patrulla}} = \vec{r}_{\text{camioneta}}
+</span> <span class="math display">
+t^2 + 10t = 25t
+</span> Despejamos <span class="math inline">t</span>: <span class="math display">
+t^2 - 15t = 0
+</span> <span class="math display">
+t(t - 15) = 0
+</span> <span class="math display">
+t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = 15 \hspace{0.1cm} s
+</span> <span class="math inline">t = 0</span> es trivial, no lo consideramos como solución. Por lo que el tiempo que tarda en alcanzar a la camioneta es de 15 segundos.</p>
+</section>
+<section id="velocidad-de-la-patrulla" class="slide level2">
+<h2>Velocidad de la patrulla</h2>
+<p>Reemplazamos <span class="math inline">t = 15 \hspace{0.1cm} s</span> en la velocidad de la patrulla:</p>
+<p><span class="math display">
+\vec{v}_{\text{patrulla}} = ( 2(15) + 10 ) \hspace{0.1cm} \hat{ı} = 40 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
 
 </section>
     </div>
