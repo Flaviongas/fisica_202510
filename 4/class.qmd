@@ -388,3 +388,121 @@ $$
 \vec{r} = 42.12 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
 $$
 
+## Ejercicio 3
+Una pelota de béisbol sale golpeada por un bate con una velocidad de 30 m/s en un ángulo de 30° respecto a la horizontal. ¿Cuáles son las componentes horizontal y vertical de la velocidad después de 3 s?
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./6.png)
+:::
+
+## 
+Como siempre, modelemos la aceleración:
+$$
+\vec{a} = -9.81 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+$$
+Integrando:
+$$
+\vec{v} = ( -9.81t ) \hspace{0.1cm} \hat{ȷ} + \vec{v}_0  \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+En este caso, la velocidad inicial es de 30 m/s en un ángulo de 30° respecto a la horizontal. Por lo que podemos descomponer la velocidad inicial en sus componentes horizontal y vertical:
+$$
+\vec{v}_0 = 30 \cos(30°) \hspace{0.1cm} \hat{ı} + 30 \sin(30°) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+##
+$$
+\vec{v}_0 = 25.98 \hspace{0.1cm} \hat{ı} + 15 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+Ahora, reemplazamos $\vec{v}_0$ en la ecuación de la velocidad:
+$$
+\vec{v} = -9.81t \hspace{0.1cm} \hat{ȷ} + ( 25.98 \hspace{0.1cm} \hat{ı} + 15 \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+Reorganizemos la ecuación en base a los vectores unitarios:
+$$
+\vec{v} = 25.98 \hspace{0.1cm} \hat{ı} + ( 15 - 9.81t ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+## Componente horizontal de la velocidad
+Evaluamos $t = 3 \hspace{0.1cm} s$ solo en la componente horizontal:
+$$
+\vec{v}_{\text{horizontal}} = 25.98 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+Dado que no hay un parámetro de tiempo en la componente horizontal, la velocidad no cambia. Por lo que la componente horizontal de la velocidad es de 25.98 m/s.
+
+## Componente vertical de la velocidad
+Evaluamos $t = 3 \hspace{0.1cm} s$ en la componente vertical:
+$$
+\vec{v}_{\text{vertical}} = ( 15 - 9.81(3) ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+\vec{v}_{\text{vertical}} = ( 15 - 29.43 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+\vec{v}_{\text{vertical}} = -14.43 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+## Ejercicio 4
+Un cañon de artillería es disparado con una velocidad de 125 m/s en un ángulo de 38° respecto a la horizontal. Si explota 10 s después de ser disparado, ¿a qué distancia horizontal se encuentra el proyectil en el instante de la explosión? ¿Cuál es la altura máxima alcanzada por el proyectil?
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./7.png)
+:::
+
+##
+Modelemos la aceleración:
+$$
+\vec{a} = -9.81 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+$$
+Integrando:
+$$
+\vec{v} = ( -9.81t ) \hspace{0.1cm} \hat{ȷ} + \vec{v}_0  \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+La velocidad inicial es de 125 m/s en un ángulo de 38° respecto a la horizontal. Por lo que podemos descomponer la velocidad inicial en sus componentes horizontal y vertical:
+$$
+\vec{v}_0 = 125 \cos(38°) \hspace{0.1cm} \hat{ı} + 125 \sin(38°) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+\vec{v}_0 = 98.5 \hspace{0.1cm} \hat{ı} + 76.96 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+##
+Ahora, reemplazamos $\vec{v}_0$ en la ecuación de la velocidad:
+$$
+\vec{v} = -9.81t \hspace{0.1cm} \hat{ȷ} + ( 98.5 \hspace{0.1cm} \hat{ı} + 76.96 \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+Reorganizemos la ecuación en base a los vectores unitarios:
+$$
+\vec{v} = 98.5 \hspace{0.1cm} \hat{ı} + ( 76.96 - 9.81t ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+Necesitamos calcular la distancia horizontal recorrida y la altura máxima alcanzada por el proyectil, por lo que necesitamos la función posición.
+Integrando nuevamente:
+$$
+\vec{r} = ( 98.5t \hspace{0.1cm} \hat{ı} + ( 76.96t - \frac{9.81}{2} t^2 ) \hspace{0.1cm} \hat{ȷ} ) + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
+$$
+$$
+\vec{r} = ( 98.5t \hspace{0.1cm} \hat{ı} + ( 76.96t - 4.9t^2 ) \hspace{0.1cm} \hat{ȷ} ) + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
+$$
+
+##
+No hay posición inicial, por lo que $\vec{r}_0 = 0 \hspace{0.1cm} \hat{ı} + 0 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]$
+$$
+\vec{r} = ( 98.5t \hspace{0.1cm} \hat{ı} + ( 76.96t - 4.9t^2 ) \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ m \right ]
+$$
+
+### Distancia horizontal recorrida
+Para calcular la distancia horizontal recorrida, reemplazamos $t = 10 \hspace{0.1cm} s$ en la componente horizontal de la posición:
+$$
+\vec{r} = ( 98.5(10) \hspace{0.1cm} \hat{ı} ) \hspace{0.1cm} \left [ m \right ]
+$$
+$$
+\vec{r} = 985 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+$$
+### Altura máxima alcanzada
+Para calcular la altura máxima alcanzada, reemplazamos $t = 10 \hspace{0.1cm} s$ en la componente vertical de la posición:
+$$
+\vec{r} = ( 76.96(10) - 4.9(10)^2 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]
+$$
+$$
+\vec{r} = 279.6 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]
+$$
