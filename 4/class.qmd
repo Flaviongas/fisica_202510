@@ -306,6 +306,7 @@ $$
 $$
 t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = 15 \hspace{0.1cm} s
 $$
+
 $t = 0$ es trivial, no lo consideramos como solución. Por lo que el tiempo que tarda en alcanzar a la camioneta es de 15 segundos.
 
 ## Velocidad de la patrulla
@@ -341,3 +342,49 @@ Integrando:
 $$
 \vec{v} = ( -9.81t ) \hspace{0.1cm} \hat{ȷ} + \vec{v}_0  \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 $$
+
+La velocidad inicial es de 27 m/s horizontalmente, por lo que $\vec{v}_0 = 27 \hspace{0.1cm} \hat{ı} + 0 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]$
+
+## 
+
+Entonces la velocidad quedaría:
+$$
+\vec{v} = ( 27 \hspace{0.1cm} \hat{ı} - 9.81t \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+Integrando una vez más:
+$$
+\vec{r} = ( 27t \hspace{0.1cm} \hat{ı} - \frac{9.81}{2} t^2 \hspace{0.1cm} \hat{ȷ} ) + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
+$$
+Recordemos que hay una altura inicial de 12 m, por lo que $\vec{r}_0 = 0 \hspace{0.1cm} \hat{ı} + 12 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]$
+$$
+\vec{r} = ( 27t \hspace{0.1cm} \hat{ı})+( - \frac{9.81}{2} t^2 + 12 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]
+$$
+
+## Distancia horizontal recorrida
+Para calcular la distancia horizontal recorrida, necesitamos el tiempo que tarda en llegar al suelo. Para eso, igualamos la componente vertical de la posición a cero:
+
+$$
+- \frac{9.81}{2} t^2 + 12 = 0
+$$
+
+Despejamos $t$:
+$$
+- \frac{9.81}{2} t^2 = -12
+$$
+$$
+t^2 = \frac{12}{\frac{9.81}{2}} = \frac{24}{9.81}
+$$
+$$
+t = \sqrt{\frac{24}{9.81}} \approx 1.56 \hspace{0.1cm} s
+$$
+
+##
+Ahora que tenemos el tiempo, podemos calcular la distancia horizontal recorrida. Reemplazamos $t = 1.56 \hspace{0.1cm} s$ en la componente horizontal de la posición:
+$$
+\vec{r} = ( 27(1.56) \hspace{0.1cm} \hat{ı})\hspace{0.1cm} \left [ m \right ]
+$$
+$$
+\vec{r} = 42.12 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+$$
+
