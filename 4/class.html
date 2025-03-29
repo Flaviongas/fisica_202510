@@ -6,8 +6,8 @@
 <script src="class_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="class_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="class_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-6c21014d9765ba549c6ebad95917e4d7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.6">
+<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.33">
 
   <meta name="author" content="Flavio Jara L.">
   <title>Movimiento Rectilíneo Acelerado y Lanzamiento de Proyectiles</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-85b1feb8ec970ded495406fe56a514bd.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -334,16 +334,15 @@ t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = \frac{20}{1.25
 </span> Integrando: <span class="math display">
 \vec{v}_{\text{patrulla}} = 2t \hspace{0.1cm} \hat{ı} + \vec{v}_{0} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span> La velocidad inicial de la patrulla es de 36 km/h, por lo que <span class="math inline">\vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ]</span> Pero antes, pasamos la velocidad inicial a m/s:</p>
-<p><span class="math display">
-\vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ] \cdot \frac{1000 \hspace{0.1cm} m}{1 \hspace{0.1cm} km} \cdot \frac{1 \hspace{0.1cm} h}{3600 \hspace{0.1cm} s} = 10 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
-</span></p>
+<p>$$ _{0} = 36 = 10 </p>
+<p>$$</p>
 </section>
 <section id="section-5" class="slide level2">
 <h2></h2>
 <p><span class="math display">
 \vec{v}_{\text{patrulla}} = ( 2t + 10 ) \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span> Integrando nuevamente: <span class="math display">
-\vec{r}_{\text{patrulla}} = t^2 + 10t + \vec{r}_{0} \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+\vec{r}_{\text{patrulla}} = ( t^2 + 10t ) \hspace{0.1cm} \hat{ı} + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
 </span> No hay posición inicial, por lo que <span class="math inline">\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]</span> <span class="math display">
 \vec{r}_{\text{patrulla}} = t^2 + 10t \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
 </span></p>
@@ -363,7 +362,7 @@ t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = \frac{20}{1.25
 <p><span class="math display">
 \vec{v}_{\text{camioneta}} = 25 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span> Integrando nuevamente: <span class="math display">
-\vec{r}_{\text{camioneta}} = 25t + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
+\vec{r}_{\text{camioneta}} = 25t \hspace{0.1cm} \hat{ı} + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
 </span> No hay posición inicial, por lo que <span class="math inline">\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]</span> <span class="math display">
 \vec{r}_{\text{camioneta}} = 25t \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
 </span></p>
@@ -387,6 +386,29 @@ t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = 15 \hspace{0.1
 <p>Reemplazamos <span class="math inline">t = 15 \hspace{0.1cm} s</span> en la velocidad de la patrulla:</p>
 <p><span class="math display">
 \vec{v}_{\text{patrulla}} = ( 2(15) + 10 ) \hspace{0.1cm} \hat{ı} = 40 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+</section>
+<section id="lanzamiento-de-proyectiles" class="slide level2">
+<h2>Lanzamiento de proyectiles</h2>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./4.png"></p>
+</div>
+</section>
+<section id="ejemplo" class="slide level2">
+<h2>Ejemplo</h2>
+<p>Se lanza un proyectil desde una altura de 12 m con una velocidad inicial de 27 m/s en un ángulo de 0° respecto a la horizontal. Calcular la distancia horizontal recorrida por el proyectil y el tiempo que tarda en llegar al suelo.</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./5.png"></p>
+</div>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p>Para modelar este tipo de ejercicios, no es muy diferente a los ejercicios anteriores. La diferencia es que ahora tenemos dos componentes de movimiento, el movimiento horizontal y el movimiento vertical.</p>
+<p>Modelemos la aceleración considerando ambos ejes. No hay aceleración horizontal y la aceleración vertical es la gravedad: <span class="math display">
+\vec{a} = -9.81 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+</span></p>
+<p>Integrando: <span class="math display">
+\vec{v} = ( -9.81t ) \hspace{0.1cm} \hat{ȷ} + \vec{v}_0  \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span></p>
 
 </section>
@@ -665,6 +687,8 @@ t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = 15 \hspace{0.1
       });
       clipboard.on('success', onCopySuccess);
       if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
         const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
           text: getTextToCopy,
           container: window.document.getElementById('quarto-embedded-source-code-modal')

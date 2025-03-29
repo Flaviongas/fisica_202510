@@ -243,6 +243,7 @@ Pero antes, pasamos la velocidad inicial a m/s:
 
 $$
 \vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ] \cdot \frac{1000 \hspace{0.1cm} m}{1 \hspace{0.1cm} km} \cdot \frac{1 \hspace{0.1cm} h}{3600 \hspace{0.1cm} s} = 10 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+
 $$
 
 ##
@@ -251,7 +252,7 @@ $$
 $$
 Integrando nuevamente:
 $$
-\vec{r}_{\text{patrulla}} = t^2 + 10t + \vec{r}_{0} \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+\vec{r}_{\text{patrulla}} = ( t^2 + 10t ) \hspace{0.1cm} \hat{ı} + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
 $$
 No hay posición inicial, por lo que $\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]$
 $$
@@ -279,7 +280,7 @@ $$
 $$
 Integrando nuevamente:
 $$
-\vec{r}_{\text{camioneta}} = 25t + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
+\vec{r}_{\text{camioneta}} = 25t \hspace{0.1cm} \hat{ı} + \vec{r}_{0} \hspace{0.1cm} \left [ m \right ]
 $$
 No hay posición inicial, por lo que $\vec{r}_{0} = 0 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]$
 $$
@@ -315,3 +316,28 @@ $$
 \vec{v}_{\text{patrulla}} = ( 2(15) + 10 ) \hspace{0.1cm} \hat{ı} = 40 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 $$
 
+## Lanzamiento de proyectiles
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./4.png)
+:::
+
+## Ejemplo 
+Se lanza un proyectil desde una altura de 12 m con una velocidad inicial de 27 m/s en un ángulo de 0° respecto a la horizontal. Calcular la distancia horizontal recorrida por el proyectil y el tiempo que tarda en llegar al suelo.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./5.png)
+:::
+
+##
+Para modelar este tipo de ejercicios, no es muy diferente a los ejercicios anteriores. La diferencia es que ahora tenemos dos componentes de movimiento, el movimiento horizontal y el movimiento vertical.
+
+Modelemos la aceleración considerando ambos ejes. No hay aceleración horizontal y la aceleración vertical es la gravedad:
+$$
+\vec{a} = -9.81 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
+$$
+
+Integrando:
+$$
+\vec{v} = ( -9.81t ) \hspace{0.1cm} \hat{ȷ} + \vec{v}_0  \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
