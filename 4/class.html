@@ -161,7 +161,7 @@ Flavio Jara L.
 </section>
 <section id="ejemplo-1" class="slide level2">
 <h2>Ejemplo 1</h2>
-<p>Un vehiculo que marcha a una velocidad de 15 m/s aumenta su velocidad a razón de 1 m/s cada segundo.</p>
+<p>Un vehículo que marcha a una velocidad de 15 m/s aumenta su velocidad a razón de 1 m/s cada segundo.</p>
 <ul>
 <li><ol type="A">
 <li>Calcular la distancia recorrida en 6 segundos.</li>
@@ -321,7 +321,7 @@ t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = \frac{20}{1.25
 </section>
 <section id="ejercicio-2" class="slide level2">
 <h2>Ejercicio 2</h2>
-<p>Una patrulla de policia que viaja a 36 km/h es rebasada por una camioneta a exceso de velocidad también con velocidad constante 90 km/h. Exactamente 1 segundo después de ser rebasada, la patrulla comienza a acelerar a 2 m/s² para alcanzar a la camioneta. ¿Cuánto tiempo tardará la patrulla en alcanzarla? Además, ¿cuál será la velocidad de la patrulla en ese instante (en metros por segundo)?</p>
+<p>Una patrulla de policía que viaja a 36 km/h es rebasada por una camioneta a exceso de velocidad también con velocidad constante 90 km/h. Exactamente 1 segundo después de ser rebasada, la patrulla comienza a acelerar a 2 m/s² para alcanzar a la camioneta. ¿Cuánto tiempo tardará la patrulla en alcanzarla? Además, ¿cuál será la velocidad de la patrulla en ese instante (en metros por segundo)?</p>
 <div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./3.png"></p>
 </div>
@@ -334,8 +334,9 @@ t = 0 \hspace{0.1cm} s \hspace{0.1cm} \text{o} \hspace{0.1cm} t = \frac{20}{1.25
 </span> Integrando: <span class="math display">
 \vec{v}_{\text{patrulla}} = 2t \hspace{0.1cm} \hat{ı} + \vec{v}_{0} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span> La velocidad inicial de la patrulla es de 36 km/h, por lo que <span class="math inline">\vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ]</span> Pero antes, pasamos la velocidad inicial a m/s:</p>
-<p>$$ _{0} = 36 = 10 </p>
-<p>$$</p>
+<p><span class="math display">
+\vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ] \cdot \frac{1000 \hspace{0.1cm} m}{1 \hspace{0.1cm} km} \cdot \frac{1 \hspace{0.1cm} h}{3600 \hspace{0.1cm} s} = 10 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
 </section>
 <section id="section-5" class="slide level2">
 <h2></h2>
@@ -448,7 +449,7 @@ t = \sqrt{\frac{24}{9.81}} \approx 1.56 \hspace{0.1cm} s
 </section>
 <section id="ejercicio-3" class="slide level2">
 <h2>Ejercicio 3</h2>
-<p>Una pelota de béisbol sale golpeada por un bate con una velocidad de 30 m/s en un ángulo de 30° respecto a la horizontal. ¿Cuáles son las componentes horizontal y vertical de la velocidad después de 3 s?</p>
+<p>Una pelota de béisbol sale golpeada por un bate con una velocidad de 30 m/s en un ángulo de 30° respecto a la horizontal. ¿Cuáles son las componentes horizontal y vertical de la velocidad después de 3 s? ¿ Que distancia horizontal ha recorrido la pelota cuando toca el suelo? ¿Cuál es la altura máxima alcanzada por la pelota?</p>
 <div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./6.png"></p>
 </div>
@@ -490,14 +491,42 @@ t = \sqrt{\frac{24}{9.81}} \approx 1.56 \hspace{0.1cm} s
 \vec{v}_{\text{vertical}} = -14.43 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span></p>
 </section>
+<section id="distancia-horizontal-recorrida-1" class="slide level2">
+<h2>Distancia horizontal recorrida</h2>
+<p>Para calcular la distancia horizontal recorrida, necesitamos la función posición. Integrando nuevamente: <span class="math display">
+\vec{r} = ( 25.98t \hspace{0.1cm} \hat{ı} + ( 15t - \frac{9.81}{2} t^2 ) \hspace{0.1cm} \hat{ȷ} ) + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
+</span> No hay posición inicial, por lo que <span class="math inline">\vec{r}_0 = 0 \hspace{0.1cm} \hat{ı} + 0 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]</span> <span class="math display">
+\vec{r} = ( 25.98t \hspace{0.1cm} \hat{ı} + ( 15t - 4.905t^2 ) \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ m \right ]
+</span> Para calcular la distancia horizontal recorrida, igualamos la componente vertical de la posición a cero: <span class="math display">
+( 15t - 4.905t^2 ) = 0
+</span> Despejamos <span class="math inline">t</span>: <span class="math display">
+15t - 4.905t^2 = 0
+</span></p>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<p><span class="math display">
+t( 15 - 4.905t ) = 0
+</span> Quitando la solución trivial <span class="math inline">t = 0</span>: <span class="math display">
+15 - 4.905t = 0
+</span> <span class="math display">
+4.905t = 15
+</span> <span class="math display">
+t = \frac{15}{4.905} \approx 3.06 \hspace{0.1cm} s
+</span> Este es el tiempo que tarda en llegar al suelo. Ahora, reemplazamos <span class="math inline">t = 3.06 \hspace{0.1cm} s</span> en la componente horizontal de la posición: <span class="math display">
+\vec{r} = ( 25.98(3.06) \hspace{0.1cm} \hat{ı} ) \hspace{0.1cm} \left [ m \right ]
+</span> <span class="math display">
+\vec{r} = 79.5 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+</span></p>
+</section>
 <section id="ejercicio-4" class="slide level2">
 <h2>Ejercicio 4</h2>
-<p>Un cañon de artillería es disparado con una velocidad de 125 m/s en un ángulo de 38° respecto a la horizontal. Si explota 10 s después de ser disparado, ¿a qué distancia horizontal se encuentra el proyectil en el instante de la explosión? ¿Cuál es la altura máxima alcanzada por el proyectil?</p>
+<p>Un cañon de artillería es disparado con una velocidad de 125 m/s en un ángulo de 38° respecto a la horizontal. Si explota 10 s después de ser disparado, ¿a qué distancia horizontal se encuentra el proyectil en el instante de la explosión? ¿Cuál es la altura máxima alcanzada por el proyectil al explosionar? ¿Cuál es el módulo de la velocidad del proyectil en el instante de la explosión?¿Cuál es el ángulo de la velocidad del proyectil en el instante de la explosión respecto a la horizontal?</p>
 <div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./7.png"></p>
 </div>
 </section>
-<section id="section-12" class="slide level2">
+<section id="section-13" class="slide level2">
 <h2></h2>
 <p>Modelemos la aceleración: <span class="math display">
 \vec{a} = -9.81 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s^2} \right ]
@@ -509,7 +538,7 @@ t = \sqrt{\frac{24}{9.81}} \approx 1.56 \hspace{0.1cm} s
 \vec{v}_0 = 98.5 \hspace{0.1cm} \hat{ı} + 76.96 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 </span></p>
 </section>
-<section id="section-13" class="slide level2">
+<section id="section-14" class="slide level2">
 <h2></h2>
 <p>Ahora, reemplazamos <span class="math inline">\vec{v}_0</span> en la ecuación de la velocidad: <span class="math display">
 \vec{v} = -9.81t \hspace{0.1cm} \hat{ȷ} + ( 98.5 \hspace{0.1cm} \hat{ı} + 76.96 \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ \frac{m}{s} \right ]
@@ -521,21 +550,73 @@ t = \sqrt{\frac{24}{9.81}} \approx 1.56 \hspace{0.1cm} s
 \vec{r} = ( 98.5t \hspace{0.1cm} \hat{ı} + ( 76.96t - 4.9t^2 ) \hspace{0.1cm} \hat{ȷ} ) + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
 </span></p>
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-15" class="slide level2">
 <h2></h2>
 <p>No hay posición inicial, por lo que <span class="math inline">\vec{r}_0 = 0 \hspace{0.1cm} \hat{ı} + 0 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]</span> <span class="math display">
 \vec{r} = ( 98.5t \hspace{0.1cm} \hat{ı} + ( 76.96t - 4.9t^2 ) \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ m \right ]
 </span></p>
-<h3 id="distancia-horizontal-recorrida-1">Distancia horizontal recorrida</h3>
+<h3 id="distancia-horizontal-recorrida-2">Distancia horizontal recorrida</h3>
 <p>Para calcular la distancia horizontal recorrida, reemplazamos <span class="math inline">t = 10 \hspace{0.1cm} s</span> en la componente horizontal de la posición: <span class="math display">
 \vec{r} = ( 98.5(10) \hspace{0.1cm} \hat{ı} ) \hspace{0.1cm} \left [ m \right ]
 </span> <span class="math display">
 \vec{r} = 985 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
-</span> ### Altura máxima alcanzada Para calcular la altura máxima alcanzada, reemplazamos <span class="math inline">t = 10 \hspace{0.1cm} s</span> en la componente vertical de la posición: <span class="math display">
+</span></p>
+<h3 id="altura-máxima-alcanzada-al-explosionar">Altura máxima alcanzada al explosionar</h3>
+<p>Para calcular la altura máxima alcanzada, reemplazamos <span class="math inline">t = 10 \hspace{0.1cm} s</span> en la componente vertical de la posición: <span class="math display">
 \vec{r} = ( 76.96(10) - 4.9(10)^2 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]
 </span> <span class="math display">
 \vec{r} = 279.6 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]
 </span></p>
+</section>
+<section id="módulo-de-la-velocidad" class="slide level2">
+<h2>Módulo de la velocidad</h2>
+<p>Para calcular el módulo de la velocidad, reemplazamos <span class="math inline">t = 10 \hspace{0.1cm} s</span> en la ecuación de la velocidad: <span class="math display">
+\vec{v} = 98.5 \hspace{0.1cm} \hat{ı} + ( 76.96 - 9.81(10) ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> <span class="math display">
+\vec{v} = 98.5 \hspace{0.1cm} \hat{ı} + ( 76.96 - 98.1 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> <span class="math display">
+\vec{v} = 98.5 \hspace{0.1cm} \hat{ı} + ( -21.14 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+</section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+<p>La fórmula para calcular el módulo de un vector es: <span class="math display">
+|\vec{v}| = \sqrt{v_x^2 + v_y^2}
+</span> <span class="math display">
+|\vec{v}| = \sqrt{( 98.5 )^2 + ( -21.14 )^2} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> <span class="math display">
+|\vec{v}| = \sqrt{9702.25 + 446.89} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> <span class="math display">
+|\vec{v}| = \sqrt{10149.14} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span> <span class="math display">
+|\vec{v}| \approx 100.74 \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+</span></p>
+</section>
+<section id="ángulo-de-la-velocidad" class="slide level2">
+<h2>Ángulo de la velocidad</h2>
+<p>Para calcular el ángulo de la velocidad, podemos usar una función trigonométrica armando un triángulo rectángulo con las componentes de la velocidad:</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./8.png"></p>
+</div>
+<p>Podemos usar cualquier función trigonométrica, pero en este caso usaremos la tangente: <span class="math display">
+\tan(\theta) = \frac{v_y}{v_x}
+</span></p>
+</section>
+<section id="section-17" class="slide level2">
+<h2></h2>
+<p>Despejamos <span class="math inline">\theta</span>: <span class="math display">
+\theta = \tan^{-1} \left( \frac{v_y}{v_x} \right)
+</span></p>
+<p>Reemplazamos <span class="math inline">v_y</span> y <span class="math inline">v_x</span>: <span class="math display">
+\theta = \tan^{-1} \left( \frac{-21.14}{98.5} \right)
+</span> <span class="math display">
+\theta = \tan^{-1} \left( -0.215 \right)
+</span> <span class="math display">
+\theta \approx -12.11°
+</span></p>
+</section>
+<section id="gracias-por-su-atención" class="title-slide slide level1 center">
+<h1>Gracias por su atención</h1>
 
 </section>
     </div>

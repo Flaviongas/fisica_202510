@@ -15,7 +15,7 @@ include-in-header:
 ---
 
 ## Ejemplo 1
-Un vehiculo que marcha a una velocidad de 15 m/s aumenta su velocidad a razón de 1 m/s cada segundo.
+Un vehículo que marcha a una velocidad de 15 m/s aumenta su velocidad a razón de 1 m/s cada segundo.
 
 - A) Calcular la distancia recorrida en 6 segundos.
 - B) Si disminuye su velocidad a razón de 1 m/s cada segundo, calcular la distancia recorrida en 6 segundos y el tiempo que demora en detenerse.
@@ -221,7 +221,7 @@ $$
 $$
 
 ## Ejercicio 2
-Una patrulla de policia que viaja a 36 km/h es rebasada por una camioneta a exceso de velocidad también con velocidad constante 90 km/h. Exactamente 1 segundo después de ser rebasada, la patrulla comienza a acelerar a 2 m/s² para alcanzar a la camioneta. ¿Cuánto tiempo tardará la patrulla en alcanzarla? Además, ¿cuál será la velocidad de la patrulla en ese instante (en metros por segundo)?
+Una patrulla de policía que viaja a 36 km/h es rebasada por una camioneta a exceso de velocidad también con velocidad constante 90 km/h. Exactamente 1 segundo después de ser rebasada, la patrulla comienza a acelerar a 2 m/s² para alcanzar a la camioneta. ¿Cuánto tiempo tardará la patrulla en alcanzarla? Además, ¿cuál será la velocidad de la patrulla en ese instante (en metros por segundo)?
 
 ::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
 ![](./3.png)
@@ -243,7 +243,6 @@ Pero antes, pasamos la velocidad inicial a m/s:
 
 $$
 \vec{v}_{0} = 36 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{km}{h} \right ] \cdot \frac{1000 \hspace{0.1cm} m}{1 \hspace{0.1cm} km} \cdot \frac{1 \hspace{0.1cm} h}{3600 \hspace{0.1cm} s} = 10 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
-
 $$
 
 ##
@@ -390,6 +389,8 @@ $$
 
 ## Ejercicio 3
 Una pelota de béisbol sale golpeada por un bate con una velocidad de 30 m/s en un ángulo de 30° respecto a la horizontal. ¿Cuáles son las componentes horizontal y vertical de la velocidad después de 3 s?
+¿ Que distancia horizontal ha recorrido la pelota cuando toca el suelo?
+¿Cuál es la altura máxima alcanzada por la pelota?
 
 ::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
 ![](./6.png)
@@ -442,8 +443,52 @@ $$
 \vec{v}_{\text{vertical}} = -14.43 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
 $$
 
+## Distancia horizontal recorrida
+Para calcular la distancia horizontal recorrida, necesitamos la función posición. Integrando nuevamente:
+$$
+\vec{r} = ( 25.98t \hspace{0.1cm} \hat{ı} + ( 15t - \frac{9.81}{2} t^2 ) \hspace{0.1cm} \hat{ȷ} ) + \vec{r}_0 \hspace{0.1cm} \left [ m \right ]
+$$
+No hay posición inicial, por lo que $\vec{r}_0 = 0 \hspace{0.1cm} \hat{ı} + 0 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]$
+$$
+\vec{r} = ( 25.98t \hspace{0.1cm} \hat{ı} + ( 15t - 4.905t^2 ) \hspace{0.1cm} \hat{ȷ} ) \hspace{0.1cm} \left [ m \right ]
+$$
+Para calcular la distancia horizontal recorrida, igualamos la componente vertical de la posición a cero:
+$$
+( 15t - 4.905t^2 ) = 0
+$$
+Despejamos $t$:
+$$
+15t - 4.905t^2 = 0
+$$
+
+##
+
+$$
+t( 15 - 4.905t ) = 0
+$$
+Quitando la solución trivial $t = 0$:
+$$
+15 - 4.905t = 0
+$$
+$$
+4.905t = 15
+$$
+$$
+t = \frac{15}{4.905} \approx 3.06 \hspace{0.1cm} s
+$$
+Este es el tiempo que tarda en llegar al suelo. Ahora, reemplazamos $t = 3.06 \hspace{0.1cm} s$ en la componente horizontal de la posición:
+$$
+\vec{r} = ( 25.98(3.06) \hspace{0.1cm} \hat{ı} ) \hspace{0.1cm} \left [ m \right ]
+$$
+$$
+\vec{r} = 79.5 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
+$$
+
+
+
 ## Ejercicio 4
-Un cañon de artillería es disparado con una velocidad de 125 m/s en un ángulo de 38° respecto a la horizontal. Si explota 10 s después de ser disparado, ¿a qué distancia horizontal se encuentra el proyectil en el instante de la explosión? ¿Cuál es la altura máxima alcanzada por el proyectil?
+Un cañon de artillería es disparado con una velocidad de 125 m/s en un ángulo de 38° respecto a la horizontal. Si explota 10 s después de ser disparado, ¿a qué distancia horizontal se encuentra el proyectil en el instante de la explosión? ¿Cuál es la altura máxima alcanzada por el proyectil al explosionar?
+¿Cuál es el módulo de la velocidad del proyectil en el instante de la explosión?¿Cuál es el ángulo de la velocidad del proyectil en el instante de la explosión respecto a la horizontal?
 
 ::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
 ![](./7.png)
@@ -498,7 +543,8 @@ $$
 $$
 \vec{r} = 985 \hspace{0.1cm} \hat{ı} \hspace{0.1cm} \left [ m \right ]
 $$
-### Altura máxima alcanzada
+
+### Altura máxima alcanzada al explosionar
 Para calcular la altura máxima alcanzada, reemplazamos $t = 10 \hspace{0.1cm} s$ en la componente vertical de la posición:
 $$
 \vec{r} = ( 76.96(10) - 4.9(10)^2 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]
@@ -506,3 +552,67 @@ $$
 $$
 \vec{r} = 279.6 \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ m \right ]
 $$
+
+## Módulo de la velocidad
+Para calcular el módulo de la velocidad, reemplazamos $t = 10 \hspace{0.1cm} s$ en la ecuación de la velocidad:
+$$
+\vec{v} = 98.5 \hspace{0.1cm} \hat{ı} + ( 76.96 - 9.81(10) ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+\vec{v} = 98.5 \hspace{0.1cm} \hat{ı} + ( 76.96 - 98.1 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+\vec{v} = 98.5 \hspace{0.1cm} \hat{ı} + ( -21.14 ) \hspace{0.1cm} \hat{ȷ} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+## 
+La fórmula para calcular el módulo de un vector es:
+$$
+|\vec{v}| = \sqrt{v_x^2 + v_y^2}
+$$
+$$
+|\vec{v}| = \sqrt{( 98.5 )^2 + ( -21.14 )^2} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+|\vec{v}| = \sqrt{9702.25 + 446.89} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+|\vec{v}| = \sqrt{10149.14} \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+$$
+|\vec{v}| \approx 100.74 \hspace{0.1cm} \left [ \frac{m}{s} \right ]
+$$
+
+## Ángulo de la velocidad
+Para calcular el ángulo de la velocidad, podemos usar una función trigonométrica armando un triángulo rectángulo con las componentes de la velocidad:
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./8.png)
+:::
+
+Podemos usar cualquier función trigonométrica, pero en este caso usaremos la tangente:
+$$
+\tan(\theta) = \frac{v_y}{v_x}
+$$
+
+##
+
+Despejamos $\theta$:
+$$
+\theta = \tan^{-1} \left( \frac{v_y}{v_x} \right)
+$$
+
+Reemplazamos $v_y$ y $v_x$:
+$$
+\theta = \tan^{-1} \left( \frac{-21.14}{98.5} \right)
+$$
+$$
+\theta = \tan^{-1} \left( -0.215 \right)
+$$
+$$
+\theta \approx -12.11°
+$$
+
+# Gracias por su atención
+
