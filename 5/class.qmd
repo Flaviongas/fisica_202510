@@ -1,0 +1,32 @@
+---
+title: "Movimiento Circular y Repaso Ev. 1"
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.60em;
+      }
+      </style>
+---
+
+## Movimiento Circular
+
+
+## Ejercicio 3
+
+Usted está a cargo de una flota de vehículos de encomiendas. Uno de éstos recoge insumos para llevarlos a su empresa que representa el origen del sistema de referencia. Para ello, comienza el recorrido en la central $A$ ubicada a 15[km] y a N40°O (norte cuarenta grados oeste) de la empresa. Luego de recoger los insumos en la central $A$, inicia el trayecto para llegar a la central $B$ ubicada a N60°E de la central $A$ demorando 25[min] en llegar y viajando con una rapidez de 50[km/h]. A continuación, inicia el trayecto para llegar a la central $C$, para lo cual, recorre 17[km] con una rapidez de 30 [km/h] y una dirección al S75°E. Finalmente, conduce a la empresa demorando 0,7[h].
+
+De acuerdo con lo anterior, y considerando un sistema de referencia ubicado en la empresa, responda:
+
+- a) Por medio de vectores, dibuje la trayectoria seguida por el furgón de encomiendas.
+- b) Determine los vectores de posición $\vec{r}_a$, $\vec{r}_b$ y $\vec{r}_c$.
+- c) Determine la velocidad media en todo el trayecto.
+- d) Determine la rapidez media en todo el trayecto.
+
+## a)
+
