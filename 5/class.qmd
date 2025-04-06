@@ -28,5 +28,160 @@ De acuerdo con lo anterior, y considerando un sistema de referencia ubicado en l
 - c) Determine la velocidad media en todo el trayecto.
 - d) Determine la rapidez media en todo el trayecto.
 
+##
+
+Definamos primero los vectores dados en el problema. $\vec{r}_a$ es el vector que va desde la empresa hasta la central $A$, se nos da la magnitud, la cual pasaremos a metros y el ángulo (el cual mediremos desde el eje x), por lo que podemos escribirlo como:
+$$
+\vec{r}_a = 15000 \cos(130°) \hat{ı} + 15000 \sin(130°) \hat{ȷ} \hspace{0.2cm} [m]
+$$
+$$
+\vec{r}_a = -9641.81 \hat{ı} + 11490.66 \hat{ȷ} \hspace{0.2cm} [m]
+$$
+
+##
+
+Lo siguiente que nos dan es el vector que va desde la central $A$ hasta la central $B$, el cual se encuentra a N60°E de la central $A$. No nos dan la magnitud, pero si la rapidez y el tiempo que demora en llegar. Por lo que podemos calcular la magnitud del vector como:
+$$
+v = \frac{d}{t} \Rightarrow d = v t
+$$
+Pasando los kilómetros a metros y el tiempo a horas:
+$$
+d = 50 \frac{km}{h} \cdot 25 min \cdot \frac{1 h}{60 min} \cdot 1000 \frac{m}{km}
+$$
+$$
+d = 20833.33 \hspace{0.2cm} [m]
+$$
+
+##
+
+Ahora podemos escribir el vector $\vec{r}_{ ab }$ como:
+$$
+\vec{r}_{ab} = 20833.33 \cos(30°) \hat{ı} + 20833.33 \sin(30°) \hat{ȷ} \hspace{0.2cm} [m]
+$$
+$$
+\vec{r}_{ab} = 18042.5 \hspace{0.2cm} \hat{ı} + 10416.67 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+$$
+
+Con esto podemos sacar el vector $\vec{r}_b$ como:
+$$
+\vec{r}_b = \vec{r}_a + \vec{r}_{ab}
+$$
+$$
+\vec{r}_b = (-9641.81 \hspace{0.2cm} \hat{ı} + 11490.66 \hspace{0.2cm} \hat{ȷ}) + (18042.5 \hspace{0.2cm} \hat{ı} + 10416.67 \hspace{0.2cm} \hat{ȷ}) \hspace{0.2cm} [m]
+$$
+$$
+\vec{r}_b = 8400.69 \hspace{0.2cm} \hat{ı} + 21907.33 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+$$
+
+##
+Ahora pasamos al vector que va desde la central $B$ hasta la central $C$. Nos dan la magnitud y la dirección, por lo que podemos escribir el vector como:
+$$
+\vec{r}_{bc} = 17000 \cos(-15°) \hat{ı} + 17000 \sin(-15°) \hat{ȷ} \hspace{0.2cm} [m]
+$$
+$$
+\vec{r}_{bc} = 16420.74 \hspace{0.2cm} \hat{ı} - 4399.92 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+$$
+Con esto podemos sacar el vector $\vec{r}_c$ como:
+$$
+\vec{r}_c = \vec{r}_b + \vec{r}_{bc}
+$$
+$$
+\vec{r}_c = (8400.69 \hspace{0.2cm} \hat{ı} + 21907.33 \hspace{0.2cm} \hat{ȷ}) + (16420.74 \hspace{0.2cm} \hat{ı} - 4399.92 \hspace{0.2cm} \hat{ȷ}) \hspace{0.2cm} [m]
+$$
+$$
+\vec{r}_c = 24821.43 \hspace{0.2cm} \hat{ı} + 17507.41 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+$$
+
+Finalmente, el vector que vuelve a la empresa es el vector $\vec{r}_{c}$, pero con dirección opuesta, por lo que podemos escribirlo como:
+$$
+\vec{r}_{ce} = -\vec{r}_c
+$$
+$$
+\vec{r}_{ce} = -24821.43 \hspace{0.2cm} \hat{ı} - 17507.41 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+$$
+
 ## a)
+Nos piden la trayectoria seguida por el furgón de encomiendas, por lo que necesitamos graficar solo los vectores  $\vec{r}_{ab}$, $\vec{r}_{bc}$ y $\vec{r}_{ce}$. 
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./1.png)
+:::
+
+## b)
+Ya determinamos los vectores de posición $\vec{r}_a$, $\vec{r}_b$ y $\vec{r}_c$ en la parte anterior, por lo que no es necesario volver a calcularlos.
+
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+## c)
+Para determinar la velocidad media, debemos calcular el desplazamiento total y el tiempo total. El desplazamiento total es la distancia entre la posición inicial y la posición final, por lo que podemos escribirlo como:
+$$
+\vec{r}_{total} = \vec{r}_{ab} + \vec{r}_{bc} + \vec{r}_{ce}
+$$
+$$
+\vec{r}_{total} = (18042.5 \hspace{0.2cm} \hat{ı} + 10416.67 \hspace{0.2cm} \hat{ȷ}) + (16420.74 \hspace{0.2cm} \hat{ı} - 4399.92 \hspace{0.2cm} \hat{ȷ}) + (-24821.43 \hspace{0.2cm} \hat{ı} - 17507.41 \hspace{0.2cm} \hat{ȷ})
+$$
+$$
+\vec{r}_{total} = (18042.5 + 16420.74 - 24821.43) \hspace{0.2cm} \hat{ı} + (10416.67 - 4399.92 - 17507.41) \hspace{0.2cm} \hat{ȷ}
+$$
+$$
+\vec{r}_{total} = 9641.81 \hspace{0.2cm} \hat{ı} - 11490.66 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+$$
+Sumamos todos los tiempos que demora el furgón en llegar a cada central:
+$$
+t_{total} = t_{ab} + t_{bc} + t_{ce}
+$$
+No tenemos $t_{bc}$, pero podemos calcularlo como:
+
+##
+
+$$
+t_{bc} = \frac{d_{bc}}{v_{bc}} = \frac{17 \hspace{0.2cm} [km]}{30 \hspace{0.2cm} [km/h]} = 0.5667 \hspace{0.2cm} [h]
+$$
+$$
+t_{total} = 25 \hspace{0.2cm} [min] + 0.5667 \hspace{0.2cm} [h] + 0.7 \hspace{0.2cm} [h]
+$$
+Pasando los minutos a horas:
+$$
+t_{total} = 25 \hspace{0.2cm} [min] \cdot \frac{1 h}{60 min} + 0.5667 \hspace{0.2cm} [h] + 0.7 \hspace{0.2cm} [h]
+$$
+$$
+t_{total} = 0.4167 \hspace{0.2cm} [h] + 0.5667 \hspace{0.2cm} [h] + 0.7 \hspace{0.2cm} [h]
+$$
+$$
+t_{total} = 1.6834 \hspace{0.2cm} [h]
+$$
+Pasandolo a segunods:
+$$
+t_{total} = 1.6834 \hspace{0.2cm} [h] \cdot 3600 \hspace{0.2cm} [s/h] = 6060,24 \hspace{0.2cm} [s]
+$$
+
+##
+Ahora podemos calcular la velocidad media como:
+$$
+\vec{v}_{media} = \frac{\vec{r}_{total}}{t_{total}}
+$$
+
+$$
+\vec{v}_{media} = \frac{9641.81 \hspace{0.2cm} \hat{ı} - 11490.66 \hspace{0.2cm} \hat{ȷ}}{6060,24 \hspace{0.2cm} [s]}
+$$
+$$
+\vec{v}_{media} = 1.59 \hspace{0.2cm} \hat{ı} - 1.9 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m/s]
+$$
+
+## d)
+La rapidez media el módulo de la velocidad media, por lo que podemos escribirla como:
+$$
+v_{media} = \sqrt{(1.59)^2 + (-1.9)^2}
+$$
+$$
+v_{media} = \sqrt{2.5281 + 3.61}
+$$
+$$
+v_{media} = \sqrt{6.1381} = 2.48 \hspace{0.2cm} [m/s]
+$$
+
+## Ejercicio 4
 

@@ -6,8 +6,8 @@
 <script src="class_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="class_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="class_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.33">
+<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-6c21014d9765ba549c6ebad95917e4d7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.6">
 
   <meta name="author" content="Flavio Jara L.">
   <title>Movimiento Circular y Repaso Ev. 1</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-85b1feb8ec970ded495406fe56a514bd.css">
+  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -181,8 +181,125 @@ Flavio Jara L.
 </ol></li>
 </ul>
 </section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p>Definamos primero los vectores dados en el problema. <span class="math inline">\vec{r}_a</span> es el vector que va desde la empresa hasta la central <span class="math inline">A</span>, se nos da la magnitud, la cual pasaremos a metros y el ángulo (el cual mediremos desde el eje x), por lo que podemos escribirlo como: <span class="math display">
+\vec{r}_a = 15000 \cos(130°) \hat{ı} + 15000 \sin(130°) \hat{ȷ} \hspace{0.2cm} [m]
+</span> <span class="math display">
+\vec{r}_a = -9641.81 \hat{ı} + 11490.66 \hat{ȷ} \hspace{0.2cm} [m]
+</span></p>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p>Lo siguiente que nos dan es el vector que va desde la central <span class="math inline">A</span> hasta la central <span class="math inline">B</span>, el cual se encuentra a N60°E de la central <span class="math inline">A</span>. No nos dan la magnitud, pero si la rapidez y el tiempo que demora en llegar. Por lo que podemos calcular la magnitud del vector como: <span class="math display">
+v = \frac{d}{t} \Rightarrow d = v t
+</span> Pasando los kilómetros a metros y el tiempo a horas: <span class="math display">
+d = 50 \frac{km}{h} \cdot 25 min \cdot \frac{1 h}{60 min} \cdot 1000 \frac{m}{km}
+</span> <span class="math display">
+d = 20833.33 \hspace{0.2cm} [m]
+</span></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p>Ahora podemos escribir el vector <span class="math inline">\vec{r}_{ ab }</span> como: <span class="math display">
+\vec{r}_{ab} = 20833.33 \cos(30°) \hat{ı} + 20833.33 \sin(30°) \hat{ȷ} \hspace{0.2cm} [m]
+</span> <span class="math display">
+\vec{r}_{ab} = 18042.5 \hspace{0.2cm} \hat{ı} + 10416.67 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+</span></p>
+<p>Con esto podemos sacar el vector <span class="math inline">\vec{r}_b</span> como: <span class="math display">
+\vec{r}_b = \vec{r}_a + \vec{r}_{ab}
+</span> <span class="math display">
+\vec{r}_b = (-9641.81 \hspace{0.2cm} \hat{ı} + 11490.66 \hspace{0.2cm} \hat{ȷ}) + (18042.5 \hspace{0.2cm} \hat{ı} + 10416.67 \hspace{0.2cm} \hat{ȷ}) \hspace{0.2cm} [m]
+</span> <span class="math display">
+\vec{r}_b = 8400.69 \hspace{0.2cm} \hat{ı} + 21907.33 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+</span></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p>Ahora pasamos al vector que va desde la central <span class="math inline">B</span> hasta la central <span class="math inline">C</span>. Nos dan la magnitud y la dirección, por lo que podemos escribir el vector como: <span class="math display">
+\vec{r}_{bc} = 17000 \cos(-15°) \hat{ı} + 17000 \sin(-15°) \hat{ȷ} \hspace{0.2cm} [m]
+</span> <span class="math display">
+\vec{r}_{bc} = 16420.74 \hspace{0.2cm} \hat{ı} - 4399.92 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+</span> Con esto podemos sacar el vector <span class="math inline">\vec{r}_c</span> como: <span class="math display">
+\vec{r}_c = \vec{r}_b + \vec{r}_{bc}
+</span> <span class="math display">
+\vec{r}_c = (8400.69 \hspace{0.2cm} \hat{ı} + 21907.33 \hspace{0.2cm} \hat{ȷ}) + (16420.74 \hspace{0.2cm} \hat{ı} - 4399.92 \hspace{0.2cm} \hat{ȷ}) \hspace{0.2cm} [m]
+</span> <span class="math display">
+\vec{r}_c = 24821.43 \hspace{0.2cm} \hat{ı} + 17507.41 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+</span></p>
+<p>Finalmente, el vector que vuelve a la empresa es el vector <span class="math inline">\vec{r}_{c}</span>, pero con dirección opuesta, por lo que podemos escribirlo como: <span class="math display">
+\vec{r}_{ce} = -\vec{r}_c
+</span> <span class="math display">
+\vec{r}_{ce} = -24821.43 \hspace{0.2cm} \hat{ı} - 17507.41 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+</span></p>
+</section>
 <section id="a" class="slide level2">
 <h2>a)</h2>
+<p>Nos piden la trayectoria seguida por el furgón de encomiendas, por lo que necesitamos graficar solo los vectores <span class="math inline">\vec{r}_{ab}</span>, <span class="math inline">\vec{r}_{bc}</span> y <span class="math inline">\vec{r}_{ce}</span>.</p>
+<div style="text-align:center; width:70%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./1.png"></p>
+</div>
+</section>
+<section id="b" class="slide level2">
+<h2>b)</h2>
+<p>Ya determinamos los vectores de posición <span class="math inline">\vec{r}_a</span>, <span class="math inline">\vec{r}_b</span> y <span class="math inline">\vec{r}_c</span> en la parte anterior, por lo que no es necesario volver a calcularlos.</p>
+<div style="text-align:center; width:70%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./2.png"></p>
+</div>
+</section>
+<section id="c" class="slide level2">
+<h2>c)</h2>
+<p>Para determinar la velocidad media, debemos calcular el desplazamiento total y el tiempo total. El desplazamiento total es la distancia entre la posición inicial y la posición final, por lo que podemos escribirlo como: <span class="math display">
+\vec{r}_{total} = \vec{r}_{ab} + \vec{r}_{bc} + \vec{r}_{ce}
+</span> <span class="math display">
+\vec{r}_{total} = (18042.5 \hspace{0.2cm} \hat{ı} + 10416.67 \hspace{0.2cm} \hat{ȷ}) + (16420.74 \hspace{0.2cm} \hat{ı} - 4399.92 \hspace{0.2cm} \hat{ȷ}) + (-24821.43 \hspace{0.2cm} \hat{ı} - 17507.41 \hspace{0.2cm} \hat{ȷ})
+</span> <span class="math display">
+\vec{r}_{total} = (18042.5 + 16420.74 - 24821.43) \hspace{0.2cm} \hat{ı} + (10416.67 - 4399.92 - 17507.41) \hspace{0.2cm} \hat{ȷ}
+</span> <span class="math display">
+\vec{r}_{total} = 9641.81 \hspace{0.2cm} \hat{ı} - 11490.66 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
+</span> Sumamos todos los tiempos que demora el furgón en llegar a cada central: <span class="math display">
+t_{total} = t_{ab} + t_{bc} + t_{ce}
+</span> No tenemos <span class="math inline">t_{bc}</span>, pero podemos calcularlo como:</p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><span class="math display">
+t_{bc} = \frac{d_{bc}}{v_{bc}} = \frac{17 \hspace{0.2cm} [km]}{30 \hspace{0.2cm} [km/h]} = 0.5667 \hspace{0.2cm} [h]
+</span> <span class="math display">
+t_{total} = 25 \hspace{0.2cm} [min] + 0.5667 \hspace{0.2cm} [h] + 0.7 \hspace{0.2cm} [h]
+</span> Pasando los minutos a horas: <span class="math display">
+t_{total} = 25 \hspace{0.2cm} [min] \cdot \frac{1 h}{60 min} + 0.5667 \hspace{0.2cm} [h] + 0.7 \hspace{0.2cm} [h]
+</span> <span class="math display">
+t_{total} = 0.4167 \hspace{0.2cm} [h] + 0.5667 \hspace{0.2cm} [h] + 0.7 \hspace{0.2cm} [h]
+</span> <span class="math display">
+t_{total} = 1.6834 \hspace{0.2cm} [h]
+</span> Pasandolo a segunods: <span class="math display">
+t_{total} = 1.6834 \hspace{0.2cm} [h] \cdot 3600 \hspace{0.2cm} [s/h] = 6060,24 \hspace{0.2cm} [s]
+</span></p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p>Ahora podemos calcular la velocidad media como: <span class="math display">
+\vec{v}_{media} = \frac{\vec{r}_{total}}{t_{total}}
+</span></p>
+<p><span class="math display">
+\vec{v}_{media} = \frac{9641.81 \hspace{0.2cm} \hat{ı} - 11490.66 \hspace{0.2cm} \hat{ȷ}}{6060,24 \hspace{0.2cm} [s]}
+</span> <span class="math display">
+\vec{v}_{media} = 1.59 \hspace{0.2cm} \hat{ı} - 1.9 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m/s]
+</span></p>
+</section>
+<section id="d" class="slide level2">
+<h2>d)</h2>
+<p>La rapidez media el módulo de la velocidad media, por lo que podemos escribirla como: <span class="math display">
+v_{media} = \sqrt{(1.59)^2 + (-1.9)^2}
+</span> <span class="math display">
+v_{media} = \sqrt{2.5281 + 3.61}
+</span> <span class="math display">
+v_{media} = \sqrt{6.1381} = 2.48 \hspace{0.2cm} [m/s]
+</span></p>
+</section>
+<section id="ejercicio-4" class="slide level2">
+<h2>Ejercicio 4</h2>
 
 </section>
     </div>
@@ -460,8 +577,6 @@ Flavio Jara L.
       });
       clipboard.on('success', onCopySuccess);
       if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
         const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
           text: getTextToCopy,
           container: window.document.getElementById('quarto-embedded-source-code-modal')
