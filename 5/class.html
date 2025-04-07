@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.6">
 
   <meta name="author" content="Flavio Jara L.">
-  <title>Movimiento Circular y Repaso Ev. 1</title>
+  <title>Movimiento Circular Uniforme y Repaso Ev. 1</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -148,7 +148,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Movimiento Circular y Repaso Ev. 1</h1>
+  <h1 class="title">Movimiento Circular Uniforme y Repaso Ev. 1</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -159,8 +159,62 @@ Flavio Jara L.
 </div>
 
 </section>
-<section id="movimiento-circular" class="slide level2">
-<h2>Movimiento Circular</h2>
+<section id="movimiento-circular-uniforme" class="slide level2">
+<h2>Movimiento Circular Uniforme</h2>
+<p>El movimiento circular es un movimiento periódico, en el cual un objeto se mueve a lo largo de una trayectoria circular. Este movimiento puede ser uniforme o no uniforme, dependiendo de si la velocidad angular es constante o no.</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./4.png"></p>
+</div>
+</section>
+<section id="definiciones" class="slide level2">
+<h2>Definiciones</h2>
+<h4 id="aceleración-centripeta-o-radial">Aceleración Centripeta o Radial</h4>
+<p>La aceleración centrípeta es la aceleración hacia el centro de la trayectoria circular, y se define como:</p>
+<h5 id="aceleración-tangencial">Aceleración Tangencial</h5>
+<p>La aceleración tangencial es la aceleración tangente a la trayectoria circular, y se define como: <span class="math display"> a_t = \frac{d v}{d t}</span> <span class="math display"> a_r = \frac{v^2}{r}</span></p>
+<div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./6.png"></p>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<h5 id="aceleración-total">Aceleración Total</h5>
+<p>La aceleración total es la raíz de la suma de la aceleración centrípeta y la aceleración tangencial, y se define como: <span class="math display"> a = \sqrt{a_t^2 + a_r^2}</span></p>
+<h5 id="velocidad-angular">Velocidad Angular</h5>
+<p>La velocidad angular es la razón de cambio del ángulo (en radianes) con respecto al tiempo, y se define como: <span class="math display"> \omega = \frac{\theta}{t}</span></p>
+<h5 id="velocidad-tangencial">Velocidad Tangencial</h5>
+<p>La velocidad es la velocidad del objeto si se dejara de aplicar la fuerza centrípeta, y se define como: <span class="math display"> | \vec{v_t} | = \frac{2\pi r}{T} = \omega r</span></p>
+</section>
+<section id="ejercicio-1" class="slide level2">
+<h2>Ejercicio 1</h2>
+<p>Un volante de 3 metros de diámetro gira a 120 revoluciones por minuto. Calcula frecuencia y período de un punto sobre el borde.</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./5.webp"></p>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p>Primero, pasemos RPM a rad/s: <span class="math display"> \omega = 120 \frac{rev}{min} \cdot \frac{2\pi rad}{1 rev} \cdot \frac{1 min}{60 s}</span> <span class="math display"> \omega = 12.56 \hspace{0.2cm} [rad/s]</span> Recordemos que el período es el tiempo que demora en dar una vuelta completa, y la frecuencia es la cantidad de vueltas que da en un segundo.</p>
+<p>La frecuencia se puede calcular como: <span class="math display"> f = \frac{\omega}{2\pi}</span> <span class="math display"> f = \frac{12.56}{2\pi} = 2 \hspace{0.2cm} [Hz]</span></p>
+<p>Y el período se puede calcular como: <span class="math display"> T = \frac{1}{f} = \frac{1}{2} = 0.5 \hspace{0.2cm} [s]</span></p>
+</section>
+<section id="ejercicio-2" class="slide level2">
+<h2>Ejercicio 2</h2>
+<p>¿ Cuántas rpm realiza un disco de 25 cm de radio si su aceleración centripeta en el borde es de <span class="math inline">36 \pi^2 m/s^2</span>?</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./7.svg"></p>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p>Primero pasemos el radio a metros: <span class="math display"> r = 25 \hspace{0.2cm} [cm] \cdot \frac{1 m}{100 cm} = 0.25 \hspace{0.2cm} [m]</span></p>
+<p>Dado que nos piden rpm, debemos calcular la velocidad angular en rad/s y luego pasarlo a revoluciones por minuto. Ahora, sabemos que la aceleración centrípeta se puede calcular como: <span class="math display"> a_c = \frac{v^2}{r}</span> Con esto podemos despejar la velocidad, pero esto no sirve demasiado.</p>
+<p>Lo que podemos hacer es usar la relación entre la aceleración centrípeta y la velocidad angular. Recordemos que la velocidad lineal se puede calcular como: <span class="math display"> v = \omega r</span></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p>Si reemplazamos esto en la ecuación de la aceleración centrípeta, podemos escribirla como: <span class="math display"> a_c = \frac{(\omega r)^2}{r}</span> <span class="math display"> a_c = \omega^2 r</span></p>
+<p>De aqui despejamos la velocidad angular: <span class="math display"> \omega = \sqrt{\frac{a_c}{r}}</span> <span class="math display"> \omega = \sqrt{\frac{36 \pi^2}{0.25}}</span> <span class="math display"> \omega = 12 \pi \hspace{0.2cm} [rad/s]</span> Ahora pasamos a revoluciones por minuto: <span class="math display"> \omega = 12 \pi \hspace{0.2cm} [rad/s] \cdot \frac{1 rev}{2\pi rad} \cdot \frac{60 s}{1 min}</span> <span class="math display"> \omega = 360 \hspace{0.2cm} [rev/min]</span></p>
 </section>
 <section id="ejercicio-3" class="slide level2">
 <h2>Ejercicio 3</h2>
@@ -181,7 +235,7 @@ Flavio Jara L.
 </ol></li>
 </ul>
 </section>
-<section id="section" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 <p>Definamos primero los vectores dados en el problema. <span class="math inline">\vec{r}_a</span> es el vector que va desde la empresa hasta la central <span class="math inline">A</span>, se nos da la magnitud, la cual pasaremos a metros y el ángulo (el cual mediremos desde el eje x), por lo que podemos escribirlo como: <span class="math display">
 \vec{r}_a = 15000 \cos(130°) \hat{ı} + 15000 \sin(130°) \hat{ȷ} \hspace{0.2cm} [m]
@@ -189,7 +243,7 @@ Flavio Jara L.
 \vec{r}_a = -9641.81 \hat{ı} + 11490.66 \hat{ȷ} \hspace{0.2cm} [m]
 </span></p>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <p>Lo siguiente que nos dan es el vector que va desde la central <span class="math inline">A</span> hasta la central <span class="math inline">B</span>, el cual se encuentra a N60°E de la central <span class="math inline">A</span>. No nos dan la magnitud, pero si la rapidez y el tiempo que demora en llegar. Por lo que podemos calcular la magnitud del vector como: <span class="math display">
 v = \frac{d}{t} \Rightarrow d = v t
@@ -199,7 +253,7 @@ d = 50 \frac{km}{h} \cdot 25 min \cdot \frac{1 h}{60 min} \cdot 1000 \frac{m}{km
 d = 20833.33 \hspace{0.2cm} [m]
 </span></p>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
 <p>Ahora podemos escribir el vector <span class="math inline">\vec{r}_{ ab }</span> como: <span class="math display">
 \vec{r}_{ab} = 20833.33 \cos(30°) \hat{ı} + 20833.33 \sin(30°) \hat{ȷ} \hspace{0.2cm} [m]
@@ -214,7 +268,7 @@ d = 20833.33 \hspace{0.2cm} [m]
 \vec{r}_b = 8400.69 \hspace{0.2cm} \hat{ı} + 21907.33 \hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} [m]
 </span></p>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <p>Ahora pasamos al vector que va desde la central <span class="math inline">B</span> hasta la central <span class="math inline">C</span>. Nos dan la magnitud y la dirección, por lo que podemos escribir el vector como: <span class="math display">
 \vec{r}_{bc} = 17000 \cos(-15°) \hat{ı} + 17000 \sin(-15°) \hat{ȷ} \hspace{0.2cm} [m]
@@ -261,7 +315,7 @@ d = 20833.33 \hspace{0.2cm} [m]
 t_{total} = t_{ab} + t_{bc} + t_{ce}
 </span> No tenemos <span class="math inline">t_{bc}</span>, pero podemos calcularlo como:</p>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-8" class="slide level2">
 <h2></h2>
 <p><span class="math display">
 t_{bc} = \frac{d_{bc}}{v_{bc}} = \frac{17 \hspace{0.2cm} [km]}{30 \hspace{0.2cm} [km/h]} = 0.5667 \hspace{0.2cm} [h]
@@ -277,7 +331,7 @@ t_{total} = 1.6834 \hspace{0.2cm} [h]
 t_{total} = 1.6834 \hspace{0.2cm} [h] \cdot 3600 \hspace{0.2cm} [s/h] = 6060,24 \hspace{0.2cm} [s]
 </span></p>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
 <p>Ahora podemos calcular la velocidad media como: <span class="math display">
 \vec{v}_{media} = \frac{\vec{r}_{total}}{t_{total}}
@@ -300,6 +354,88 @@ v_{media} = \sqrt{6.1381} = 2.48 \hspace{0.2cm} [m/s]
 </section>
 <section id="ejercicio-4" class="slide level2">
 <h2>Ejercicio 4</h2>
+<p>Una ave parada a una altura de 10 m, sobre la punta de la rama de un árbol, y a orillas de un lago, se dispone a cazar un pez que nada a una profundidad de 1.2 m. El ave salta con una rapidez inicial <span class="math inline">v_0</span> desconocida, y con un ángulo <span class="math inline">\theta = 20\deg</span> describiendo una trayectoria parabólica. En el mismo instante que salta el ave (<span class="math inline">t = 0</span>), el pez huye con aceleración constante desconocida, pero con una rapidez inicial de 50 cm/s. En <span class="math inline">t=4\hspace {0.2cm} [s]</span> el ave alcanza al pez. Si en <span class="math inline">t=0</span>, el pez se encuentra a una distancia horizontal de 3 m con respecto a la orilla y considerando el sistema de referencia en la figura, determine:</p>
+<ul>
+<li><ol type="a">
+<li>Las condiciones iniciales del ave y del pez.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Mediante integración, las ecuaciones de movimiento para la velocidad y la posicón del ave y del pez, para todo instante de tiempo.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La velocidad inicial del ave (vector), y la aceleración del pez (magnitud).</li>
+</ol></li>
+</ul>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<div style="text-align:center; width:80%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./3.jpeg"></p>
+</div>
+</section>
+<section id="ave" class="slide level2">
+<h2>Ave</h2>
+<p>Modelemos sus ecuaciones, dado que está volando, se ve afectada por la gravedad.</p>
+<p><span class="math display"> \vec{a}_{ave} = -9.81 \hspace{0.2cm}  \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]</span></p>
+<p>Integramos para obtener la velocidad: <span class="math display"> \vec{v}_{ave} = \int \vec{a}_{ave} dt = -9.81  t \hspace{0.2cm}  \hat{ȷ}+ \vec{v}_0 \left [ \frac{m}{s} \right ]</span> La velocidad inicial es desconocida, pero sabemos que tiene un ángulo de 20° con respecto al eje x, por lo que podemos descomponerla: <span class="math display"> \vec{v}_0 = v_{0}\cos(20°) \hat{ı} + v_{0}\sin(20°) \hat{ȷ}</span></p>
+<p><span class="math display"> \vec{v}_{ave} = -9.81  t \hspace{0.2cm}  \hat{ȷ}+ v_{0}\cos(20°) \hspace{0.2cm} \hat{ı} + v_{0}\sin(20°)\hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s} \right ]</span></p>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p>Ahora integramos para obtener la posición: <span class="math display"> \vec{r}_{ave} = \int \vec{v}_{ave} dt = -4.905 t^2 \hspace{0.2cm}  \hat{ȷ}+ v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + v_{0}\sin(20°) t \hspace{0.2cm}\hat{ȷ} + \vec{r}_0 \left [ m \right ]</span> Reorganizamos los términos: <span class="math display"> \vec{r}_{ave} = v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + (v_{0}\sin(20°)t - 4.905 t^2) \hspace{0.2cm}  \hat{ȷ} + \vec{r}_0 \left [ m \right ]</span> La posición inicial es solo la altura más la profundidad del lago, por lo que podemos escribirla como: <span class="math display"> \vec{r}_0 = ( 10 + 1.2 \hspace{0.2cm} ) = 11.2 \hspace{0.2cm} \hat{ȷ} \left [ m \right ]</span> Reemplazando: <span class="math display"> \vec{r}_{ave} = v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + (v_{0}\sin(20°)t - 4.905 t^2 + 11.2) \hspace{0.2cm}  \hat{ȷ} \left [ m \right ]</span></p>
+</section>
+<section id="pez" class="slide level2">
+<h2>Pez</h2>
+<p>Modelemos, tiene una aceleración constante desconocida, por lo que podemos escribirla como: <span class="math display"> \vec{a}_{pez} = a_{p} \hspace{0.2cm}  \hat{ı} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]</span> Integramos para obtener la velocidad: <span class="math display"> \vec{v}_{pez} = \int \vec{a}_{p} dt = a_{p} t \hspace{0.2cm}  \hat{ı} + \vec{v}_0 \left [ \frac{m}{s} \right ]</span> La velocidad inicial es de 50 cm/s, por lo que podemos escribirla como: <span class="math display"> \vec{v}_0 = 0.5 \hspace{0.2cm} \hat{ı} \left [ m/s \right ]</span> Reemplazando: <span class="math display"> \vec{v}_{p} = ( a_{p} t \hspace{0.2cm}  + 0.5 )\hspace{0.2cm}  \hat{ı} \left [ \frac{m}{s} \right ]</span></p>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<p>Ahora integramos para obtener la posición: <span class="math display"> \vec{r}_{p} = \int \vec{v}_{p} dt = \left( \frac{1}{2} a_{p} t^2 +0.5 t  \right )\hspace{0.2cm}   \hat{ı} +  \vec{r}_0 \left [ m \right ]</span> La posición inicial es la distancia que hay entre el pez y la orilla, por lo que podemos escribirla como: <span class="math display"> \vec{r}_0 = 3 \hspace{0.2cm} \hat{ı} \left [ m \right ]</span></p>
+<p>Reemplazando: <span class="math display"> \vec{r}_{pez} = \left( \frac{1}{2} a_{p} t^2 +0.5 t + 3  \right )\hspace{0.2cm}   \hat{ı} \left [ m \right ]</span></p>
+</section>
+<section id="a-condiciones-iniciales" class="slide level2">
+<h2>a) Condiciones iniciales</h2>
+<h4 id="ave-1">Ave</h4>
+<p>La posición inicial es la altura más la profundidad del lago: <span class="math display"> \vec{r}_{ave}(0) = 11.2 \hspace{0.2cm} \hat{ȷ} \left [ m \right ]</span> La velocidad inicial es: <span class="math display"> \vec{v}_{ave}(0) = v_{0}\cos(20°) \hat{ı} + v_{0}\sin(20°) \hat{ȷ} \left [ m/s \right ]</span> La aceleración inicial es la gravedad <span class="math display"> \vec{a}_{ave}(0) = -9.81 \hspace{0.2cm}  \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]</span></p>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<h4 id="pez-1">Pez</h4>
+<p>La posición inicial es la distancia que hay entre el pez y la orilla: <span class="math display"> \vec{r}_{pez}(0) = 3 \hspace{0.2cm} \hat{ı} \left [ m \right ]</span> La velocidad inicial es: <span class="math display"> \vec{v}_{pez}(0) = 0.5 \hspace{0.2cm} \hat{ı} \left [ m/s \right ]</span> La aceleración inicial es la aceleración que tiene el pez: <span class="math display"> \vec{a}_{pez}(0) = a_{p} \hspace{0.2cm}  \hat{ı} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]</span></p>
+</section>
+<section id="b-ecuaciones-de-movimiento" class="slide level2">
+<h2>b) Ecuaciones de movimiento</h2>
+<h4 id="ave-2">Ave</h4>
+<p>Las sacamos anteriormente:</p>
+<p><span class="math display"> \vec{v}_{ave} = -9.81  t \hspace{0.2cm}  \hat{ȷ}+ v_{0}\cos(20°) \hspace{0.2cm} \hat{ı} + v_{0}\sin(20°)\hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s} \right ]</span> <span class="math display"> \vec{r}_{ave} = v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + (v_{0}\sin(20°)t - 4.905 t^2 + 11.2) \hspace{0.2cm}  \hat{ȷ} \left [ m \right ]</span></p>
+<h4 id="pez-2">Pez</h4>
+<p><span class="math display"> \vec{v}_{pez} = ( a_{p} t \hspace{0.2cm}  + 0.5 )\hspace{0.2cm}  \hat{ı} \left [ \frac{m}{s} \right ]</span> <span class="math display"> \vec{r}_{pez} = \left( \frac{1}{2} a_{p} t^2 +0.5 t + 3  \right )\hspace{0.2cm}   \hat{ı} \left [ m \right ]</span></p>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+<h4 id="c-velocidad-inicial-del-ave-y-aceleración-del-pez">c) Velocidad inicial del ave y aceleración del pez</h4>
+<p>Para determinar la velocidad inicial del ave, debemos igualar las posiciones de ambos objetos (sabemos que esto pasa a los 4 segundos), por lo que podemos escribirlo como: <span class="math display"> \vec{r}_{ave}(4) = \vec{r}_{pez}(4)</span> <span class="math display"> v_{0}\cos(20°) (4) \hat{ı} + (v_{0}\sin(20°)(4) - 4.905 (4)^2 + 11.2) \hat{ȷ} = \left( \frac{1}{2} a_{p} (4)^2 +0.5 (4) + 3  \right )\hspace{0.2cm}   \hat{ı}</span></p>
+<p>Para resolver esto, debemos separar las componentes en ecuaciones distintas:</p>
+<h6 id="x">x</h6>
+<p><span class="math display"> v_{0}\cos(20°) (4) = \left( \frac{1}{2} a_{p} (4)^2 +0.5 (4) + 3  \right )</span> <span class="math display"> (v_{0}\sin(20°)(4) - 4.905 (4)^2 + 11.2) = 0</span></p>
+</section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+<p><span class="math display"> 4v_{0}\cos(20°) = \frac{1}{2} a_{p} (16) + 2 + 3</span> <span class="math display"> 4v_{0}\cos(20°) = 8a_{p} + 5</span> Despejando aceleración: <span class="math display"> a_{p} = \frac{4v_{0}\cos(20°) - 5}{8}</span></p>
+<h6 id="y">y</h6>
+<p><span class="math display"> 4v_{0}\sin(20°) - 4.905 (16) + 11.2 = 0</span> Aqui podemos despejar directamente la velocidad inicial: <span class="math display"> v_{0} = \frac{4.905 (16) - 11.2}{4\sin(20°)}</span> <span class="math display"> v_{0} = 49.18 \hspace{0.2cm} [m/s]</span></p>
+</section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+<p>Reemplazando esta velocidad en la ecuación de aceleración: <span class="math display"> a_{p} = \frac{4(49.18)\cos(20°) - 5}{8}</span> <span class="math display"> a_{p} = \frac{196.72 - 5}{8}</span></p>
+<h4 id="aceleración-del-pez">Aceleración del pez</h4>
+<p><span class="math display"> a_{p} = 23.96 \hspace{0.2cm} [m/s^2]</span></p>
+<p>Y reemplazando la velocidad inicial en la ecuación de la velocidad inicial del ave: <span class="math display"> \vec{v}_{ave}(0) = 49.18\cos(20°) \hat{ı} + 49.18\sin(20°) \hat{ȷ}</span></p>
+<h4 id="vector-velocidad-inicial-del-ave">Vector velocidad inicial del ave</h4>
+<p><span class="math display"> \vec{v}_{ave}(0) = 46.21 \hat{ı} + 16.82 \hat{ȷ} \hspace{0.2cm} [m/s]</span></p>
+</section>
+<section id="gracias-por-su-atención" class="title-slide slide level1 center">
+<h1>Gracias por su atención</h1>
 
 </section>
     </div>

@@ -1,5 +1,5 @@
 ---
-title: "Movimiento Circular y Repaso Ev. 1"
+title: "Movimiento Circular Uniforme y Repaso Ev. 1"
 author: "Flavio Jara L."
 format:
   revealjs:
@@ -14,7 +14,101 @@ include-in-header:
       </style>
 ---
 
-## Movimiento Circular
+## Movimiento Circular Uniforme
+El movimiento circular es un movimiento periódico, en el cual un objeto se mueve a lo largo de una trayectoria circular. Este movimiento puede ser uniforme o no uniforme, dependiendo de si la velocidad angular es constante o no.
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./4.png)
+:::
+
+
+## Definiciones
+
+#### Aceleración Centripeta o Radial
+La aceleración centrípeta es la aceleración hacia el centro de la trayectoria circular, y se define como:
+
+##### Aceleración Tangencial
+La aceleración tangencial es la aceleración tangente a la trayectoria circular, y se define como:
+$$ a_t = \frac{d v}{d t}$$
+$$ a_r = \frac{v^2}{r}$$
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./6.png)
+:::
+
+
+##
+
+##### Aceleración Total
+La aceleración total es la raíz de la suma de la aceleración centrípeta y la aceleración tangencial, y se define como:
+$$ a = \sqrt{a_t^2 + a_r^2}$$
+
+
+
+##### Velocidad Angular
+La velocidad angular es la razón de cambio del ángulo (en radianes) con respecto al tiempo, y se define como:
+$$ \omega = \frac{\theta}{t}$$
+
+##### Velocidad Tangencial
+La velocidad es la velocidad del objeto si se dejara de aplicar la fuerza centrípeta, y se define como:
+$$ | \vec{v_t} | = \frac{2\pi r}{T} = \omega r$$
+
+
+## Ejercicio 1
+Un volante de 3 metros de diámetro gira a 120 revoluciones por minuto. Calcula frecuencia y período de un punto sobre el borde.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./5.webp)
+:::
+
+##
+Primero, pasemos RPM a rad/s:
+$$ \omega = 120 \frac{rev}{min} \cdot \frac{2\pi rad}{1 rev} \cdot \frac{1 min}{60 s}$$
+$$ \omega = 12.56 \hspace{0.2cm} [rad/s]$$
+Recordemos que el período es el tiempo que demora en dar una vuelta completa, y la frecuencia es la cantidad de vueltas que da en un segundo. 
+
+La frecuencia se puede calcular como:
+$$ f = \frac{\omega}{2\pi}$$
+$$ f = \frac{12.56}{2\pi} = 2 \hspace{0.2cm} [Hz]$$
+
+Y el período se puede calcular como:
+$$ T = \frac{1}{f} = \frac{1}{2} = 0.5 \hspace{0.2cm} [s]$$
+
+## Ejercicio 2
+¿ Cuántas rpm realiza un disco de 25 cm de radio si su aceleración centripeta en el borde es de $36 \pi^2 m/s^2$?
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./7.svg)
+:::
+
+##
+Primero pasemos el radio a metros:
+$$ r = 25 \hspace{0.2cm} [cm] \cdot \frac{1 m}{100 cm} = 0.25 \hspace{0.2cm} [m]$$
+
+Dado que nos piden rpm, debemos calcular la velocidad angular en rad/s y luego pasarlo a revoluciones por minuto.
+Ahora, sabemos que la aceleración centrípeta se puede calcular como:
+$$ a_c = \frac{v^2}{r}$$
+Con esto podemos despejar la velocidad, pero esto no sirve demasiado.
+
+Lo que podemos hacer es usar la relación entre la aceleración centrípeta y la velocidad angular. Recordemos que la velocidad lineal se puede calcular como:
+$$ v = \omega r$$
+
+##
+
+Si reemplazamos esto en la ecuación de la aceleración centrípeta, podemos escribirla como:
+$$ a_c = \frac{(\omega r)^2}{r}$$
+$$ a_c = \omega^2 r$$
+
+De aqui despejamos la velocidad angular:
+$$ \omega = \sqrt{\frac{a_c}{r}}$$
+$$ \omega = \sqrt{\frac{36 \pi^2}{0.25}}$$
+$$ \omega = 12 \pi \hspace{0.2cm} [rad/s]$$
+Ahora pasamos a revoluciones por minuto:
+$$ \omega = 12 \pi \hspace{0.2cm} [rad/s] \cdot \frac{1 rev}{2\pi rad} \cdot \frac{60 s}{1 min}$$
+$$ \omega = 360 \hspace{0.2cm} [rev/min]$$
+
+
 
 
 ## Ejercicio 3
@@ -184,4 +278,134 @@ v_{media} = \sqrt{6.1381} = 2.48 \hspace{0.2cm} [m/s]
 $$
 
 ## Ejercicio 4
+Una ave parada a una altura de 10 m, sobre la punta de la rama de un árbol, y a orillas de un lago, se dispone a cazar un pez que nada a una profundidad de 1.2 m. El ave salta con una rapidez inicial $v_0$ desconocida, y con un ángulo $\theta = 20\deg$ describiendo una trayectoria parabólica. En el mismo instante que salta el ave ($t = 0$), el pez huye con aceleración constante desconocida, pero con una rapidez inicial de 50 cm/s. En $t=4\hspace {0.2cm} [s]$ el ave alcanza al pez. Si en $t=0$, el pez se encuentra a una distancia horizontal de 3 m con respecto a la orilla y considerando el sistema de referencia en la figura, determine:
 
+- a) Las condiciones iniciales del ave y del pez.
+- b) Mediante integración, las ecuaciones de movimiento para la velocidad y la posicón del ave y del pez, para todo instante de tiempo.
+- c) La velocidad inicial del ave (vector), y la aceleración del pez (magnitud).
+
+## 
+
+::: {style="text-align:center; width:80%; margin-left: auto; margin-right: auto;"}
+![](./3.jpeg)
+:::
+
+## Ave
+Modelemos sus ecuaciones, dado que está volando, se ve afectada por la gravedad.
+
+$$ \vec{a}_{ave} = -9.81 \hspace{0.2cm}  \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]$$
+
+Integramos para obtener la velocidad:
+$$ \vec{v}_{ave} = \int \vec{a}_{ave} dt = -9.81  t \hspace{0.2cm}  \hat{ȷ}+ \vec{v}_0 \left [ \frac{m}{s} \right ]$$
+La velocidad inicial es desconocida, pero sabemos que tiene un ángulo de 20° con respecto al eje x, por lo que podemos descomponerla:
+$$ \vec{v}_0 = v_{0}\cos(20°) \hat{ı} + v_{0}\sin(20°) \hat{ȷ}$$
+
+$$ \vec{v}_{ave} = -9.81  t \hspace{0.2cm}  \hat{ȷ}+ v_{0}\cos(20°) \hspace{0.2cm} \hat{ı} + v_{0}\sin(20°)\hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s} \right ]$$
+
+##
+Ahora integramos para obtener la posición:
+$$ \vec{r}_{ave} = \int \vec{v}_{ave} dt = -4.905 t^2 \hspace{0.2cm}  \hat{ȷ}+ v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + v_{0}\sin(20°) t \hspace{0.2cm}\hat{ȷ} + \vec{r}_0 \left [ m \right ]$$
+Reorganizamos los términos:
+$$ \vec{r}_{ave} = v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + (v_{0}\sin(20°)t - 4.905 t^2) \hspace{0.2cm}  \hat{ȷ} + \vec{r}_0 \left [ m \right ]$$
+La posición inicial es solo la altura más la profundidad del lago, por lo que podemos escribirla como:
+$$ \vec{r}_0 = ( 10 + 1.2 \hspace{0.2cm} ) = 11.2 \hspace{0.2cm} \hat{ȷ} \left [ m \right ]$$
+Reemplazando:
+$$ \vec{r}_{ave} = v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + (v_{0}\sin(20°)t - 4.905 t^2 + 11.2) \hspace{0.2cm}  \hat{ȷ} \left [ m \right ]$$
+
+## Pez
+Modelemos, tiene una aceleración constante desconocida, por lo que podemos escribirla como:
+$$ \vec{a}_{pez} = a_{p} \hspace{0.2cm}  \hat{ı} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]$$
+Integramos para obtener la velocidad:
+$$ \vec{v}_{pez} = \int \vec{a}_{p} dt = a_{p} t \hspace{0.2cm}  \hat{ı} + \vec{v}_0 \left [ \frac{m}{s} \right ]$$
+La velocidad inicial es de 50 cm/s, por lo que podemos escribirla como:
+$$ \vec{v}_0 = 0.5 \hspace{0.2cm} \hat{ı} \left [ m/s \right ]$$
+Reemplazando:
+$$ \vec{v}_{p} = ( a_{p} t \hspace{0.2cm}  + 0.5 )\hspace{0.2cm}  \hat{ı} \left [ \frac{m}{s} \right ]$$
+
+##
+
+
+Ahora integramos para obtener la posición:
+$$ \vec{r}_{p} = \int \vec{v}_{p} dt = \left( \frac{1}{2} a_{p} t^2 +0.5 t  \right )\hspace{0.2cm}   \hat{ı} +  \vec{r}_0 \left [ m \right ]$$
+La posición inicial es la distancia que hay entre el pez y la orilla, por lo que podemos escribirla como:
+$$ \vec{r}_0 = 3 \hspace{0.2cm} \hat{ı} \left [ m \right ]$$
+
+Reemplazando:
+$$ \vec{r}_{pez} = \left( \frac{1}{2} a_{p} t^2 +0.5 t + 3  \right )\hspace{0.2cm}   \hat{ı} \left [ m \right ]$$
+
+## a) Condiciones iniciales
+
+#### Ave
+
+La posición inicial es la altura más la profundidad del lago:
+$$ \vec{r}_{ave}(0) = 11.2 \hspace{0.2cm} \hat{ȷ} \left [ m \right ]$$
+La velocidad inicial es:
+$$ \vec{v}_{ave}(0) = v_{0}\cos(20°) \hat{ı} + v_{0}\sin(20°) \hat{ȷ} \left [ m/s \right ]$$
+La aceleración inicial es la gravedad
+$$ \vec{a}_{ave}(0) = -9.81 \hspace{0.2cm}  \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]$$
+
+##
+#### Pez
+La posición inicial es la distancia que hay entre el pez y la orilla:
+$$ \vec{r}_{pez}(0) = 3 \hspace{0.2cm} \hat{ı} \left [ m \right ]$$
+La velocidad inicial es:
+$$ \vec{v}_{pez}(0) = 0.5 \hspace{0.2cm} \hat{ı} \left [ m/s \right ]$$
+La aceleración inicial es la aceleración que tiene el pez:
+$$ \vec{a}_{pez}(0) = a_{p} \hspace{0.2cm}  \hat{ı} \hspace{0.2cm} \left [ \frac{m}{s^2} \right ]$$
+
+## b) Ecuaciones de movimiento
+
+#### Ave
+Las sacamos anteriormente:
+
+$$ \vec{v}_{ave} = -9.81  t \hspace{0.2cm}  \hat{ȷ}+ v_{0}\cos(20°) \hspace{0.2cm} \hat{ı} + v_{0}\sin(20°)\hspace{0.2cm} \hat{ȷ} \hspace{0.2cm} \left [ \frac{m}{s} \right ]$$
+$$ \vec{r}_{ave} = v_{0}\cos(20°) t \hspace{0.2cm} \hat{ı} + (v_{0}\sin(20°)t - 4.905 t^2 + 11.2) \hspace{0.2cm}  \hat{ȷ} \left [ m \right ]$$
+
+#### Pez
+$$ \vec{v}_{pez} = ( a_{p} t \hspace{0.2cm}  + 0.5 )\hspace{0.2cm}  \hat{ı} \left [ \frac{m}{s} \right ]$$
+$$ \vec{r}_{pez} = \left( \frac{1}{2} a_{p} t^2 +0.5 t + 3  \right )\hspace{0.2cm}   \hat{ı} \left [ m \right ]$$
+
+##
+
+#### c) Velocidad inicial del ave y aceleración del pez
+Para determinar la velocidad inicial del ave, debemos igualar las posiciones de ambos objetos (sabemos que esto pasa a los 4 segundos), por lo que podemos escribirlo como:
+$$ \vec{r}_{ave}(4) = \vec{r}_{pez}(4)$$
+$$ v_{0}\cos(20°) (4) \hat{ı} + (v_{0}\sin(20°)(4) - 4.905 (4)^2 + 11.2) \hat{ȷ} = \left( \frac{1}{2} a_{p} (4)^2 +0.5 (4) + 3  \right )\hspace{0.2cm}   \hat{ı}$$
+
+Para resolver esto, debemos separar las componentes en ecuaciones distintas:
+
+###### x
+
+$$ v_{0}\cos(20°) (4) = \left( \frac{1}{2} a_{p} (4)^2 +0.5 (4) + 3  \right )$$
+$$ (v_{0}\sin(20°)(4) - 4.905 (4)^2 + 11.2) = 0$$
+
+##
+
+$$ 4v_{0}\cos(20°) = \frac{1}{2} a_{p} (16) + 2 + 3$$
+$$ 4v_{0}\cos(20°) = 8a_{p} + 5$$
+Despejando aceleración:
+$$ a_{p} = \frac{4v_{0}\cos(20°) - 5}{8}$$
+
+
+###### y
+$$ 4v_{0}\sin(20°) - 4.905 (16) + 11.2 = 0$$
+Aqui podemos despejar directamente la velocidad inicial:
+$$ v_{0} = \frac{4.905 (16) - 11.2}{4\sin(20°)}$$
+$$ v_{0} = 49.18 \hspace{0.2cm} [m/s]$$
+
+## 
+Reemplazando esta velocidad en la ecuación de aceleración:
+$$ a_{p} = \frac{4(49.18)\cos(20°) - 5}{8}$$
+$$ a_{p} = \frac{196.72 - 5}{8}$$
+
+#### Aceleración del pez
+$$ a_{p} = 23.96 \hspace{0.2cm} [m/s^2]$$
+
+Y reemplazando la velocidad inicial en la ecuación de la velocidad inicial del ave:
+$$ \vec{v}_{ave}(0) = 49.18\cos(20°) \hat{ı} + 49.18\sin(20°) \hat{ȷ}$$
+
+#### Vector velocidad inicial del ave
+$$ \vec{v}_{ave}(0) = 46.21 \hat{ı} + 16.82 \hat{ȷ} \hspace{0.2cm} [m/s]$$
+
+
+# Gracias por su atención
