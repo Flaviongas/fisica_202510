@@ -1,0 +1,117 @@
+---
+title: Fuerza, Leyes de Newton y Diagramas de Cuerpo Libre
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+## ¿Qué es la fuerza?
+La fuerza es una interacción entre dos cuerpos que puede cambiar el estado de movimiento de un cuerpo.
+La fuerza es una magnitud vectorial, es decir, tiene dirección y sentido, además tiene un punto de de acción. La fuerza se mide en Newtons (N) y se representa con la letra **F**.
+
+## Tipos de Fuerza
+ 
+::: {style="text-align:center; width:90%; margin-left: auto; margin-right: auto;"}
+![](./1.jpeg)
+:::
+
+## Leyes de Newton
+Las leyes de Newton son tres principios fundamentales que describen el movimiento de los cuerpos y la relación entre la fuerza y el movimiento. Estas leyes son:
+
+##### 1. **Primera Ley de Newton (Ley de la Inercia)**:
+Un cuerpo en reposo permanecerá en reposo y un cuerpo en movimiento continuará en movimiento con velocidad constante a menos que actúe sobre él una fuerza neta externa.
+
+##### 2. **Segunda Ley de Newton (Ley de la Fuerza)**:
+La aceleración de un cuerpo es directamente proporcional a la fuerza neta que actúa sobre él e inversamente proporcional a su masa. Esta ley se expresa matemáticamente como:
+$$
+\sum \vec{F} = m \cdot \vec{a}
+	 $$
+	 donde F es la fuerza neta, m es la masa del cuerpo y a es la aceleración. Esta ley implica que la fuerza neta es igual al cambio de momento lineal por unidad de tiempo.
+
+##
+
+##### 3. **Tercera Ley de Newton (Ley de Acción y Reacción)**:
+Por cada acción hay una reacción igual y opuesta. Esto significa que si un cuerpo A ejerce una fuerza sobre un cuerpo B, el cuerpo B ejercerá una fuerza de igual magnitud pero en sentido opuesto sobre el cuerpo A.
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+## Diagrama de Cuerpo Libre
+Un diagrama de cuerpo libre es una representación gráfica que muestra todas las fuerzas que actúan sobre un objeto. Este diagrama es útil para analizar el equilibrio y el movimiento de un cuerpo. En un diagrama de cuerpo libre, se representan las fuerzas como vectores que actúan sobre el objeto, y se indica su dirección y magnitud.
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./3.png)
+:::
+
+## Ejemplo
+Un disco de hockey con una masa de $0,30 \hspace{0.1cm} kg$ se desliza sobre la superficie horizontal sin fricción de una pista de hielo. Dos palos de hockey golpean el disco simultáneamente, ejerciendo sobre él las fuerzas que se muestran en la Figura . La fuerza $\vec{F}_1$ tiene una magnitud de $5 \hspace{1mm} N$ y está dirigida a $\theta = 20\degree$ por debajo del eje x. La fuerza $\vec{F}_2$ tiene una magnitud de $8 \hspace{1mm} N$ y su dirección es $\phi = 60\degree$ por encima del eje x. Determine tanto la magnitud como la dirección de la aceleración del disco.
+
+::: {style="text-align:center; width:30%; margin-left: auto; margin-right: auto;"}
+![](./4.png)
+:::
+
+##
+
+Primero descomponemos las fuerzas en sus componentes x e y. La fuerza $\vec{F}_1$ se descompone de la siguiente manera:
+$$ \vec{F}_1 = F_{1x} \hspace{1mm}\hat{ı} + F_{1y} \hspace{1mm}\hat{ȷ}$$
+$$ F_{1x} = F_1 \cdot \cos(\theta) = 5 \hspace{1mm} N \cdot \cos(-20\degree) = 4,69 \hspace{1mm} N$$
+$$ F_{1y} = F_1 \cdot \sin(\theta) = 5 \hspace{1mm} N \cdot \sin(-20\degree) = -1,71 \hspace{1mm} N$$
+Por lo que la fuerza $\vec{F}_1$ se puede escribir como:
+$$ \vec{F}_1 = 4,69 \hspace{1mm}  \hspace{1mm}\hat{ı} - 1,71 \hspace{1mm}  \hspace{1mm}\hat{ȷ} \hspace{3mm [N]}$$
+
+##
+
+Ahora, hacemos lo mismo con la fuerza $\vec{F}_2$:
+$$ \vec{F}_2 = F_{2x} \hspace{1mm}\hat{ı} + F_{2y} \hspace{1mm}\hat{ȷ}$$
+$$ F_{2x} = F_2 \cdot \cos(\phi) = 8 \hspace{1mm} N \cdot \cos(60\degree) = 4 \hspace{1mm} N$$
+$$ F_{2y} = F_2 \cdot \sin(\phi) = 8 \hspace{1mm} N \cdot \sin(60\degree) = 6,93 \hspace{1mm} N$$
+
+Por lo que la fuerza $\vec{F}_2$ se puede escribir como:
+$$ \vec{F}_2 = 4 \hspace{1mm}  \hspace{1mm}\hat{ı} + 6,93 \hspace{1mm}  \hspace{1mm}\hat{ȷ} \hspace{3mm [N]}$$
+
+Ahora, sumamos las fuerzas para obtener la fuerza neta:
+$$ \vec{F}_{net} = \vec{F}_1 + \vec{F}_2$$
+$$ \vec{F}_{net} = (4,69 + 4) \hspace{1mm}  \hspace{1mm}\hat{ı} + (-1,71 + 6,93) \hspace{1mm}  \hspace{1mm}\hat{ȷ} \hspace{3mm [N]}$$
+$$ \vec{F}_{net} = 8,69 \hspace{1mm}  \hspace{1mm}\hat{ı} + 5,22 \hspace{1mm}  \hspace{1mm}\hat{ȷ} \hspace{3mm [N]}$$
+
+##
+
+Ahora, aplicamos la segunda ley de Newton para encontrar la aceleración del disco:
+$$ \sum \vec{F} = m \cdot \vec{a}$$
+$$ \vec{a} = \frac{\sum \vec{F}}{m}$$
+$$ \vec{a} = \frac{8,69 \hspace{1mm}  \hspace{1mm}\hat{ı} + 5,22 \hspace{1mm}  \hspace{1mm}\hat{ȷ}}{0,30 \hspace{1mm} kg}$$
+$$ \vec{a} = 28,96 \hspace{1mm}  \hspace{1mm}\hat{ı} + 17,40 \hspace{1mm}  \hspace{1mm}\hat{ȷ} \hspace{3mm [m/s^2]}$$
+
+Nos piden la magnitud:
+$$ |\vec{a}| = \sqrt{(28,96)^2 + (17,40)^2}$$
+$$ |\vec{a}| = 33,78 \hspace{1mm}  \hspace{1mm} [m/s^2]$$
+
+##
+Para sacar el angulo podemos separar el vector aceleración en sus componentes:
+$$ \vec{a} = a_x \hspace{1mm}\hat{ı} + a_y \hspace{1mm}\hat{ȷ}$$
+$$ a_x = 28,96 \hspace{1mm}  \hspace{1mm} [m/s^2]$$
+$$ a_y = 17,40 \hspace{1mm}  \hspace{1mm} [m/s^2]$$
+
+Podemos imaginar un triángulo rectángulo donde la hipotenusa es la magnitud de la aceleración y los catetos son las componentes de la aceleración. 
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./5.png)
+:::
+
+## 
+Para encontrar el ángulo $\alpha$ podemos usar cualquier función trigonométrica, en este caso usaremos la tangente:
+$$ \tan(\alpha) = \frac{a_y}{a_x}$$
+$$ \alpha = \tan^{-1}\left(\frac{a_y}{a_x}\right)$$
+$$ \alpha = \tan^{-1}\left(\frac{17,40}{28,96}\right)$$
+$$ \alpha = 31\degree$$
