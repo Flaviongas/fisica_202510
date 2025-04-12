@@ -227,6 +227,65 @@ Flavio Jara L.
 <section id="section-5" class="slide level2">
 <h2></h2>
 <p>Para encontrar el ángulo <span class="math inline">\alpha</span> podemos usar cualquier función trigonométrica, en este caso usaremos la tangente: <span class="math display"> \tan(\alpha) = \frac{a_y}{a_x}</span> <span class="math display"> \alpha = \tan^{-1}\left(\frac{a_y}{a_x}\right)</span> <span class="math display"> \alpha = \tan^{-1}\left(\frac{17,40}{28,96}\right)</span> <span class="math display"> \alpha = 31\degree</span></p>
+</section>
+<section id="ejercicio-1" class="slide level2">
+<h2>Ejercicio 1</h2>
+<p>Un semáforo que pesa <span class="math inline">122 N</span> cuelga de un cable atado a otros dos cables fijados a un soporte, como se muestra en la Figura . Los cables superiores forman ángulos de <span class="math inline">\theta_1= 37\degree</span> y <span class="math inline">\theta_2 = 53\degree</span> con la horizontal. Estos cables superiores no son tan resistentes como el cable vertical y se romperán si la tensión en ellos supera los <span class="math inline">100 N</span>. ¿El semáforo permanece colgado en esta situación o se romperá uno de los cables?</p>
+<div style="text-align:center; width:40%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./6.png"></p>
+</div>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p>Para esto tenemos que realizar un diagrama de cuerpo libre del semáforo. En este caso, el semáforo está en equilibrio, por lo que la suma de las fuerzas en x y en y es igual a cero.</p>
+<div style="text-align:center; width:40%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./7.png"></p>
+</div>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p>La convención es representar las fuerzas en X en una sumatoria de fuerzas en X y las fuerzas en Y en una sumatoria de fuerzas en Y. <span class="math display"> \sum F_x = 0</span> <span class="math display"> \sum F_y = 0</span> <span class="math display"> \sum F_{T1x} + \sum F_{T2x} = 0</span> <span class="math display"> \sum F_{T1y} + \sum F_{T2y} - FT_3 = 0</span></p>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p>Ahora simplemente reemplazamos las fuerzas en X y en Y por sus componentes: <span class="math display"> \sum F_{x} = -T_1 \cdot \cos(\theta_1) + T_2 \cdot \cos(\theta_2) = 0 \hspace{3mm [N]}</span> <span class="math display"> \sum F_{y} = T_1 \cdot \sin(\theta_1) + T_2 \cdot \sin(\theta_2) - 122 N = 0 \hspace{3mm [N]}</span> Reemplazando en X: <span class="math display"> - T_1 \cdot \cos(37\degree) + T_2 \cdot \cos(53\degree) = 0 \hspace{3mm [N]}</span> <span class="math display"> T_1 \cdot 0,7986 + T_2 \cdot 0,6018 = 0 \hspace{3mm [N]}</span></p>
+<p>Ahora reemplazamos en Y: <span class="math display"> T_1 \cdot \sin(37\degree) + T_2 \cdot \sin(53\degree) - 122 N = 0 \hspace{3mm [N]}</span> <span class="math display"> T_1 \cdot 0,6018 + T_2 \cdot 0,7986 - 122 N = 0 \hspace{3mm [N]}</span></p>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<p>Con esto podemos armar un sistema de ecuaciones: <span class="math display"> -T_1 \cdot 0,7986 + T_2 \cdot 0,6018 = 0 \hspace{3mm [N]}</span> <span class="math display"> T_1 \cdot 0,6018 + T_2 \cdot 0,7986 = 122 \hspace{3mm [N]}</span></p>
+<p>Para resolverlo, podemos despejar <span class="math inline">T_1</span> de la primera ecuación: <span class="math display"> T_1 = \frac{T_2 \cdot 0,6018}{0,7986} \hspace{3mm [N]}</span> <span class="math display"> T_1 = 0,754 \cdot T_2 \hspace{3mm [N]}</span> Ahora reemplazamos <span class="math inline">T_1</span> en la segunda ecuación: <span class="math display"> 0,754 \cdot T_2 \cdot 0,6018 + T_2 \cdot 0,7986 = 122 \hspace{3mm [N]}</span></p>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p><span class="math display"> 0,453 \cdot T_2 + T_2 \cdot 0,7986 = 122 \hspace{3mm [N]}</span> <span class="math display"> T_2 \cdot (0,7986 + 0,453) = 122 \hspace{3mm [N]}</span> <span class="math display"> T_2 \cdot 1,2516 = 122 \hspace{3mm [N]}</span> <span class="math display"> T_2 = \frac{122}{1,2516} \hspace{3mm [N]}</span> <span class="math display"> T_2 = 97,4 \hspace{3mm [N]}</span> Ahora reemplazamos <span class="math inline">T_2</span> en la ecuación de <span class="math inline">T_1</span>: <span class="math display"> T_1 = 0,754 \cdot 97,4 \hspace{3mm [N]}</span> <span class="math display"> T_1 = 73,4 \hspace{3mm [N]}</span></p>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p>Ninguna de las tensiones supera los <span class="math inline">100 N</span>, por lo que el semáforo no se romperá.</p>
+</section>
+<section id="ejemplo-plano-inclinado" class="slide level2">
+<h2>Ejemplo plano inclinado</h2>
+<p>Un auto de masa <span class="math inline">m</span> está en una bajada con hielo, inclinada a un ángulo <span class="math inline">\theta</span> con la horizontal. Encuentre la aceleración del auto en la bajada. Suponga que no hay fricción entre el auto y la superficie.</p>
+<div style="text-align:center; width:60%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./8.png"></p>
+</div>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<p>Hagamos un diagrama de cuerpo libre del auto. La única fuerza que actúa sobre el auto es su peso, que se puede descomponer en dos componentes: una componente paralela a la pendiente y una componente perpendicular a la pendiente.</p>
+<div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./9.png"></p>
+</div>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<p>Ahora representamos las fuerzas en X y en Y, ya que esta en movimiento, la suma de las fuerzas en X es igual a la masa por la aceleración y la suma de las fuerzas en Y es igual a cero (no se mueve en ese eje). <span class="math display"> \sum F_x = m \cdot a_x</span> <span class="math display"> \sum F_y = 0</span> <span class="math display"> \sum F_{x} = mg \cdot \sin(\theta) = m \cdot a_x</span> <span class="math display"> \sum F_{y} = -mg \cdot \cos(\theta)  + F_N = 0</span></p>
+<p>Necesitamos la aceleración en X, por lo que despejamos <span class="math inline">a_x</span> de la primera ecuación: <span class="math display"> a_x = g \cdot \sin(\theta)</span> <span class="math display"> a_x = 9,81 \cdot \sin(\theta)</span></p>
+</section>
+<section id="ejercicio-2" class="slide level2">
+<h2>Ejercicio 2</h2>
+<p>Suponga que el automóvil se suelta desde el reposo en la parte superior de la pendiente y que la distancia desde el parachoques delantero del automóvil hasta la parte inferior de la pendiente es d.&nbsp;¿Cuánto tiempo tarda el parachoques delantero en llegar al final de la colina y cuál es la velocidad del automóvil cuando llega allí?</p>
 
 </section>
     </div>
