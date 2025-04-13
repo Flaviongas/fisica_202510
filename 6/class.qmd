@@ -176,6 +176,49 @@ $$ T_1 = 73,4 \hspace{3mm [N]}$$
 ##
 Ninguna de las tensiones supera los $100 N$, por lo que el semáforo no se romperá.
 
+
+## Ejercicio 2
+Tres fuerzas actúan como se muestra en la figura sobre un anillo. Si el anillo se encuentra en equilibrio, ¿cuál es la magnitud de la fuerza F?
+
+
+::: {style="text-align:center; width:40%; margin-left: auto; margin-right: auto;"}
+![](./10.png)
+:::
+
+##
+Definamos primeros los vectores, el que va hacia abajo es el vector peso:
+$$ \vec{P} = -mg = 4165 \hspace{1mm}\hat{ȷ} \hspace{3mm [N]}$$
+Luego tenemos la tensión en un angulo de $35\degree$, la cual podemos descomponer en sus componentes:
+$$ \vec{T} = T_x \hspace{1mm}\hat{ı} + T_y \hspace{1mm}\hat{ȷ}$$
+$$ \vec{T} = T \cdot \cos(35\degree) \hspace{1mm}\hat{ı} + T \cdot \sin(35\degree) \hspace{1mm}\hat{ȷ}$$
+$$ \vec{T} = T \cdot 0,8192 \hspace{1mm}\hat{ı} + T \cdot 0,5736 \hspace{1mm}\hat{ȷ}$$
+
+Por último, la fuerza F que actúa en el anillo, la cual solo actua en X:
+$$ \vec{F} = -F_x \hspace{1mm}\hat{ı}$$
+
+## 
+Dado que está en equilibrio, la suma de las fuerzas en X y en Y es igual a cero:
+$$ \sum F_x = 0$$
+$$ \sum F_y = 0$$
+
+Por lo tanto, el peso más la tensión en Y es igual a cero:
+$$ \sum F_{y} = T \cdot 0,5736 - 4165 = 0 \hspace{3mm [N]}$$
+De aquí podemos despejar la tensión:
+$$ T \cdot 0,5736 = 4165 \hspace{3mm [N]}$$
+$$ T = \frac{4165}{0,5736} \hspace{3mm [N]}$$
+$$ T = 7261.16 \hspace{3mm [N]}$$
+
+##
+La suma de las fuerzas en X es igual a cero:
+$$ \sum F_{x} = -F + T \cdot 0,8192 = 0 \hspace{3mm [N]}$$
+Ya que tenemos la tensión, podemos reemplazarla:
+$$ -F + 7261.16 \cdot 0,8192 = 0 \hspace{3mm [N]}$$
+Y despejar la fuerza F:
+$$ -F + 5945.16 = 0 \hspace{3mm [N]}$$
+$$ F = 5948.34 \hspace{3mm [N]}$$
+
+
+
 ## Ejemplo plano inclinado
 Un auto de masa $m$ está en una bajada con hielo, inclinada a un ángulo $\theta$ con la horizontal. Encuentre la aceleración del auto en la bajada. Suponga que no hay fricción entre el auto y la superficie.
 
@@ -201,5 +244,74 @@ Necesitamos la aceleración en X, por lo que despejamos $a_x$ de la primera ecua
 $$ a_x = g \cdot \sin(\theta)$$
 $$ a_x = 9,81 \cdot \sin(\theta)$$
 
-## Ejercicio 2
+## Ejercicio 3
 Suponga que el automóvil se suelta desde el reposo en la parte superior de la pendiente y que la distancia desde el parachoques delantero del automóvil hasta la parte inferior de la pendiente es d. ¿Cuánto tiempo tarda el parachoques delantero en llegar al final de la colina y cuál es la velocidad del automóvil cuando llega allí?
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./8.png)
+:::
+
+## 
+Esto es un ejercicio de cinemática. Sabemos que la aceleración es constante, por lo que podemos modelar el movimiento del automóvil:
+
+$$ \vec{a} = a_x \hspace{1mm}\hat{ı} \hspace{1mm} \left[ \frac{m}{s^2} \right]$$
+Integramos la aceleración para obtener la velocidad:
+$$ \vec{v} = \int \vec{a} dt = a_x \hspace{1mm}\hat{ı} \cdot t + \vec{v}_0$$
+$$ \vec{v} = ( a_x  \cdot t ) \hspace{1mm}\hat{ı} + \vec{v}_0$$
+No mencionan la velocidad inicial, por lo que asumimos que el auto parte del reposo, es decir, $\vec{v}_0 = 0$.
+$$ \vec{v} = ( a_x  \cdot t ) \hspace{1mm}\hat{ı}$$
+
+##
+Integramos la velocidad para obtener la posición:
+$$ \vec{r} = \int \vec{v} dt = ( a_x  \cdot t ) \hspace{1mm}\hat{ı} \cdot t + \vec{r}_0$$
+$$ \vec{r} = \frac{1}{2} a_x  \cdot t^2 \hspace{1mm}\hat{ı} + \vec{r}_0$$
+No mencionan la posición inicial, por lo que asumimos que el auto parte de la posición $r_0 = 0$.
+$$ \vec{r} = \frac{1}{2} a_x  \cdot t^2 \hspace{1mm}\hat{ı}$$
+
+Tenemos que encontrar el tiempo que tarda el auto en recorrer la distancia $d$:
+$$ \vec{r} = d = \frac{1}{2} a_x  \cdot t^2 \hspace{1mm}\hat{ı}$$
+
+##
+Establecimos que la posición es d, por lo que podemos despejar el tiempo:
+$$ d = \frac{1}{2} a_x  \cdot t^2$$
+$$ t^2 = \frac{2d}{a_x}$$
+$$ t = \sqrt{\frac{2d}{a_x}}$$
+Recordemos que $a_x = g \cdot \sin(\theta)$, por lo que el tiempo es:
+$$ t = \sqrt{\frac{2d}{g \cdot \sin(\theta)}}$$
+
+##
+Ahora que tenemos el tiempo podemos encontrar la velocidad del auto al llegar al final de la pendiente:
+$$ \vec{v} = ( a_x  \cdot t ) \hspace{1mm}\hat{ı}$$
+$$ \vec{v} = ( g \cdot \sin(\theta)  \cdot t ) \hspace{1mm}\hat{ı}$$
+$$ \vec{v} = \left( g \cdot \sin(\theta)  \cdot \sqrt{\frac{2d}{g \cdot \sin(\theta)}} \right) \hspace{1mm}\hat{ı}$$
+Esto se puede simplificar:
+$$ \vec{v} = \sqrt{2gd \sin{(\theta)}} \hspace{1mm}\hat{ı}$$
+
+
+## Ejercicio 4
+Se tiene un bloque de $10 kg$ que se desliza sobre un plano inclinado sin fricción con un ángulo de $30\degree$ respecto a la horizontal. Calcular la aceleración del bloque.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./11.png)
+:::
+
+##
+Para este ejercicio, primero tenemos que hacer un diagrama de cuerpo libre del bloque. La única fuerza que actúa sobre el bloque es su peso, que se puede descomponer en dos componentes: una componente paralela a la pendiente y una componente perpendicular a la pendiente.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./12.png)
+:::
+
+##
+La aceleración que nos interesa es la que actúa en la dirección de la pendiente, dado que la otra es la gravedad.
+$$ \sum F_x = m \cdot a_x$$
+Por reflexión de ángulos, la componente X es:
+$$ \sum F_x = P \cdot \sin(\theta) = m \cdot a_x$$
+$$ \sum F_x = mg \cdot \sin(\theta) = m \cdot a_x$$
+$$ \sum F_x = g \cdot \sin(\theta) =  \cdot a_x$$
+
+Por lo tanto, la aceleración del bloque es:
+$$ a_x = 9,8 \cdot \sin(30\degree)$$
+$$ a_x = 4,9 \hspace{1mm} [m/s^2]$$
+
+# Gracias por su atención
