@@ -3,6 +3,7 @@ title: Fuerza, Leyes de Newton y Diagramas de Cuerpo Libre
 author: "Flavio Jara L."
 format:
   html
+html-math-method: katex
 ---
 
 ## ¿Qué es la fuerza?
