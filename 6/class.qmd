@@ -146,7 +146,7 @@ $$ \sum F_{x} = -T_1 \cdot \cos(\theta_1) + T_2 \cdot \cos(\theta_2) = 0 \hspace
 $$ \sum F_{y} = T_1 \cdot \sin(\theta_1) + T_2 \cdot \sin(\theta_2) - 122 N = 0 \hspace{3mm [N]}$$
 Reemplazando en X:
 $$ - T_1 \cdot \cos(37\degree) + T_2 \cdot \cos(53\degree) = 0 \hspace{3mm [N]}$$
-$$ T_1 \cdot 0,7986 + T_2 \cdot 0,6018 = 0 \hspace{3mm [N]}$$
+$$- T_1 \cdot 0,7986 + T_2 \cdot 0,6018 = 0 \hspace{3mm [N]}$$
 
 Ahora reemplazamos en Y:
 $$ T_1 \cdot \sin(37\degree) + T_2 \cdot \sin(53\degree) - 122 N = 0 \hspace{3mm [N]}$$
