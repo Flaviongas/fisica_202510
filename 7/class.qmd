@@ -1,0 +1,94 @@
+---
+title: Fricción y Resortes
+author: "Flavio Jara L."
+css: styles.css
+format:
+  revealjs:
+      transition: zoom
+      title-slide-attributes: 
+          data-background-image: "./back.png"
+          data-background-size: 500px
+          data-background-position: 50% 10%
+          class: "title-slide"
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+## Fricción
+La fricción es una fuerza que se opone al movimiento de un objeto. Se produce cuando dos superficies están en contacto y se mueven una sobre la otra. La fricción puede ser estática o cinética, dependiendo de si el objeto está en reposo o en movimiento.
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./1.png)
+:::
+
+## Tipos de fricción
+
+### Fricción estática
+La fricción estática es la fuerza que impide que un objeto en reposo comience a moverse. Esta fuerza es proporcional a la fuerza normal y depende de la naturaleza de las superficies en contacto.
+La fricción estática máxima se puede calcular con la siguiente fórmula:
+$$
+F_{s,max} = \mu_s \cdot N
+$$
+donde $\mu_s$ es el coeficiente de fricción estática y $N$ es la fuerza normal, que es la fuerza perpendicular a la superficie de contacto.
+
+##
+### Fricción cinética
+La fricción cinética es la fuerza que actúa sobre un objeto en movimiento. Esta fuerza es generalmente menor que la fricción estática máxima y se puede calcular con la siguiente fórmula:
+$$
+F_k = \mu_k \cdot N
+$$
+donde $\mu_k$ es el coeficiente de fricción cinética y $N$ es la fuerza normal.
+
+##
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+## Ejemplo
+Una persona mueve un bloque de 68 kg de masa con una aceleración de 2 $\left [\frac{m}{s^2}\right ]$, si el ángulo de inclinación es de 30° y el coeficiente de fricción cinética es de 0.3, ¿cuál es la fuerza que se aplica al bloque?
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./3.png)
+:::
+
+##
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./4.png)
+:::
+
+##
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./5.png)
+:::
+
+##
+Representemos las fuerzas en $X$:
+$$ \sum F_x = m \cdot a $$
+$$ F - f_r - F_{gx} = m \cdot a $$
+$$ F - f_r - m \cdot g \cdot sen(\theta) = m \cdot a $$
+$$ F - \mu_k \cdot N - m \cdot g \cdot sen(\theta) = m \cdot a $$
+
+Representemos las fuerzas en $Y$:
+$$ \sum F_y = 0 $$
+$$ N - m \cdot g \cdot cos(\theta) = 0 $$
+$$ N = m \cdot g \cdot cos(\theta) $$
+
+##
+Sustituyendo $N$ en la ecuación de $X$:
+$$ F - \mu_k \cdot m \cdot g \cdot cos(\theta) - m \cdot g \cdot sen(\theta) = m \cdot a $$
+$$ F = m \cdot a + \mu_k \cdot m \cdot g \cdot cos(\theta) + m \cdot g \cdot sen(\theta) $$
+
+$$ F = m \cdot (a + \mu_k \cdot g \cdot cos(\theta) + g \cdot sen(\theta)) $$
+Tenemos todos los datos, reemplazamos:
+$$ F = 68 \cdot (2 + 0.3 \cdot 9.81 \cdot cos(30°) + 9.81 \cdot sen(30°)) $$
+$$ F = 642.85 N $$
