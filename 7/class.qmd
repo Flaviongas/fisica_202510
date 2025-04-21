@@ -3,21 +3,7 @@ title: Fricción y Resortes
 author: "Flavio Jara L."
 css: styles.css
 format:
-  revealjs:
-      transition: zoom
-      title-slide-attributes: 
-          data-background-image: "./back.png"
-          data-background-size: 500px
-          data-background-position: 50% 10%
-          class: "title-slide"
-      html-math-method: katex
-include-in-header:
-  - text: |
-      <style>
-      p,ul {
-        font-size: 0.70em;
-      }
-      </style>
+  html
 ---
 
 ## Fricción
