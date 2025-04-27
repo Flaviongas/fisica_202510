@@ -80,7 +80,7 @@ $$ F = 68 \cdot (2 + 0.3 \cdot 9.81 \cdot cos(30°) + 9.81 \cdot sen(30°)) $$
 $$ F = 642.85 N $$
 
 ## Ejercicio 1
-Un escritorio pesa $40.8 kg$ y se encuentra en una superficie horizontal. Si el coeficiente de fricción estática entre el escritorio y la superficie es de $0.4$, ¿cuál es la fuerza mínima que se debe aplicar para mover el escritorio?
+Un escritorio masa $40.8 kg$ y se encuentra en una superficie horizontal. Si el coeficiente de fricción estática entre el escritorio y la superficie es de $0.4$, ¿cuál es la fuerza mínima que se debe aplicar para mover el escritorio?
 
 ::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
 ![](./7.png)

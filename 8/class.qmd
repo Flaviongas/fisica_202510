@@ -1,0 +1,149 @@
+---
+title: Resortes y Fuerzas en equilibrio
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+## Resortes
+Un resorte es un dispositivo mecánico que almacena energía potencial elástica cuando se deforma.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./1.png)
+:::
+
+## Ley de Hooke
+La ley de Hooke establece que la fuerza ejercida por un resorte es proporcional a la deformación del resorte, es decir:
+$$ F = -k \cdot \Delta x $$
+donde:
+
+- $F$ es la fuerza ejercida por el resorte (en Newtons)
+- $k$ es la constante del resorte (en N/m)
+- $\Delta x$ es la deformación del resorte (en metros)
+
+## Ejemplo
+Una persona de 60 kg está parada sobre un resorte de compresión que tiene una constante de 3000 N/m y una longitud inicial de 0.3 m. ¿Cuál es la longitud total del resorte con la persona encima?
+
+::: {style="text-align:center; width:10%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+##
+Primero calculemos el peso ejercido por la persona:
+$$ P = m \cdot g = 60 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 = 588.6 \, \text{N} $$
+
+Esta fuerza es la que se opone a la fuerza del resorte, por lo que podemos igualar las fuerzas:
+$$ P = k \cdot \Delta x $$
+Reemplazamos:
+$$ 588.6 \, \text{N} = -3000 \, \text{N/m} \cdot \Delta x $$
+Despejamos $\Delta x$:
+$$ \Delta x = \frac{588.6 \, \text{N}}{-3000 \, \text{N/m}} \approx -0.2 \, \text{m} $$
+
+##
+
+Para obtener la longitud total del resorte con la persona encima, sumamos la longitud inicial del resorte y la deformación:
+$$ L = L_0 + \Delta x = 0.3 \, \text{m} - 0.2 \, \text{m} = 0.1 \, \text{m} $$
+Por lo tanto, la longitud total del resorte con la persona encima es de 0.1 m.
+
+## Ejercicio 1
+Un resorte suspendido por uno de sus extremos tiene una longitud de 10 cm . Si le aplicamos una fuerza de 10 N, pasa a medir 20cm. ¿Cuál es la constante del resorte? ¿Cuál sería su longitud si le aplicamos una fuerza de estiramiento de 25 N?
+
+::: {style="text-align:center; width:35%; margin-left: auto; margin-right: auto;"}
+![](./3.gif)
+:::
+
+##
+Para calcular la constante del resorte, utilizamos la ley de Hooke:
+$$ F = -k \cdot \Delta x $$
+Tenemos que asumir que la longitud inicial del resorte es de 10 cm.
+Por lo tanto, la deformación del resorte es:
+$$ \Delta x = L - L_0 = 20 \, \text{cm} - 10 \, \text{cm} = 10 \, \text{cm} = 0.1 \, \text{m} $$
+Reemplazamos en la ecuación de la ley de Hooke:
+$$ 10 \, \text{N} = -k \cdot 0.1 \, \text{m} $$
+Despejamos $k$:
+$$ k = \frac{10 \, \text{N}}{-0.1 \, \text{m}} = -100 \, \text{N/m} $$
+
+##
+Por lo tanto, la constante del resorte es de 100 N/m.
+Para calcular la longitud del resorte al aplicar una fuerza de 25 N, utilizamos nuevamente la ley de Hooke:
+$$ F = -k \cdot \Delta x $$
+Sabemos que la constante del resorte es de 100 N/m, por lo que:
+$$ 25 \, \text{N} = -100 \, \text{N/m} \cdot \Delta x $$
+Despejamos $\Delta x$:
+$$ \Delta x = \frac{25 \, \text{N}}{-100 \, \text{N/m}} = -0.25 \, \text{m} $$
+Esto significa que el resorte se estiro 25 cm hacia abajo.
+
+
+##
+
+Por lo tanto, la longitud total del resorte al aplicar una fuerza de 25 N es:
+$$ L = L_0 + \Delta x = 10 \, \text{cm} + 25 \, \text{cm} = 35 \, \text{cm} $$
+
+# Equilibrio en plano inclinado
+
+## Ejercicio 2
+Un bloque de 200 N descansa sobre un plano inclinado sin fricción, que tiene una pendiente de 30°, el bloque esta atado a una cuerda sobre una polea sin fricción colocada en el extremo superior del plano y va atada a un segundo bloque. ¿Cuál es el peso del segundo bloque si el sistema se encuentra en equilibrio?
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./4.png)
+:::
+
+##
+Primero, realizamos el diagrama de cuerpo libre del bloque en el plano inclinado.
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./5.png)
+:::
+
+##
+Y también del bloque colgante.
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./6.png)
+:::
+
+##
+El sistema está en equilibrio, por lo que la suma de fuerzas en la dirección del plano inclinado es igual a cero:
+$$ \sum F_x = 0 $$
+$$ \sum F_y = 0 $$
+
+Descomponemos la fuerza de gravedad del bloque en el plano inclinado:
+$$ F_{gx} = m_1\cdot g \cdot \sin(\theta) $$
+$$ F_{gy} = m_1\cdot g \cdot \cos(\theta) $$
+
+Realizando la suma de fuerzas en X para el bloque en el plano inclinado:
+$$ \sum F_x = T - F_{gx} = 0 $$
+
+##
+
+Ahora realizamos la suma de fuerzas en Y del bloque inclinado:
+$$ \sum F_y = N - F_{gy} = 0 $$
+Por lo que la normal es:
+$$ N = F_{gy} = m_1\cdot g \cdot \cos(\theta) $$
+
+El bloque colgante no tiene fuerzas en X, por lo que la única fuerza que actúa sobre él es su peso y la tensión de la cuerda:
+$$ \sum F_y = T - P = 0 $$
+$$ T = P = m_2\cdot g $$
+
+##
+
+Nos preguntan por el peso del segundo bloque, por lo que podemos igualar las tensiones de ambos bloques:
+$$ T = T $$
+$$ m_2 \cdot g = m_1\cdot g \cdot \sin(\theta) $$
+$$ m_2 = m_1 \cdot \sin(\theta) $$
+$$ P_2 = m_2 \cdot g = m_1 \cdot g \cdot \sin(\theta) $$
+$$ P_2 = 200 \, \text{N} \cdot \sin(30°) $$
+$$ P_2 = 200 \, \text{N} \cdot 0.5 $$
+$$ P_2 = 100 \, \text{N} $$
+
