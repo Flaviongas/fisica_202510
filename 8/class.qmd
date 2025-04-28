@@ -147,3 +147,44 @@ $$ P_2 = 200 \, \text{N} \cdot \sin(30°) $$
 $$ P_2 = 200 \, \text{N} \cdot 0.5 $$
 $$ P_2 = 100 \, \text{N} $$
 
+## Ejercicio 3
+Si tenemos un bloque de masa $m$ en una plano inclinado en un ángulo $\theta$ con fricción, ¿cuál debe ser el coeficiente de fricción estático para que el bloque no se deslice?
+
+
+::: {style="text-align:center; width:60%; margin-left: auto; margin-right: auto;"}
+![](./7.png)
+:::
+
+##
+Dado que el bloque no se debe deslizar, esto implica que el sistema debe estar en equilibrio. Por lo tanto:
+
+$$ \sum F_x = 0 $$
+$$ \sum F_y = 0 $$
+
+Descomponemos la fuerza de gravedad del bloque en el plano inclinado:
+$$ F_{gx} = m\cdot g \cdot \sin(\theta) $$
+$$ F_{gy} = m\cdot g \cdot \cos(\theta) $$
+
+##
+Recordando que la fuerza de fricción estática es:
+$$ F_{fr} = -\mu_s \cdot N $$
+
+Representamos las fuerzas en Y:
+$$ \sum F_y = N - F_{gy} = 0 $$
+$$ \sum F_y = N - m\cdot g \cdot \cos(\theta) = 0 $$
+$$ \sum F_y = N = m\cdot g \cdot \cos(\theta) $$
+
+Por lo que la fricción es:
+$$ F_{fr} = -\mu_s \cdot N = -\mu_s \cdot m\cdot g \cdot \cos(\theta) $$
+
+##
+Representamos las fuerzas en X:
+$$ \sum F_x = - F_{gx} + F_{r} = 0 $$
+$$ \sum F_x = - m\cdot g \cdot \sin(\theta) + (-\mu_s \cdot m\cdot g \cdot \cos(\theta)) = 0 $$
+$$ \sum F_x = - m\cdot g \cdot \sin(\theta) - \mu_s \cdot m\cdot g \cdot \cos(\theta) = 0 $$
+Despejamos el coeficiente de fricción:
+$$ \mu_s = \frac{m\cdot g \cdot \sin(\theta)}{-m\cdot g \cdot \cos(\theta)} $$
+$$ \mu_s = -\frac{\sin(\theta)}{\cos(\theta)} $$
+$$ \mu_s = -\tan(\theta) $$
+
+# Gracias por su atención
