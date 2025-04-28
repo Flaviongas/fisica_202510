@@ -1,5 +1,5 @@
 ---
-title: Fricción y Resortes
+title: Fricción
 author: "Flavio Jara L."
 css: styles.css
 format:
