@@ -31,7 +31,9 @@ jobs:
           cd /var/www/example.org/ 
           cd fisica
           git checkout main
+          git reset --hard
           git pull
+          git checkout HEAD~1 
 
     - name: SSH Gidua
       uses: appleboy/ssh-action@v1.2.2
@@ -46,4 +48,3 @@ jobs:
           cd fisica
           git checkout main
           git pull
-          git checkout HEAD~1 
