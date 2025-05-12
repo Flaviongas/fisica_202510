@@ -27,11 +27,8 @@ El movimiento circular es un movimiento periódico, en el cual un objeto se muev
 
 #### Aceleración Centripeta o Radial
 La aceleración centrípeta es la aceleración hacia el centro de la trayectoria circular, y se define como:
+$$ a_r = \frac{v^2}{r} $$
 
-##### Aceleración Tangencial
-La aceleración tangencial es la aceleración tangente a la trayectoria circular, y se define como:
-$$ a_t = \frac{d v}{d t}$$
-$$ a_r = \frac{v^2}{r}$$
 
 ::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
 ![](./2.png)
@@ -75,7 +72,7 @@ Si derivamos nuevamente la velocidad angular, obtenemos la aceleración angular:
 $$ \vec{\alpha}(t) = \frac{d \omega}{d t} \hat{k} = \dot{\omega} \hat{k}$$
 
 ## Relación con la segunda ley de Newton
-Un objeto en movimiento circular siempre experimenta una aceleración centrípeta, podemos relacionara con la segunda ley de Newton:
+Un objeto en movimiento circular siempre experimenta una aceleración centrípeta, podemos relacionarla con la segunda ley de Newton:
 $$ \vec{F} = m \cdot \vec{a_c}$$
 $$ \vec{a_c} = \frac{v^2}{r}$$
 $$ \vec{F} = m \cdot \frac{v^2}{r}$$
@@ -184,4 +181,98 @@ Nos piden las componentes horizontal y vertical de la aceleración centrípeta, 
 $$ a_{c_x} = a_c \cdot \cos(35\degree) = 0.29 m/s^2 \cdot \cos(35\degree) = 0.24 m/s^2$$
 $$ a_{c_y} = a_c \cdot \sin(35\degree) = 0.29 m/s^2 \cdot \sin(35\degree) = 0.17 m/s^2$$
 
+## Ejercicio 4
+Una pelota de 200 gramos de masa gira en un péndulo cónico con una cuerda de 50 cm de longitud que forma un ángulo de 10° con la vertical, describiendo una trayectoria circular con rapidez constante (MCU). Encuentra:
 
+- a) La tensión de la cuerda.
+- b) La rapidez con la que se mueve la pelota.
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./8.png)
+:::
+
+## Diagrama de cuerpo libre
+
+::: {style="text-align:center; width:60%; margin-left: auto; margin-right: auto;"}
+![](./9.png)
+:::
+
+## 
+La fuerza de tensión se descompone en dos componentes: una componente vertical que contrarresta el peso del objeto y una componente horizontal que proporciona la aceleración centrípeta.
+$$ \sum F_x = T \cdot \sin(10\degree) = m \cdot a_c$$
+$$ \sum F_y = T \cdot \cos(10\degree) - mg = 0$$
+
+Podemos despejar la tensión de la segunda ecuación:
+$$ T = \frac{mg}{\cos(10\degree)}$$
+$$ T = \frac{0.2 kg \cdot 9.81 m/s^2}{\cos(10\degree)}$$
+$$ T = 1.99 N$$
+
+##
+Para conseguir la rápidez, podemos usar la aceleración centrípeta:
+$$ a_c = \frac{v^2}{r}$$
+$$ \sum F_x = T \cdot \sin(10\degree) = m \cdot a_c$$
+$$ T \cdot \sin(10\degree) = m \cdot \frac{v^2}{r}$$
+Despejamos $v$:
+$$ v = \sqrt{\frac{T \cdot \sin(10\degree) \cdot r}{m}}$$
+Pero no tenemos el radio, por lo que tenemos que calcularlo. 
+
+##
+Podemos armar el siguiente triángulo:
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./10.png)
+:::
+Para obtener el radio, podemos usar la siguiente relación:
+$$ r = L \cdot \sin(10\degree)$$
+$$ r = 0.5 m \cdot \sin(10\degree) = 0.087 m$$
+
+
+##
+Ahora podemos calcular la rápidez:
+$$ v = \sqrt{\frac{T \cdot \sin(10\degree) \cdot r}{m}}$$
+$$ v = \sqrt{\frac{1.99 N \cdot \sin(10\degree) \cdot 0.087 m}{0.2 kg}}$$
+$$ v = 0.387 m/s$$
+
+## Ejercicio 5
+
+Un automóvil viaja a una velocidad constante de 90 km/h (25 m/s) en un giro circular de 300 m de radio. ¿Qué ángulo de peralte $(\alpha)$ debe tener la carretera sobre la horizontal para que el automóvil haga el giro circular sin deslizamiento aunque no haya fricción entre las llantas y la carretera?
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./11.png)
+:::
+
+## Diagrama de cuerpo libre
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./12.png)
+:::
+
+##
+Para lograr el giro, la componente horizontal de la normal debe ser igual a la fuerza centrípeta:
+$$ \sum F_x = N \cdot \sin(\alpha) = m \cdot a_c$$
+$$ \sum F_y = N \cdot \cos(\alpha) - mg = 0$$
+Dado que solo necesitamos el ángulo de peralte, podemos usar la primera ecuación:
+$$ N \cdot \sin(\alpha) = m \cdot a_c$$
+$$ a_c = \frac{v^2}{r}$$
+$$ N \cdot \sin(\alpha) = m \cdot \frac{v^2}{r}$$
+
+##
+Despejamos la normal de la segunda ecuación:
+$$ N \cdot \cos(\alpha) = mg$$
+$$ N = \frac{mg}{\cos(\alpha)}$$
+Sustituyendo en la primera ecuación:
+$$ \frac{mg}{\cos(\alpha)} \cdot \sin(\alpha) = m \cdot \frac{v^2}{r}$$
+$$ \frac{g \cdot \sin(\alpha)}{\cos(\alpha)} = \frac{v^2}{r}$$
+$$ g \cdot \tan(\alpha) = \frac{v^2}{r}$$
+$$ \tan(\alpha) = \frac{v^2}{g \cdot r}$$
+
+##
+Usamos la función inversa de la tangente para despejar el ángulo:
+$$ \alpha = \tan^{-1} \left( \frac{v^2}{g \cdot r} \right)$$
+
+Sustituyendo los valores:
+$$ \alpha = \tan^{-1} \left( \frac{(25 m/s)^2}{9.81 m/s^2 \cdot 300 m} \right)$$
+$$ \alpha = \tan^{-1} \left( \frac{625}{2943} \right)$$
+$$ \alpha = \tan^{-1} (0.212)$$
+$$ \alpha = 11.97\degree$$
+
+# Gracias por su atención

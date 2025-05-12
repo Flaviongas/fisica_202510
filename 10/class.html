@@ -6,8 +6,8 @@
 <script src="class_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="class_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="class_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.33">
+<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-6c21014d9765ba549c6ebad95917e4d7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.6">
 
   <meta name="author" content="Flavio Jara L.">
   <title>Movimiento Circular y Segunda Ley de Newton</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-85b1feb8ec970ded495406fe56a514bd.css">
+  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -169,9 +169,7 @@ Flavio Jara L.
 <section id="definiciones" class="slide level2">
 <h2>Definiciones</h2>
 <h4 id="aceleración-centripeta-o-radial">Aceleración Centripeta o Radial</h4>
-<p>La aceleración centrípeta es la aceleración hacia el centro de la trayectoria circular, y se define como:</p>
-<h5 id="aceleración-tangencial">Aceleración Tangencial</h5>
-<p>La aceleración tangencial es la aceleración tangente a la trayectoria circular, y se define como: <span class="math display"> a_t = \frac{d v}{d t}</span> <span class="math display"> a_r = \frac{v^2}{r}</span></p>
+<p>La aceleración centrípeta es la aceleración hacia el centro de la trayectoria circular, y se define como: <span class="math display"> a_r = \frac{v^2}{r} </span></p>
 <div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./2.png"></p>
 </div>
@@ -201,7 +199,7 @@ Flavio Jara L.
 </section>
 <section id="relación-con-la-segunda-ley-de-newton" class="slide level2">
 <h2>Relación con la segunda ley de Newton</h2>
-<p>Un objeto en movimiento circular siempre experimenta una aceleración centrípeta, podemos relacionara con la segunda ley de Newton: <span class="math display"> \vec{F} = m \cdot \vec{a_c}</span> <span class="math display"> \vec{a_c} = \frac{v^2}{r}</span> <span class="math display"> \vec{F} = m \cdot \frac{v^2}{r}</span></p>
+<p>Un objeto en movimiento circular siempre experimenta una aceleración centrípeta, podemos relacionarla con la segunda ley de Newton: <span class="math display"> \vec{F} = m \cdot \vec{a_c}</span> <span class="math display"> \vec{a_c} = \frac{v^2}{r}</span> <span class="math display"> \vec{F} = m \cdot \frac{v^2}{r}</span></p>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
@@ -270,6 +268,77 @@ Flavio Jara L.
 <p>Ahora podemos calcular la aceleración centrípeta: <span class="math display"> a_c = \frac{v^2}{r} = \frac{(6.53 m/s)^2}{149.6 m} = 0.29 m/s^2</span></p>
 <p>Nos piden las componentes horizontal y vertical de la aceleración centrípeta, por lo que tenemos que descomponerla. La aceleración centrípeta siempre apunta hacia el centro de la trayectoria circular, por lo que podemos usar el ángulo que nos dan para calcular las componentes:</p>
 <p><span class="math display"> a_{c_x} = a_c \cdot \cos(35\degree) = 0.29 m/s^2 \cdot \cos(35\degree) = 0.24 m/s^2</span> <span class="math display"> a_{c_y} = a_c \cdot \sin(35\degree) = 0.29 m/s^2 \cdot \sin(35\degree) = 0.17 m/s^2</span></p>
+</section>
+<section id="ejercicio-4" class="slide level2">
+<h2>Ejercicio 4</h2>
+<p>Una pelota de 200 gramos de masa gira en un péndulo cónico con una cuerda de 50 cm de longitud que forma un ángulo de 10° con la vertical, describiendo una trayectoria circular con rapidez constante (MCU). Encuentra:</p>
+<ul>
+<li><ol type="a">
+<li>La tensión de la cuerda.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>La rapidez con la que se mueve la pelota.</li>
+</ol></li>
+</ul>
+<div style="text-align:center; width:70%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./8.png"></p>
+</div>
+</section>
+<section id="diagrama-de-cuerpo-libre" class="slide level2">
+<h2>Diagrama de cuerpo libre</h2>
+<div style="text-align:center; width:60%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./9.png"></p>
+</div>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p>La fuerza de tensión se descompone en dos componentes: una componente vertical que contrarresta el peso del objeto y una componente horizontal que proporciona la aceleración centrípeta. <span class="math display"> \sum F_x = T \cdot \sin(10\degree) = m \cdot a_c</span> <span class="math display"> \sum F_y = T \cdot \cos(10\degree) - mg = 0</span></p>
+<p>Podemos despejar la tensión de la segunda ecuación: <span class="math display"> T = \frac{mg}{\cos(10\degree)}</span> <span class="math display"> T = \frac{0.2 kg \cdot 9.81 m/s^2}{\cos(10\degree)}</span> <span class="math display"> T = 1.99 N</span></p>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<p>Para conseguir la rápidez, podemos usar la aceleración centrípeta: <span class="math display"> a_c = \frac{v^2}{r}</span> <span class="math display"> \sum F_x = T \cdot \sin(10\degree) = m \cdot a_c</span> <span class="math display"> T \cdot \sin(10\degree) = m \cdot \frac{v^2}{r}</span> Despejamos <span class="math inline">v</span>: <span class="math display"> v = \sqrt{\frac{T \cdot \sin(10\degree) \cdot r}{m}}</span> Pero no tenemos el radio, por lo que tenemos que calcularlo.</p>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<p>Podemos armar el siguiente triángulo:</p>
+<div style="text-align:center; width:70%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./10.png"></p>
+</div>
+<p>Para obtener el radio, podemos usar la siguiente relación: <span class="math display"> r = L \cdot \sin(10\degree)</span> <span class="math display"> r = 0.5 m \cdot \sin(10\degree) = 0.087 m</span></p>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+<p>Ahora podemos calcular la rápidez: <span class="math display"> v = \sqrt{\frac{T \cdot \sin(10\degree) \cdot r}{m}}</span> <span class="math display"> v = \sqrt{\frac{1.99 N \cdot \sin(10\degree) \cdot 0.087 m}{0.2 kg}}</span> <span class="math display"> v = 0.387 m/s</span></p>
+</section>
+<section id="ejercicio-5" class="slide level2">
+<h2>Ejercicio 5</h2>
+<p>Un automóvil viaja a una velocidad constante de 90 km/h (25 m/s) en un giro circular de 300 m de radio. ¿Qué ángulo de peralte <span class="math inline">(\alpha)</span> debe tener la carretera sobre la horizontal para que el automóvil haga el giro circular sin deslizamiento aunque no haya fricción entre las llantas y la carretera?</p>
+<div style="text-align:center; width:70%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./11.png"></p>
+</div>
+</section>
+<section id="diagrama-de-cuerpo-libre-1" class="slide level2">
+<h2>Diagrama de cuerpo libre</h2>
+<div style="text-align:center; width:70%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./12.png"></p>
+</div>
+</section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+<p>Para lograr el giro, la componente horizontal de la normal debe ser igual a la fuerza centrípeta: <span class="math display"> \sum F_x = N \cdot \sin(\alpha) = m \cdot a_c</span> <span class="math display"> \sum F_y = N \cdot \cos(\alpha) - mg = 0</span> Dado que solo necesitamos el ángulo de peralte, podemos usar la primera ecuación: <span class="math display"> N \cdot \sin(\alpha) = m \cdot a_c</span> <span class="math display"> a_c = \frac{v^2}{r}</span> <span class="math display"> N \cdot \sin(\alpha) = m \cdot \frac{v^2}{r}</span></p>
+</section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+<p>Despejamos la normal de la segunda ecuación: <span class="math display"> N \cdot \cos(\alpha) = mg</span> <span class="math display"> N = \frac{mg}{\cos(\alpha)}</span> Sustituyendo en la primera ecuación: <span class="math display"> \frac{mg}{\cos(\alpha)} \cdot \sin(\alpha) = m \cdot \frac{v^2}{r}</span> <span class="math display"> \frac{g \cdot \sin(\alpha)}{\cos(\alpha)} = \frac{v^2}{r}</span> <span class="math display"> g \cdot \tan(\alpha) = \frac{v^2}{r}</span> <span class="math display"> \tan(\alpha) = \frac{v^2}{g \cdot r}</span></p>
+</section>
+<section id="section-17" class="slide level2">
+<h2></h2>
+<p>Usamos la función inversa de la tangente para despejar el ángulo: <span class="math display"> \alpha = \tan^{-1} \left( \frac{v^2}{g \cdot r} \right)</span></p>
+<p>Sustituyendo los valores: <span class="math display"> \alpha = \tan^{-1} \left( \frac{(25 m/s)^2}{9.81 m/s^2 \cdot 300 m} \right)</span> <span class="math display"> \alpha = \tan^{-1} \left( \frac{625}{2943} \right)</span> <span class="math display"> \alpha = \tan^{-1} (0.212)</span> <span class="math display"> \alpha = 11.97\degree</span></p>
+</section>
+<section id="gracias-por-su-atención" class="title-slide slide level1 center">
+<h1>Gracias por su atención</h1>
 
 </section>
     </div>
@@ -547,8 +616,6 @@ Flavio Jara L.
       });
       clipboard.on('success', onCopySuccess);
       if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
         const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
           text: getTextToCopy,
           container: window.document.getElementById('quarto-embedded-source-code-modal')

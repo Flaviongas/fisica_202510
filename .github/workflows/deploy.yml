@@ -1,0 +1,49 @@
+
+name: Deploy
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Tailscale
+      uses: tailscale/github-action@v3
+      with:
+        oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+        oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+        tags: tag:fisica
+
+    - name: SSH Orion
+      uses: appleboy/ssh-action@v1.2.2
+      with:
+        host: rasp
+        username: ${{ secrets.USERNAME_ORION }}
+        key: ${{ secrets.SSH_KEY }}
+        password: ${{ secrets.PASSWORD_ORION }}
+        port: 22
+        script: |
+          cd /var/www/example.org/ 
+          cd fisica
+          git checkout main
+          git pull
+
+    - name: SSH Gidua
+      uses: appleboy/ssh-action@v1.2.2
+      with:
+        host: gidua
+        username: ${{ secrets.USERNAME_GIDUA }}
+        key: ${{ secrets.SSH_KEY }}
+        password: ${{ secrets.PASSWORD_GIDUA }}
+        port: 22
+        script: |
+          cd /var/www/example.org/ 
+          cd fisica
+          git checkout main
+          git pull
+          git checkout HEAD~1 
