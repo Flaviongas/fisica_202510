@@ -1,0 +1,121 @@
+---
+title: "Repaso Prueba 2: La secuela"
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.60em;
+      }
+      </style>
+---
+
+## Ejercicio 1
+Un cuerpo m de 200 g de masa describe una circunferencia de 50 cm de radio sobre una mesa horizontal dando 2 vueltas por segundo. La masa está unida mediante una cuerda que pasa por un orificio de la mesa a otra masa, M que pende verticalmente.
+
+- a) La aceleración del cuerpo m
+
+- b) La tensión de la cuerda.
+
+- c) La masa M
+
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./1.png)
+:::
+
+# Diagrama de cuerpo libre
+$$ F_c = m \cdot a_c = m$$
+
+::: {style="text-align:center; width:40%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+##
+Consideremos la masa $m$ y representemos sus fuerzas. La fuerza centrípeta es la que mantiene al cuerpo en movimiento circular, y está dada por la tensión de la cuerda. La fuerza de gravedad actúa hacia abajo, y la tensión actúa hacia arriba.
+
+Hagamos la sumatoria de fuerzas en el eje y:
+
+$$ \sum F_y = N - P = 0 $$
+$$ N = P $$
+$$ N = m \cdot g $$
+
+Y en el eje x (hacia el centro de la circunferencia):
+$$ \sum F_x = T = m \cdot a_c $$
+
+Nos piden la aceleración del cuerpo, es decir, la aceleración centrípeta.
+
+##
+Otra manera de sacar la aceleración centrípeta es usando la velocidad angular, que está dada por la relación entre la velocidad tangencial y el radio de la circunferencia.
+$$ a_c = \frac{v^2}{r} = \omega^2 \cdot r $$
+
+Nos dice que da 2 vueltas por segundo, lo que significa que la frecuencia es 2 Hz. Podemos transformar la frecuencia a radianes por segundo usando la relación:
+$$ \frac{2 \pi \text{ rad}}{1 \text{ Hz}} \cdot \frac{2 \text{ Hz}}{1 \text{ s}} = 4\pi \text{ rad/s} $$
+Lo cual es precisamente la velocidad angular.
+
+Entonces, la aceleración centrípeta es:
+$$ a_c = \omega^2 \cdot r = (4\pi)^2 \cdot 0.5 = 8\pi^2 \text{ m/s}^2 $$
+$$ a_c = 8\pi^2 \text{ m/s}^2 \approx 78.96 \text{ m/s}^2 $$
+
+## Tensión de la cuerda
+La tensión de la cuerda es igual a la fuerza centrípeta, que es la masa por la aceleración centrípeta. La masa $m$ está dada en gramos, así que debemos convertirla a kilogramos:
+$$ m = 200 \text{ g} = 0.2 \text{ kg} $$
+$$ T = m \cdot a_c = 0.2 \cdot 78.96 \text{ N} $$
+$$ T = 15.79 \text{ N} $$
+
+## Masa M
+La masa M está en equilibrio, por lo que la tensión de la cuerda es igual a la fuerza de gravedad que actúa sobre ella. La fuerza de gravedad es el peso de la masa M, que está dada por:
+$$ P = M \cdot g $$
+$$ T = M \cdot g $$
+$$ M = \frac{T}{g} = \frac{15.79}{9.81} \text{ kg} $$
+$$ M \approx 1.61 \text{ kg} $$
+
+
+## Ejercicio 2
+El tambor de eje vertical de una lavadora industrial es un cilindro de 40 cm de diámetro, y la frecuencia máxima de centrifugado es de 1200 RPM. Calcular la fuerza neta a la que está sometida una masa de 2 kg de ropa ubicada en la periferia.
+
+::: {style="text-align:center; width:30%; margin-left: auto; margin-right: auto;"}
+![](./3.png)
+:::
+
+##
+Primero, hagamos la sumatoria de fuerzas en el eje y, en el diagrama podemos ver que hay una fricción que actúa hacia arriba y la fuerza de gravedad que actúa hacia abajo. La fuerza centrípeta es la que mantiene al cuerpo en movimiento circular, y está dada por la fuerza normal.
+
+$$ \sum F_y = F_r - P = 0 $$
+
+Haciendo la sumatoria de fuerzas en el eje x, tenemos que la fuerza centrípeta debe ser igual a la normal:
+$$ \sum F_x = N = m \cdot a_c $$
+
+Dado que la normal es la fuerza centrípeta, es precisamente lo que necesitamos calcular. En teoría podriamos definir la normal en base a la suma de fuerzas en el eje y, pero eso nos deja con una incógnita.
+
+Desarrollando el eje y:
+$$ F_r = P $$
+$$ \mu_k \cdot N = m \cdot g $$
+$$ N = \frac{m \cdot g}{\mu_k} $$
+
+##
+Pero no tenemos la constante de fricción, así que no podemos calcular la normal directamente. Sin embargo, podemos calcular la aceleración centrípeta usando la frecuencia máxima de centrifugado.
+
+Recordemos que hay múltiples maneras de calcular la aceleración centrípeta:
+$$ a_c = \frac{v^2}{r} $$
+$$ a_c = \omega^2 \cdot r $$
+
+Esta última es la que usaremos, ya que involucra la velocidad angular, que podemos calcular a partir de la frecuencia máxima de centrifugado.
+La frecuencia máxima de centrifugado es de 1200 RPM, lo que significa que da 1200 revoluciones por minuto. Para convertir esto a radianes por segundo, usamos la relación:
+$$ \frac{2 \pi \text{ rad}}{1 \text{ rev}} \cdot \frac{1200 \text{ rev}}{1 \text{ min}} \cdot \frac{1 \text{ min}}{60 \text{ s}} = 40\pi \text{ rad/s} $$
+Entonces, la velocidad angular es:
+$$ \omega = 40\pi \text{ rad/s} $$
+
+##
+Ahora podemos calcular la aceleración centrípeta:
+$$ a_c = \omega^2 \cdot r = (40\pi)^2 \cdot 0.2 = 1600\pi^2 \text{ m/s}^2 $$
+$$ a_c \approx 3158.27 \text{ m/s}^2 $$
+
+Y con esto podemos calcular la fuerza centrípeta, que es la fuerza neta a la que está sometida la masa de 2 kg de ropa:
+$$ F_c = m \cdot a_c = 2 \cdot 3158.27 \text{ N} $$
+$$ F_c \approx 6316.55 \text{ N} $$
+
