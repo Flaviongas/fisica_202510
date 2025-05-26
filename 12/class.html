@@ -6,8 +6,8 @@
 <script src="class_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="class_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="class_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.33">
+<link href="class_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
 
   <meta name="author" content="Flavio Jara L.">
   <title>Repaso Prueba 2: La secuela</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-85b1feb8ec970ded495406fe56a514bd.css">
+  <link rel="stylesheet" href="class_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -232,8 +232,146 @@ Flavio Jara L.
 <h2></h2>
 <p>Ahora podemos calcular la aceleración centrípeta: <span class="math display"> a_c = \omega^2 \cdot r = (40\pi)^2 \cdot 0.2 = 1600\pi^2 \text{ m/s}^2 </span> <span class="math display"> a_c \approx 3158.27 \text{ m/s}^2 </span></p>
 <p>Y con esto podemos calcular la fuerza centrípeta, que es la fuerza neta a la que está sometida la masa de 2 kg de ropa: <span class="math display"> F_c = m \cdot a_c = 2 \cdot 3158.27 \text{ N} </span> <span class="math display"> F_c \approx 6316.55 \text{ N} </span></p>
-
+</section>
+<section id="ejercicio-3" class="slide level2">
+<h2>Ejercicio 3</h2>
+<p>Usted está bajando dos cajas, una encima de la otra, por la rampa que se muestra en la figura, tirando de una cuerda paralela a la superficie de la rampa. Ambas cajas se mueven juntas a rapidez constante de 15.0 cm/s. El coeficiente de fricción cinético entre la rampa y la caja inferior es 0.44, en tanto que el coeficiente de fricción estátioa entre ambas cajas es de 0.80.</p>
+<ul>
+<li><ol type="a">
+<li>¿Qué fuerza deberá ejercer para lograr esto?.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>¿Cuáles son la magnitud y la dirección de la fuerza de fricción sobre la caja superior.</li>
+</ol></li>
+</ul>
+<div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./4.png"></p>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p>Primero, saquemos el ángulo de la rampa. Podemos usar la tangente del ángulo para calcularlo: <span class="math display"> \theta = \tan^{-1}\left(\frac{h}{d}\right) = \tan^{-1}\left(\frac{2.5}{4.75}\right) \approx 27.76^\circ </span></p>
+<p>Para el bloque de color amarillo se tienen las siguientes fuerzas actuando sobre él:</p>
+<p><span class="math inline">\vec{T}</span>: Tensión de la cuerda ejercida por el hombre sobre el bloque amarillo para que los bloques deciendan a velocidad constante.</p>
+<p><span class="math inline">\vec{N_1}</span>: Normal que ejerce la rampa sobre el bloque amarillo.</p>
+<p><span class="math inline">\vec{N_2}</span>: Normal que ejerce el bloque naranjo sobre el bloque amarillo.</p>
+<p><span class="math inline">m_1 \vec{g}</span>: Peso del bloque amarillo.</p>
+<p><span class="math inline">\vec{f_k}</span>: Fuerza de roce cinético entre el bloque amarillo y la rampa.</p>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./5.png"></p>
+</div>
+<p>Nos piden la fuerza que debemos ejercer para que los bloques se deslicen a velocidad constante, lo que significa que la aceleración es cero. Por lo tanto, la suma de fuerzas en el eje x y en el eje y debe ser igual a cero.</p>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p>Ya que ambos objetos se mueven juntos, podemos tomarlo como una sola caja de masa <span class="math inline">M = m_1 + m_2</span>.</p>
+<p>Descompongamos la fuerza peso en sus componentes: <span class="math display"> P = M \cdot g </span> <span class="math display"> P_{x} = P \cdot \sin(\theta) </span> <span class="math display"> P_{y} = P \cdot \cos(\theta) </span></p>
+<p>Hagamos la sumatoria de fuerzas en el eje y: <span class="math display"> \sum F_y = N - P_{y} = 0 </span> <span class="math display"> N_1 = P_{y} = M \cdot g \cdot \cos(\theta) </span></p>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p>Ahora, hagamos la sumatoria de fuerzas en el eje x: <span class="math display"> \sum F_x = T + f_k - P_{x} = 0 </span></p>
+<p>Ya que la tensión es la fuerza que estamos buscando, podemos despejarla: <span class="math display"> T = P_{x} - f_k </span> La fuerza de roce cinético es: <span class="math display"> f_k = \mu_k \cdot N = \mu_k \cdot M \cdot g \cdot \cos(\theta) </span></p>
+<p>Sustituyendo la fuerza de roce cinético en la ecuación de la tensión: <span class="math display"> T = P_{x} - \mu_k \cdot M \cdot g \cdot \cos(\theta) </span> Ahora, la componente del peso en el eje x es: <span class="math display"> P_{1x} = M \cdot g \cdot \sin(\theta) </span></p>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<p>Sustituyendo esto en la ecuación de la tensión: <span class="math display"> T = M \cdot g \cdot \sin(\theta) - \mu_k \cdot M \cdot g \cdot \cos(\theta) </span> Factorizando: <span class="math display"> T = M \cdot g \cdot (\sin(\theta) - \mu_k \cdot \cos(\theta)) </span> Reemplazando los valores: <span class="math display"> T = (m_1 + m_2) \cdot g \cdot (\sin(\theta) - \mu_k \cdot \cos(\theta)) </span> <span class="math display"> T = (32 + 48) \cdot 9.81 \cdot (\sin(27.76^\circ) - 0.44 \cdot \cos(27.76^\circ)) </span></p>
+<p>Calculando: <span class="math display"> T = 80 \cdot 9.81 \cdot (0.469 - 0.44 \cdot 0.848) </span> <span class="math display"> T = 59.97 \text{ N} </span></p>
+</section>
+<section id="magnitud-y-dirección-de-la-fricción-en-la-caja-superior" class="slide level2">
+<h2>Magnitud y dirección de la fricción en la caja superior</h2>
+<p>Para calcular esto, podemos imaginar que la caja inferior es un plano inclinado. La masa superior tiende a moverse hacia la izquierda por la inclinación de la caja inferior, pero la fricción estática entre ambas cajas se opone a este movimiento.</p>
+<p>Hacemos la sumatoria de fuerzas en el eje x: <span class="math display"> \sum F_{x} = -P_{2x}+f_{s} = 0 </span> <span class="math display"> f_{s} = P_{2x} = m_2 \cdot g \cdot \sin(\theta) </span> Reemplazando: <span class="math display"> f_{s} = 32 \cdot 9.81 \cdot \sin(27.76^\circ) </span> <span class="math display"> f_{s} = 32 \cdot 9.81 \cdot 0.469 </span> <span class="math display"> f_{s} = 146.21 \text{ N} </span></p>
+</section>
+<section id="ejercicio-4" class="slide level2">
+<h2>Ejercicio 4</h2>
+<p>El coeficiente de fricción cinética y estática entre todas las superficies son: 0,2 y 0,4 respectivamente. Las poleas no tienen fricción y las masas se liberan a partir del reposo Determine: la aceleración del sistema y las tensiones en las cuerdas.</p>
+<p><span class="math display"> m_1 = 15 \text{ kg} \quad m_2 = 3 \text{ kg} \quad m_3 = 2 \text{ kg} </span></p>
+<div style="text-align:center; width:60%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./6.png"></p>
+</div>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p>Primero identifiquemos las tensiones:</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./7.png"></p>
+</div>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p>Realizemos la sumatoria de fuerzas en el eje y para cada masa:</p>
+<h4 id="para-m_1">Para <span class="math inline">m_1</span>:</h4>
+<div style="text-align:center; width:70%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./8.png"></p>
+</div>
+<p><span class="math display"> \sum F_{y1} = -T_1 + m_1 \cdot g = m_1 \cdot a </span></p>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<h4 id="para-m_2">Para <span class="math inline">m_2</span>:</h4>
+<div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./9.png"></p>
+</div>
+<p><span class="math display"> \sum F_{y2} = N_2 - P_{2} - N_3 = 0 </span> <span class="math display"> \sum F_{x2} = T_1 - T_2 - f_{s2} - f_{s3} = m_2 \cdot a </span></p>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<h4 id="para-m_3">Para <span class="math inline">m_3</span>:</h4>
+<div style="text-align:center; width:40%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./10.png"></p>
+</div>
+<p><span class="math display"> \sum F_{y3} = N_3 - P_{3} = 0 </span> <span class="math display"> \sum F_{x3} = T_2 - f_{s3} = m_3 \cdot a </span></p>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+<p>La forma más sencilla de resolver este sistema es despejando las aceleraciones de cada masa en función de las tensiones y las fuerzas de fricción.</p>
+<h4 id="para-m_1-1">Para <span class="math inline">m_1</span>:</h4>
+<p><span class="math display"> a = -\frac{T_1 }{m_1} + g </span></p>
+<h4 id="para-m_2-1">Para <span class="math inline">m_2</span>:</h4>
+<p><span class="math display"> a = \frac{T_1 - T_2 - f_{s2} - f_{s3}}{m_2} </span></p>
+<h4 id="para-m_3-1">Para <span class="math inline">m_3</span>:</h4>
+<p><span class="math display"> a = \frac{T_2 - f_{s3}}{m_3} </span></p>
+</section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+<p>Podemos reemplazas los valores que tenemos:</p>
+<h5 id="m_1"><span class="math inline">m_1</span>:</h5>
+<p><span class="math display"> a = - \frac{T_1}{15} + 9.81 </span></p>
+<h5 id="m_2"><span class="math inline">m_2</span>:</h5>
+<p><span class="math display"> a = \frac{T_1 - T_2 - 0.2 \cdot N_2 - 0.2 \cdot N_3}{3} </span> La normal <span class="math inline">N_2</span> es igual al peso de la masa <span class="math inline">m_2</span>, la normal <span class="math inline">N_3</span> es igual al peso de la masa <span class="math inline">m_3</span>: <span class="math display"> a = \frac{T_1 - T_2 - 0.2 \cdot 3 \cdot 9.81 - 0.2 \cdot 2 \cdot 9.81}{3} </span> <span class="math display"> a = \frac{T_1 - T_2}{3} - 3.26 </span></p>
+</section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+<h5 id="m_3"><span class="math inline">m_3</span>:</h5>
+<p><span class="math display"> a = \frac{T_2 - 0.2 \cdot N_3}{2} </span> La normal <span class="math inline">N_3</span> es igual al peso de la masa <span class="math inline">m_3</span>: <span class="math display"> a = \frac{T_2 - 0.2 \cdot 2 \cdot 9.81}{2} </span> <span class="math display"> a = \frac{T_2}{2} - 1.96</span></p>
+</section>
+<section id="sistema-de-ecuaciones" class="slide level2">
+<h2>Sistema de ecuaciones</h2>
+<p>Ahora tenemos un sistema de ecuaciones con tres incógnitas: <span class="math inline">T_1</span>, <span class="math inline">T_2</span> y <span class="math inline">a</span>.</p>
+<p><span class="math display"> (1) \quad a = -\frac{T_1}{15} + 9.81 </span> <span class="math display"> (2) \quad a = \frac{T_1 - T_2}{3} - 3.26 </span> <span class="math display"> (3) \quad a = \frac{T_2}{2} - 1.96 </span> Podemos igualar las ecuaciones (1) y (2): <span class="math display"> - \frac{T_1}{15} + 9.81 = \frac{T_1 }{3} - \frac{T_2}{3} - 3.26 </span> Multiplicamos todo por 15 para eliminar el denominador: <span class="math display"> - T_1 + 147.15 = 5T_1 - 5T_2 - 48.9 </span></p>
+</section>
+<section id="section-17" class="slide level2">
+<h2></h2>
+<p>Reorganizando: <span class="math display"> 6T_1 - 5T_2 = 196.05 </span> Ahora, igualamos las ecuaciones (2) y (3): <span class="math display"> \frac{T_1 - T_2}{3} - 3.26 = \frac{T_2}{2} - 1.96 </span> Multiplicamos todo por 6 para eliminar los denominadores: <span class="math display"> 2T_1 - 2T_2 - 19.56 = 3T_2 - 11.76 </span></p>
+<p>Reorganizando: <span class="math display"> 2T_1 - 5T_2 = 7.8 </span></p>
+</section>
+<section id="section-18" class="slide level2">
+<h2></h2>
+<p>Ahora tenemos un sistema de dos ecuaciones con dos incógnitas: <span class="math display"> (4) \quad 6T_1 - 5T_2 = 196.05 </span> <span class="math display"> (5) \quad 2T_1 - 5T_2 = 7.8 </span> Podemos resolver este sistema por eliminación. Restamos la ecuación (5) de la ecuación (4): <span class="math display"> (6) \quad 4T_1 = 188.25 </span> <span class="math display"> T_1 = 47.06 \text{ N} </span> Ahora sustituimos <span class="math inline">T_1</span> en la ecuación (5): <span class="math display"> 2(47.06) - 5T_2 = 7.8 </span> <span class="math display"> 94.12 - 5T_2 = 7.8 </span> <span class="math display"> 5T_2 = 86.32 </span> <span class="math display"> T_2 = 17.26 \text{ N} </span></p>
+</section>
+<section id="aceleración-del-sistema" class="slide level2">
+<h2>Aceleración del sistema</h2>
+<p>Ahora podemos sustituir <span class="math inline">T_1</span> en la ecuación (1) para encontrar la aceleración: <span class="math display"> a = -\frac{47.06}{15} + 9.81 </span> <span class="math display"> a = -3.14 + 9.81 </span> <span class="math display"> a = 6.67 \text{ m/s}^2 </span></p>
 </section></section>
+<section id="gracias-por-su-atención" class="title-slide slide level1 center">
+<h1>Gracias por su atención</h1>
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -431,192 +569,172 @@ Flavio Jara L.
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          return false;
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
             }
-          }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
