@@ -52,26 +52,34 @@ Un resorte tiene una longitud natural de 20 cm. Si una fuerza de 25 N se requier
 ##
 El trabajo es:
 $$ W = F \cdot d \cdot \cos(\theta) $$
+Pero, para este caso, la fuerza es variable, ya que depende de la elongación del resorte. Por lo tanto, debemos considerar el trabajo realizado por una fuerza variable a lo largo de un desplazamiento. En este caso, podemos usar la integral para calcular el trabajo:
+$$ W = \int_{x_1}^{x_2} F(x) \, dx $$
+
 Donde, en este caso, la fuerza es la fuerza elástica del resorte, que se calcula con la ley de Hooke:
 $$ F = k \cdot \Delta x $$
 
+##
 Para resolver este problema, primero debemos calcular la elongación del resorte:
 
 $$ \Delta x = 25 \, \text{cm} - 20 \, \text{cm} = 5 \, \text{cm} = 0.05 \, \text{m} $$
-Esta es la distancia que el resorte se estira desde su longitud natural.
-
-##
-Si reemplazamos la fuerza con la ley de Hooke, tenemos:
-$$ W = k \cdot \Delta x \cdot d \cdot \cos(\theta) $$
-No se especifica el ángulo, por lo que asumimos que la fuerza y el desplazamiento están en la misma dirección, es decir, $\cos(\theta) = 1$.
-$$ W = k \cdot \Delta x \cdot d $$
+Esta es la distancia que el resorte se estira desde su longitud natural. Al inicio no hay elongación, por lo que la elongación inicial es 0.
+Por lo que la integración quedaría de la siguiente manera:
+$$ W = \int_{0}^{0.05} k \cdot x \, dx $$
 Ahora, necesitamos encontrar la constante del resorte $k$. Sabemos que cuando el resorte está estirado a 30 cm, la fuerza es de 25 N. Por lo tanto, podemos usar la ley de Hooke para encontrar $k$:
 $$ k = \frac{F}{\Delta x} = \frac{25 \, \text{N}}{30 \, \text{cm} - 20 \, \text{cm}} = \frac{25 \, \text{N}}{0.10 \, \text{m}} = 250 \, \text{N/m} $$
 
 ##
 
 Ahora que tenemos $k$, podemos calcular el trabajo realizado al estirar el resorte de 20 cm a 25 cm:
-$$ W = k \cdot \Delta x \cdot d = 250 \, \text{N/m} \cdot 0.05 \, \text{m} \cdot 0.05 \, \text{m} = 0.3125 \, \text{J} $$
+$$ W = \int_{0}^{0.05} 250 \cdot x \, dx $$
+$$ W = 250 \cdot \left[ \frac{x^2}{2} \right]_{0}^{0.05} $$
+$$ W = 250 \cdot \left( \frac{(0.05)^2}{2} - \frac{(0)^2}{2} \right) $$
+
+##
+
+$$ W = 250 \cdot \left( \frac{0.0025}{2} \right) $$
+$$ W = 250 \cdot 0.00125 $$
+$$ W = 0.3125 \, \text{J} $$
 
 ## Ejercicio 2
 Calcula el trabajo necesario para subir un cuerpo de 85 kg, a velocidad constante, desde una altura de 11 m hasta una altura de 16 m

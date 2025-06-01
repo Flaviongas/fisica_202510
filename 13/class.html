@@ -190,17 +190,21 @@ Flavio Jara L.
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-<p>El trabajo es: <span class="math display"> W = F \cdot d \cdot \cos(\theta) </span> Donde, en este caso, la fuerza es la fuerza elástica del resorte, que se calcula con la ley de Hooke: <span class="math display"> F = k \cdot \Delta x </span></p>
-<p>Para resolver este problema, primero debemos calcular la elongación del resorte:</p>
-<p><span class="math display"> \Delta x = 25 \, \text{cm} - 20 \, \text{cm} = 5 \, \text{cm} = 0.05 \, \text{m} </span> Esta es la distancia que el resorte se estira desde su longitud natural.</p>
+<p>El trabajo es: <span class="math display"> W = F \cdot d \cdot \cos(\theta) </span> Pero, para este caso, la fuerza es variable, ya que depende de la elongación del resorte. Por lo tanto, debemos considerar el trabajo realizado por una fuerza variable a lo largo de un desplazamiento. En este caso, podemos usar la integral para calcular el trabajo: <span class="math display"> W = \int_{x_1}^{x_2} F(x) \, dx </span></p>
+<p>Donde, en este caso, la fuerza es la fuerza elástica del resorte, que se calcula con la ley de Hooke: <span class="math display"> F = k \cdot \Delta x </span></p>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-<p>Si reemplazamos la fuerza con la ley de Hooke, tenemos: <span class="math display"> W = k \cdot \Delta x \cdot d \cdot \cos(\theta) </span> No se especifica el ángulo, por lo que asumimos que la fuerza y el desplazamiento están en la misma dirección, es decir, <span class="math inline">\cos(\theta) = 1</span>. <span class="math display"> W = k \cdot \Delta x \cdot d </span> Ahora, necesitamos encontrar la constante del resorte <span class="math inline">k</span>. Sabemos que cuando el resorte está estirado a 30 cm, la fuerza es de 25 N. Por lo tanto, podemos usar la ley de Hooke para encontrar <span class="math inline">k</span>: <span class="math display"> k = \frac{F}{\Delta x} = \frac{25 \, \text{N}}{30 \, \text{cm} - 20 \, \text{cm}} = \frac{25 \, \text{N}}{0.10 \, \text{m}} = 250 \, \text{N/m} </span></p>
+<p>Para resolver este problema, primero debemos calcular la elongación del resorte:</p>
+<p><span class="math display"> \Delta x = 25 \, \text{cm} - 20 \, \text{cm} = 5 \, \text{cm} = 0.05 \, \text{m} </span> Esta es la distancia que el resorte se estira desde su longitud natural. Al inicio no hay elongación, por lo que la elongación inicial es 0. Por lo que la integración quedaría de la siguiente manera: <span class="math display"> W = \int_{0}^{0.05} k \cdot x \, dx </span> Ahora, necesitamos encontrar la constante del resorte <span class="math inline">k</span>. Sabemos que cuando el resorte está estirado a 30 cm, la fuerza es de 25 N. Por lo tanto, podemos usar la ley de Hooke para encontrar <span class="math inline">k</span>: <span class="math display"> k = \frac{F}{\Delta x} = \frac{25 \, \text{N}}{30 \, \text{cm} - 20 \, \text{cm}} = \frac{25 \, \text{N}}{0.10 \, \text{m}} = 250 \, \text{N/m} </span></p>
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
-<p>Ahora que tenemos <span class="math inline">k</span>, podemos calcular el trabajo realizado al estirar el resorte de 20 cm a 25 cm: <span class="math display"> W = k \cdot \Delta x \cdot d = 250 \, \text{N/m} \cdot 0.05 \, \text{m} \cdot 0.05 \, \text{m} = 0.3125 \, \text{J} </span></p>
+<p>Ahora que tenemos <span class="math inline">k</span>, podemos calcular el trabajo realizado al estirar el resorte de 20 cm a 25 cm: <span class="math display"> W = \int_{0}^{0.05} 250 \cdot x \, dx </span> <span class="math display"> W = 250 \cdot \left[ \frac{x^2}{2} \right]_{0}^{0.05} </span> <span class="math display"> W = 250 \cdot \left( \frac{(0.05)^2}{2} - \frac{(0)^2}{2} \right) </span></p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><span class="math display"> W = 250 \cdot \left( \frac{0.0025}{2} \right) </span> <span class="math display"> W = 250 \cdot 0.00125 </span> <span class="math display"> W = 0.3125 \, \text{J} </span></p>
 </section>
 <section id="ejercicio-2" class="slide level2">
 <h2>Ejercicio 2</h2>
@@ -209,7 +213,7 @@ Flavio Jara L.
 <p><img data-src="./3.png"></p>
 </div>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <p>Tenemos que darnos cuenta que la fuerza que se debe aplicar es igual al peso del cuerpo, es decir: <span class="math display"> F = m \cdot g </span> Y la distancia que necesitamos recorrer es: <span class="math display"> d = h_2 - h_1 = 16 \, \text{m} - 11 \, \text{m} = 5 \, \text{m} </span></p>
 <p>Por lo tanto, el trabajo ejercido por la fuerza peso es: <span class="math display"> W = F \cdot d = m \cdot g \cdot d </span> Sustituyendo los valores: <span class="math display"> W = 85 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 \cdot 5 \, \text{m} = 4169.25 \, \text{J} </span></p>
@@ -221,25 +225,25 @@ Flavio Jara L.
 <p><img data-src="./4.png"></p>
 </div>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
 <p>Para calcular el trabajo realizado, debemos considerar la fuerza neta que actúa sobre el vehículo. Para esto, hacemos un diagrama de cuerpo libre y consideramos las fuerzas que actúan sobre el vehículo.</p>
 <div style="text-align:center; width:90%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./5.png"></p>
 </div>
 </section>
-<section id="section-6" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <p>Dado que el movimiento es horizontal, las fuerzas que afectan al vehículo son la proyección horizontal de fuerza aplicada y la fuerza de fricción. <span class="math display">W_T = W_{aplicada} - W_{fricción}</span></p>
 <p>La fuerza de fricción se calcula como: <span class="math display"> F_{r} = \mu \cdot N </span> En este caso, la fuerza normal es igual al peso del vehículo menos la componente vertical de la fuerza aplicada. <span class="math display"> N = m \cdot g - F \cdot \sin(\theta) </span> <span class="math display"> N = 750 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 - 9000 \, \text{N} \cdot \sin(27^\circ) </span> <span class="math display"> N = 3271,59 \, \text{N}</span></p>
 </section>
-<section id="section-7" class="slide level2">
+<section id="section-8" class="slide level2">
 <h2></h2>
 <p>Por lo que la fuerza de fricción es: <span class="math display"> F_{r} = \mu \cdot N = 0.24 \cdot 3271.59 \, \text{N} = 785.18 \, \text{N} </span></p>
 <p>La fuerza de fricción se aplicará en todo el desplazamiento del vehículo, que es de 9 m. Por lo tanto, el trabajo realizado por la fuerza de fricción es: <span class="math display"> W_{fricción} = F_{r} \cdot d = 785.18 \, \text{N} \cdot 9 \, \text{m} = 7066.62 \, \text{J} </span></p>
 <p>Ahora, calculamos la proyección horizontal de la fuerza aplicada: <span class="math display"> F_{aplicada} = F \cdot \cos(\theta) = 9000 \, \text{N} \cdot \cos(27^\circ) = 9000 \, \text{N} \cdot 0.8480 = 8019.06 \, \text{N} </span> Ahora podemos calcular el trabajo realizado: <span class="math display"> W_{aplicada} = F_{aplicada} \cdot d = 8019.06 \, \text{N} \cdot 9 \, \text{m} = 72171.53 \, \text{J} </span></p>
 </section>
-<section id="section-8" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
 <p>Por lo tanto, el trabajo neto realizado es: <span class="math display"> W_T = W_{aplicada} - W_{fricción} = 72171.53 \, \text{J} - 7066.62 \, \text{J} = 65004.91 \, \text{J} </span> Usando prefijos de magnitud, podemos expresar el resultado como: <span class="math display"> W_T \approx 65.0 \, \text{kJ} </span></p>
 </section>
@@ -250,13 +254,13 @@ Flavio Jara L.
 <li><strong>Energía Potencial (EP)</strong>: Es la energía almacenada en un objeto debido a su posición o estado. Por ejemplo, la energía potencial gravitatoria se calcula como: <span class="math display"> EP = m g h </span> donde <span class="math inline">m</span> es la masa del objeto, <span class="math inline">g</span> es la aceleración debida a la gravedad y <span class="math inline">h</span> es la altura del objeto respecto a un nivel de referencia.</li>
 </ul>
 </section>
-<section id="section-9" class="slide level2">
+<section id="section-10" class="slide level2">
 <h2></h2>
 <div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./6.avif"></p>
 </div>
 </section>
-<section id="section-10" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
 <p><img data-src="./7.png"></p>
@@ -275,15 +279,15 @@ Flavio Jara L.
 <p><img data-src="./8.png"></p>
 </div>
 </section>
-<section id="section-11" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <p>Para calcular la energía cinética disipada, debemos calcular la energía cinética inicial y final del vehículo y luego restarlas. La energía cinética inicial (<span class="math inline">EC_i</span>) se calcula con la velocidad inicial de 90 km/h: <span class="math display"> EC_i = \frac{1}{2} m v_i^2 </span> <span class="math display"> v_i = 90 \, \text{km/h} = 25 \, \text{m/s} </span> <span class="math display"> EC_i = \frac{1}{2} \cdot 650 \, \text{kg} \cdot (25 \, \text{m/s})^2 </span> <span class="math display"> EC_i = 203125 \, \text{J} </span></p>
 </section>
-<section id="section-12" class="slide level2">
+<section id="section-13" class="slide level2">
 <h2></h2>
 <p>La energía cinética final (<span class="math inline">EC_f</span>) se calcula con la velocidad final de 50 km/h: <span class="math display"> EC_f = \frac{1}{2} m v_f^2 </span> <span class="math display"> v_f = 50 \, \text{km/h} = 13.9 \, \text{m/s} </span> <span class="math display"> EC_f = \frac{1}{2} \cdot 650 \, \text{kg} \cdot (13.9 \, \text{m/s})^2 </span> <span class="math display"> EC_f = 62793.25 \, \text{J} </span></p>
 </section>
-<section id="section-13" class="slide level2">
+<section id="section-14" class="slide level2">
 <h2></h2>
 <p>La energía cinética disipada (<span class="math inline">EC_d</span>) es la diferencia entre la energía cinética final y la inicial: <span class="math display"> EC_d = EC_f - EC_i </span> <span class="math display"> EC_d = 62793.25 \, \text{J} - 203125 \, \text{J} </span> <span class="math display"> EC_d = -140331.75 \, \text{J} </span></p>
 </section>
@@ -294,7 +298,7 @@ Flavio Jara L.
 <p><img data-src="./9.jpg"></p>
 </div>
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-15" class="slide level2">
 <h2></h2>
 <p>Primero, convertimos las libras a kilogramos: <span class="math display"> m = \frac{780 \, \text{libras}}{2.2 \, \text{libras/kg}} = 354.55 \, \text{kg} </span> Luego, calculamos la altura total que sube el ascensor: <span class="math display"> h = 9 \, \text{niveles} \cdot 3.18 \, \text{m/nivel} = 28.62 \, \text{m} </span> Finalmente, calculamos la energía potencial utilizando la fórmula: <span class="math display"> EP = m g h </span> <span class="math display"> EP = 354.55 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 \cdot 28.62 \, \text{m} </span> <span class="math display"> EP = 99544.24 \, \text{J} </span></p>
 </section>
@@ -314,15 +318,15 @@ Flavio Jara L.
 <p><img data-src="./10.png"></p>
 </div>
 </section>
-<section id="section-15" class="slide level2">
+<section id="section-16" class="slide level2">
 <h2></h2>
 <p>Para resolver este problema, utilizamos el teorema del trabajo y la energía cinética. Sabemos que el trabajo neto realizado sobre el esquiador es igual al cambio en su energía cinética: <span class="math display"> W_{neto} = \Delta EC = EC_f - EC_i </span> Dado que el esquiador comienza desde el reposo, su energía cinética inicial (<span class="math inline">EC_i</span>) es cero: <span class="math display"> EC_i = 0 </span> Por lo tanto, el trabajo neto es igual a la energía cinética final (<span class="math inline">EC_f</span>): <span class="math display"> W_{neto} = EC_f </span></p>
 </section>
-<section id="section-16" class="slide level2">
+<section id="section-17" class="slide level2">
 <h2></h2>
 <p>Ahora, podemos expresar la energía cinética final en términos de la masa y la velocidad del esquiador: <span class="math display"> EC_f = \frac{1}{2} m v^2 </span> Sustituyendo el trabajo neto en la ecuación: <span class="math display"> W_{neto} = \frac{1}{2} m v^2 </span> Despejando la velocidad (<span class="math inline">v</span>): <span class="math display"> v = \sqrt{\frac{2 W_{neto}}{m}} </span></p>
 </section>
-<section id="section-17" class="slide level2">
+<section id="section-18" class="slide level2">
 <h2></h2>
 <p>Sustituyendo los valores: <span class="math display"> v = \sqrt{\frac{2 \cdot 100600 \, \text{J}}{70 \, \text{kg}}} </span> <span class="math display"> v = \sqrt{\frac{201200}{70}} </span> <span class="math display"> v = \sqrt{2874.29} </span> <span class="math display"> v \approx 53.61 \, \text{m/s} </span></p>
 </section>
