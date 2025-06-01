@@ -45,6 +45,10 @@ Se utiliza cuando se trabaja con vectores y se quiere calcular el trabajo realiz
 ## Ejercicio 1
 Un resorte tiene una longitud natural de 20 cm. Si una fuerza de 25 N se requiere para mantenerlo estirado a una longitud de 30 cm, ¿cuánto trabajo se requiere para estirarlo de 20 cm a 25 cm?
 
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./forgot.png)
+:::
+
 ##
 El trabajo es:
 $$ W = F \cdot d \cdot \cos(\theta) $$
