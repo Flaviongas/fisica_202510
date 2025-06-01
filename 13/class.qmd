@@ -160,4 +160,54 @@ La energía es la capacidad de realizar trabajo. Existen diferentes tipos de ene
 ![](./7.png)
 :::
 
-## Teorema 
+## Conservación de la Energía
+
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./forgot2.png)
+:::
+
+## Ejercicio 4
+El conductor de un vehículo de 650 kg que va a 90 km/h, decide frenar y reduce su velocidad a 50 km/h. Calcula la energía cinética que se disipa en el proceso.
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./8.png)
+:::
+
+##
+Para calcular la energía cinética disipada, debemos calcular la energía cinética inicial y final del vehículo y luego restarlas.
+La energía cinética inicial ($EC_i$) se calcula con la velocidad inicial de 90 km/h:
+$$ EC_i = \frac{1}{2} m v_i^2 $$
+$$ v_i = 90 \, \text{km/h} = 25 \, \text{m/s} $$
+$$ EC_i = \frac{1}{2} \cdot 650 \, \text{kg} \cdot (25 \, \text{m/s})^2 $$
+$$ EC_i = 203125 \, \text{J} $$
+
+##
+La energía cinética final ($EC_f$) se calcula con la velocidad final de 50 km/h:
+$$ EC_f = \frac{1}{2} m v_f^2 $$
+$$ v_f = 50 \, \text{km/h} = 13.9 \, \text{m/s} $$
+$$ EC_f = \frac{1}{2} \cdot 650 \, \text{kg} \cdot (13.9 \, \text{m/s})^2 $$
+$$ EC_f = 62793.25 \, \text{J} $$
+
+##
+La energía cinética disipada ($EC_d$) es la diferencia entre la energía cinética final y la inicial:
+$$ EC_d = EC_f - EC_i $$
+$$ EC_d = 62793.25 \, \text{J} - 203125 \, \text{J} $$
+$$ EC_d = -140331.75 \, \text{J} $$
+
+## Ejercicio 5
+Un ascensor de 780 libras sube al apartamento no. 18 de un edificio el cual está ubicado en el nivel 9, la altura de cada nivel es de 3.18 metros. ¿Cuál es la energía potencial del ascensor al llegar al nivel 9? (1 kg = 2.2 libras)
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./9.jpg)
+:::
+
+##
+Primero, convertimos las libras a kilogramos:
+$$ m = \frac{780 \, \text{libras}}{2.2 \, \text{libras/kg}} = 354.55 \, \text{kg} $$
+Luego, calculamos la altura total que sube el ascensor:
+$$ h = 9 \, \text{niveles} \cdot 3.18 \, \text{m/nivel} = 28.62 \, \text{m} $$
+Finalmente, calculamos la energía potencial utilizando la fórmula:
+$$ EP = m g h $$
+$$ EP = 354.55 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 \cdot 28.62 \, \text{m} $$
+$$ EP = 99544.24 \, \text{J} $$
