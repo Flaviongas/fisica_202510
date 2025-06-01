@@ -9,7 +9,7 @@ include-in-header:
   - text: |
       <style>
       p,ul {
-        font-size: 0.70em;
+        font-size: 0.80em;
       }
       </style>
 ---
@@ -211,3 +211,47 @@ Finalmente, calculamos la energía potencial utilizando la fórmula:
 $$ EP = m g h $$
 $$ EP = 354.55 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 \cdot 28.62 \, \text{m} $$
 $$ EP = 99544.24 \, \text{J} $$
+
+## Teorema del trabajo y la energía cinética
+El teorema del trabajo y la energía cinética establece que el trabajo neto realizado sobre un objeto es igual al cambio en su energía cinética. Matemáticamente, se expresa como:
+$$ W_{neto} = \Delta EC = EC_f - EC_i $$
+
+Esto implica que el trabajo se puede calcular de dos maneras:
+
+- Utilizando la fórmula del trabajo:
+	 $$ W = F \cdot d \cdot \cos(\theta) $$
+
+- Utilizando el cambio en la energía cinética.
+
+## Ejercicio 6
+¿Cuál es la rapidez con la que el esquiador cuyo trabajo total o neto fue calculado como $W_{total} = 100600 J$, llega al final de la colina, si comienza su movimiento colina arriba desde el reposo?. La masa del esquiador es de $m = 70 kg$.
+
+::: {style="text-align:center; width:40%; margin-left: auto; margin-right: auto;"}
+![](./10.png)
+:::
+
+##
+Para resolver este problema, utilizamos el teorema del trabajo y la energía cinética. Sabemos que el trabajo neto realizado sobre el esquiador es igual al cambio en su energía cinética:
+$$ W_{neto} = \Delta EC = EC_f - EC_i $$
+Dado que el esquiador comienza desde el reposo, su energía cinética inicial ($EC_i$) es cero:
+$$ EC_i = 0 $$
+Por lo tanto, el trabajo neto es igual a la energía cinética final ($EC_f$):
+$$ W_{neto} = EC_f $$
+
+##
+Ahora, podemos expresar la energía cinética final en términos de la masa y la velocidad del esquiador:
+$$ EC_f = \frac{1}{2} m v^2 $$
+Sustituyendo el trabajo neto en la ecuación:
+$$ W_{neto} = \frac{1}{2} m v^2 $$
+Despejando la velocidad ($v$):
+$$ v = \sqrt{\frac{2 W_{neto}}{m}} $$
+
+##
+Sustituyendo los valores:
+$$ v = \sqrt{\frac{2 \cdot 100600 \, \text{J}}{70 \, \text{kg}}} $$
+$$ v = \sqrt{\frac{201200}{70}} $$
+$$ v = \sqrt{2874.29} $$
+$$ v \approx 53.61 \, \text{m/s} $$
+
+
+# Gracias por su atención
