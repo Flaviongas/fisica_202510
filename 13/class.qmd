@@ -1,0 +1,159 @@
+---
+title: Trabajo y Energía Cinética
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+## Producto punto
+El producto punto es una operación matemática que se realiza entre dos vectores. El resultado de esta operación es un número real. El producto punto se define como el producto de las magnitudes de los vectores y el coseno del ángulo entre ellos.
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./1.webp)
+:::
+
+## Trabajo
+El trabajo es una magnitud física que mide la energía transferida a un objeto mediante una fuerza. El trabajo se define como el producto de la fuerza y la distancia recorrida en la dirección de la fuerza.
+El trabajo se mide en julios (J) y se define como:
+$$ W = F \cdot d \cdot \cos(\theta) $$
+
+
+::: {style="text-align:center; width:80%; margin-left: auto; margin-right: auto;"}
+![](./2.jpg)
+:::
+
+## 
+Por lo tanto, se podría decir que hay 2 fórmulas para calcular el trabajo:
+
+### Escalar
+$$ W = F \cdot d \cdot \cos(\theta) $$
+Se utiliza cuando la fuerza y el desplazamiento están en la misma dirección o cuando se conoce el ángulo entre ellos.
+
+### Vectorial
+$$ W = \vec{F} \bullet \vec{d} $$
+Se utiliza cuando se trabaja con vectores y se quiere calcular el trabajo realizado por una fuerza a lo largo de un desplazamiento.
+
+## Ejercicio 1
+Un resorte tiene una longitud natural de 20 cm. Si una fuerza de 25 N se requiere para mantenerlo estirado a una longitud de 30 cm, ¿cuánto trabajo se requiere para estirarlo de 20 cm a 25 cm?
+
+##
+El trabajo es:
+$$ W = F \cdot d \cdot \cos(\theta) $$
+Donde, en este caso, la fuerza es la fuerza elástica del resorte, que se calcula con la ley de Hooke:
+$$ F = k \cdot \Delta x $$
+
+Para resolver este problema, primero debemos calcular la elongación del resorte:
+
+$$ \Delta x = 25 \, \text{cm} - 20 \, \text{cm} = 5 \, \text{cm} = 0.05 \, \text{m} $$
+Esta es la distancia que el resorte se estira desde su longitud natural.
+
+##
+Si reemplazamos la fuerza con la ley de Hooke, tenemos:
+$$ W = k \cdot \Delta x \cdot d \cdot \cos(\theta) $$
+No se especifica el ángulo, por lo que asumimos que la fuerza y el desplazamiento están en la misma dirección, es decir, $\cos(\theta) = 1$.
+$$ W = k \cdot \Delta x \cdot d $$
+Ahora, necesitamos encontrar la constante del resorte $k$. Sabemos que cuando el resorte está estirado a 30 cm, la fuerza es de 25 N. Por lo tanto, podemos usar la ley de Hooke para encontrar $k$:
+$$ k = \frac{F}{\Delta x} = \frac{25 \, \text{N}}{30 \, \text{cm} - 20 \, \text{cm}} = \frac{25 \, \text{N}}{0.10 \, \text{m}} = 250 \, \text{N/m} $$
+
+##
+
+Ahora que tenemos $k$, podemos calcular el trabajo realizado al estirar el resorte de 20 cm a 25 cm:
+$$ W = k \cdot \Delta x \cdot d = 250 \, \text{N/m} \cdot 0.05 \, \text{m} \cdot 0.05 \, \text{m} = 0.3125 \, \text{J} $$
+
+## Ejercicio 2
+Calcula el trabajo necesario para subir un cuerpo de 85 kg, a velocidad constante, desde una altura de 11 m hasta una altura de 16 m
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./3.png)
+:::
+
+##
+Tenemos que darnos cuenta que la fuerza que se debe aplicar es igual al peso del cuerpo, es decir:
+$$ F = m \cdot g $$
+Y la distancia que necesitamos recorrer es:
+$$ d = h_2 - h_1 = 16 \, \text{m} - 11 \, \text{m} = 5 \, \text{m} $$
+
+Por lo tanto, el trabajo ejercido por la fuerza peso es:
+$$ W = F \cdot d = m \cdot g \cdot d $$
+Sustituyendo los valores:
+$$ W = 85 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 \cdot 5 \, \text{m} = 4169.25 \, \text{J} $$
+
+## Ejercicio 3
+Un vehiculo de 750 kg se desplaza 9 m hacia la derecha gracias a una fuerza de 9000 N aplicada 27 grados respecto a la horizontal. ¿Cual es el trabajo neto realizado si el suelo tiene un coeficiente de fricción de 0.24?
+
+::: {style="text-align:center; width:90%; margin-left: auto; margin-right: auto;"}
+![](./4.png)
+:::
+
+##
+Para calcular el trabajo realizado, debemos considerar la fuerza neta que actúa sobre el vehículo.
+Para esto, hacemos un diagrama de cuerpo libre y consideramos las fuerzas que actúan sobre el vehículo.
+
+
+::: {style="text-align:center; width:90%; margin-left: auto; margin-right: auto;"}
+![](./5.png)
+:::
+
+##
+Dado que el movimiento es horizontal, las fuerzas que afectan al vehículo son la proyección horizontal de fuerza aplicada y la fuerza de fricción.
+$$W_T = W_{aplicada} - W_{fricción}$$
+
+La fuerza de fricción se calcula como:
+$$ F_{r} = \mu \cdot N $$
+En este caso, la fuerza normal es igual al peso del vehículo menos la componente vertical de la fuerza aplicada.
+$$ N = m \cdot g - F \cdot \sin(\theta) $$
+$$ N = 750 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 - 9000 \, \text{N} \cdot \sin(27^\circ) $$
+$$ N = 3271,59 \, \text{N}$$
+
+##
+
+Por lo que la fuerza de fricción es:
+$$ F_{r} = \mu \cdot N = 0.24 \cdot 3271.59 \, \text{N} = 785.18 \, \text{N} $$
+
+La fuerza de fricción se aplicará en todo el desplazamiento del vehículo, que es de 9 m. Por lo tanto, el trabajo realizado por la fuerza de fricción es:
+$$ W_{fricción} = F_{r} \cdot d = 785.18 \, \text{N} \cdot 9 \, \text{m} = 7066.62 \, \text{J} $$
+
+Ahora, calculamos la proyección horizontal de la fuerza aplicada:
+$$ F_{aplicada} = F \cdot \cos(\theta) = 9000 \, \text{N} \cdot \cos(27^\circ) = 9000 \, \text{N} \cdot 0.8480 = 8019.06 \, \text{N} $$
+Ahora podemos calcular el trabajo realizado:
+$$ W_{aplicada} = F_{aplicada} \cdot d = 8019.06 \, \text{N} \cdot 9 \, \text{m} = 72171.53 \, \text{J} $$
+
+##
+Por lo tanto, el trabajo neto realizado es:
+$$ W_T = W_{aplicada} - W_{fricción} = 72171.53 \, \text{J} - 7066.62 \, \text{J} = 65004.91 \, \text{J} $$
+Usando prefijos de magnitud, podemos expresar el resultado como:
+$$ W_T \approx 65.0 \, \text{kJ} $$
+
+## Tipos de Energía
+La energía es la capacidad de realizar trabajo. Existen diferentes tipos de energía, entre los cuales destacan:
+- **Energía Cinética (EC)**: Es la energía asociada al movimiento de un objeto. Se calcula como:
+	$$ EC = \frac{1}{2} m v^2 $$
+	donde $m$ es la masa del objeto y $v$ es su velocidad.
+
+- **Energía Potencial (EP)**: Es la energía almacenada en un objeto debido a su posición o estado. Por ejemplo, la energía potencial gravitatoria se calcula como:
+	$$ EP = m g h $$
+	donde $m$ es la masa del objeto, $g$ es la aceleración debida a la gravedad y $h$ es la altura del objeto respecto a un nivel de referencia.
+
+##
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./6.avif)
+:::
+
+##
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./7.png)
+:::
+
+## Teorema 
