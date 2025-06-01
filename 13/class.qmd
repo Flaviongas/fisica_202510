@@ -2,16 +2,7 @@
 title: Trabajo y Energía Cinética
 author: "Flavio Jara L."
 format:
-  revealjs:
-      transition: zoom
-      html-math-method: katex
-include-in-header:
-  - text: |
-      <style>
-      p,ul {
-        font-size: 0.80em;
-      }
-      </style>
+  html
 ---
 
 ## Producto punto
