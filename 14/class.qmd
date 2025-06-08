@@ -1,0 +1,183 @@
+---
+title: Sistemas Conservativos y No Conservativos
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+
+## Teorema del trabajo y la energía cinética
+El teorema del trabajo y la energía cinética establece que el trabajo neto realizado sobre un objeto es igual al cambio en su energía cinética. Matemáticamente, se expresa como:
+$$ W_{neto} = \Delta EC = EC_f - EC_i $$
+
+Esto implica que el trabajo se puede calcular de dos maneras:
+
+- Utilizando la fórmula del trabajo:
+	 $$ W = F \cdot d \cdot \cos(\theta) $$
+
+- Utilizando el cambio en la energía cinética.
+
+
+
+## Ejercicio 1
+Una caja se 5 kg se deja caer desde la terraza de un edificio de 20 m sin sufrir resistencia del aire apreciable. a) ¿Cuál es el trabajo realizado por la gravedad durante su desplazamiento desde la terraza al piso? b) ¿Cuál es la energía cinética de la caja justo antes de alcanzar el piso? c) ¿Cuál es la velocidad de la caja en ese punto? d) Conceptualmente, ¿Qué respuesta cambiaría si hay resistencia del aire?
+
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./1.png)
+:::
+
+## Trabajo realizado por la gravedad
+El trabajo realizado por la gravedad se calcula como:
+$$ W = F \cdot d \cdot \cos(\theta) $$
+
+Ya uqe la dirección de la fuerza de gravedad es vertical y el desplazamiento también es vertical, el ángulo \(\theta\) es 0 grados, por lo que \(\cos(0) = 1\).
+La fuerza de gravedad es \( F = m \cdot g \) y la distancia \( d \) es la altura del edificio.
+Sustituyendo los valores:
+$$ W = m \cdot g \cdot h $$
+Donde:
+$$ W = 5 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 \cdot 20 \, \text{m} = 981 \, \text{J} $$
+
+
+## Energía cinética antes de tocar el piso
+La energía cinética justo antes de alcanzar el piso se calcula utilizando la fórmula:
+$$ EC = \frac{1}{2} m v^2 $$
+Dado que el trabajo realizado por la gravedad se convierte en energía cinética, podemos igualar el trabajo al cambio en la energía cinética:
+$$ W = EC_f - EC_i $$
+Dado que la caja parte del reposo, \( EC_i = 0 \), por lo que:
+$$ EC_f = W = 981 \, \text{J} $$
+
+## Velocidad justo antes de tocar el piso
+Para encontrar la velocidad justo antes de tocar el piso, utilizamos la fórmula de la energía cinética:
+$$ EC = \frac{1}{2} m v^2 $$
+Despejando \( v \):
+$$ v = \sqrt{\frac{2 \cdot EC}{m}} $$
+Sustituyendo los valores:
+$$ v = \sqrt{\frac{2 \cdot 981 \, \text{J}}{5 \, \text{kg}}} = \sqrt{392.4} \approx 19.8 \, \text{m/s} $$
+
+## Resistencia del aire
+Si hay resistencia del aire, el trabajo realizado por la gravedad sería menor, ya que parte de la energía se disiparía en forma de calor debido a la fricción con el aire. Esto resultaría en una menor energía cinética justo antes de tocar el piso y, por lo tanto, una velocidad final menor.
+
+## Ejercicio 2
+Se lanza una bala de 1N hacia arriba con un rifle y su velocidad cuando va a 20m desde el piso  es de 20m/s. Calcular con el teorema del trabajo y la energía a) ¿cuál es su velocidad inicial? b) ¿Cuál es su altura máxima?
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+## Velocidad inicial
+Para encontrar la velocidad inicial de la bala, utilizamos el teorema del trabajo y la energía. El trabajo realizado por la fuerza de gravedad al subir es igual al cambio en la energía cinética.
+El trabajo realizado por la gravedad es:
+$$ W = F \cdot d \cdot \cos(\theta) $$
+Igual que antes, la fuerza de gravedad es \( F = m \cdot g \) y la distancia \( d \) es la altura desde el punto de lanzamiento hasta el punto donde se mide la velocidad (20 m).
+El trabajo realizado por la gravedad es negativo porque la fuerza de gravedad actúa en dirección opuesta al desplazamiento:
+$$ W = -m \cdot g \cdot h $$
+
+##
+
+Recordemos que el trabajo también se puede expresar como el cambio en la energía cinética:
+$$ W = EC_f - EC_i $$
+
+Por lo que igualando las dos expresiones:
+$$ -m \cdot g \cdot h = \frac{1}{2} m v_f^2 - \frac{1}{2} m v_i^2 $$
+Podemos cancelar la masa $m$ de ambos lados, ya que es constante:
+$$ -g \cdot h = \frac{1}{2} v_f^2 - \frac{1}{2} v_i^2 $$
+
+##
+Si tomamos la velocidad final $ v_f = 20 \, \text{m/s}$ y la altura $h = 20 \, \text{m}$, podemos despejar la velocidad inicial $v_i$:
+$$ -g \cdot h = \frac{1}{2} v_f^2 - \frac{1}{2} v_i^2 $$
+Despejando $v_i$:
+$$ v_i = \sqrt{v_f^2 + 2gh} $$
+Sustituyendo los valores:
+$$ v_i = \sqrt{(20 \, \text{m/s})^2 + 2 \cdot 9.81 \, \text{m/s}^2 \cdot 20 \, \text{m}} $$
+$$ v_i = 28.15 \, \text{m/s} $$
+
+## Altura máxima
+Para encontrar la altura máxima, utilizamos el hecho de que en el punto más alto la velocidad es cero. Por lo tanto, podemos usar la energía cinética inicial y el trabajo realizado por la gravedad para encontrar la altura máxima.
+Podemos usar la misma igualdad que antes, pero ahora con $v_f = 0$:
+
+$$ -m \cdot g \cdot h_{max} = \frac{1}{2} m v_f^2 - \frac{1}{2} m v_i^2 $$
+Cancelando la masa $m$:
+$$ g \cdot h_{max} = \frac{1}{2} v_i^2 $$
+Despejando $h_{max}$:
+$$ h_{max} = \frac{v_i^2}{2g} $$
+
+##
+Sustituyendo los valores:
+$$ h_{max} = \frac{(28.15 \, \text{m/s})^2}{2 \cdot 9.81 \, \text{m/s}^2} $$
+$$ h_{max} = 40,39 \, \text{m} $$
+
+
+## Ejercicio 3
+Un tractor arrastra un container con escombros 20m aplicando una fuerza de 6000N a 35° respecto a la horizontal. El container con la carga pesa 30000N,  la fuerza de fricción entre el container y el piso es de 3000N y su velocidad inicial es de 0 m/s a) ¿Cuál es la velocidad del container cuándo este se encuentra a 20m del origen?
+
+::: {style="text-align:center; width:100%; margin-left: auto; margin-right: auto;"}
+![](./3.png)
+:::
+
+## Trabajo neto
+Identifiquemos todas las fuerzas que actúan sobre el container:
+
+- Fuerza de tracción del tractor: $F_t = 6000 \, \text{N}$ a 35° respecto a la horizontal.
+- Fuerza de fricción: $F_f = 3000 \, \text{N}$ en dirección opuesta al movimiento.
+- Peso del container: $F_p = 30000 \, \text{N}$ hacia abajo.
+- Fuerza normal: $F_n = 30000 \, \text{N}$ hacia arriba (equilibrando el peso).
+
+
+## Diagrama de Cuerpo Libre
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./4.png)
+:::
+
+## Trabajo total
+Por lo tanto, el trabajo total realizado sobre el container es la suma del trabajo realizado por la fuerza de tracción y el trabajo realizado por la fuerza de fricción:
+$$ W_{total} = W_{F_x} - W_f + W_N + W_{ F_y } - W_P  $$
+El trabajo realizado por la fuerza de tracción en la dirección del movimiento es:
+$$ W_{F_x} = F_t \cdot d \cdot \cos(\theta) $$
+$$ W_{F_x} = 6000 \, \text{N} \cdot 20 \, \text{m} \cdot \cos(35°) $$
+$$ W_{F_x} = 98,3 \, \text{kJ} $$
+
+##
+El trabajo realizado por la fuerza de fricción es:
+$$ W_f = F_f \cdot d $$
+$$ W_f = 3000 \, \text{N} \cdot 20 \, \text{m} \cdot \cos(180°) $$
+$$ W_f = -60 \, \text{kJ} $$
+El trabajo realizado por la fuerza normal y el peso del container no realizan trabajo en la dirección del movimiento, por lo que sus trabajos son cero:
+$$ W_N = 0 $$
+$$ W_P = 0 $$
+$$ W_{F_y} = 0 $$
+
+## Trabajo total
+Por lo tanto, el trabajo total realizado sobre el container es:
+$$ W_{total} = W_{F_x} - W_f + W_N + W_{ F_y } - W_P $$
+$$ W_{total} = 98,3 \, \text{kJ} - 60 \, \text{kJ} + 0 + 0 - 0 $$
+$$ W_{total} = 38,3 \, \text{kJ} $$
+
+##
+Ahora, utilizando el teorema del trabajo y la energía, podemos relacionar el trabajo total con el cambio en la energía cinética:
+$$ W_{total} = \Delta EC = EC_f - EC_i $$
+Dado que la velocidad inicial es 0 m/s, la energía cinética inicial es:
+$$ EC_i = 0 $$
+Por lo tanto, la energía cinética final es igual al trabajo total:
+$$ EC_f = W_{total} = 38,3 \, \text{kJ} $$
+Para encontrar la velocidad final del container, utilizamos la fórmula de la energía cinética:
+$$ EC_f = \frac{1}{2} m v^2 $$
+
+##
+Despejando la velocidad $v$:
+$$ v = \sqrt{\frac{2 \cdot EC_f}{m}} $$
+Donde la masa del container se puede calcular a partir de su peso:
+$$ m = \frac{F_p}{g} = \frac{30000 \, \text{N}}{9.81 \, \text{m/s}^2} \approx 3058.1 \, \text{kg} $$
+Sustituyendo los valores:
+$$ v = \sqrt{\frac{2 \cdot 38,3 \cdot 10^3 \, \text{J}}{3058.1 \, \text{kg}}} = 5.0 \, \text{m/s} $$
+
