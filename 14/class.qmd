@@ -40,7 +40,7 @@ Una caja se 5 kg se deja caer desde la terraza de un edificio de 20 m sin sufrir
 El trabajo realizado por la gravedad se calcula como:
 $$ W = F \cdot d \cdot \cos(\theta) $$
 
-Ya uqe la dirección de la fuerza de gravedad es vertical y el desplazamiento también es vertical, el ángulo \(\theta\) es 0 grados, por lo que \(\cos(0) = 1\).
+Ya que la dirección de la fuerza de gravedad es vertical y el desplazamiento también es vertical, el ángulo \(\theta\) es 0 grados, por lo que \(\cos(0) = 1\).
 La fuerza de gravedad es \( F = m \cdot g \) y la distancia \( d \) es la altura del edificio.
 Sustituyendo los valores:
 $$ W = m \cdot g \cdot h $$
@@ -180,4 +180,101 @@ Donde la masa del container se puede calcular a partir de su peso:
 $$ m = \frac{F_p}{g} = \frac{30000 \, \text{N}}{9.81 \, \text{m/s}^2} \approx 3058.1 \, \text{kg} $$
 Sustituyendo los valores:
 $$ v = \sqrt{\frac{2 \cdot 38,3 \cdot 10^3 \, \text{J}}{3058.1 \, \text{kg}}} = 5.0 \, \text{m/s} $$
+
+## Sistemas Conservativos y No Conservativos
+Un sistema conservativo es aquel en el que la energía mecánica total (suma de energía cinética y potencial) se conserva. En estos sistemas, el trabajo realizado por las fuerzas conservativas (como la gravedad) no depende de la trayectoria seguida, sino solo de los puntos inicial y final.
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./5.webp)
+:::
+
+##
+En contraste, un sistema no conservativo es aquel en el que la energía mecánica total no se conserva debido a la presencia de fuerzas no conservativas (como la fricción o la resistencia del aire). En estos sistemas, el trabajo realizado por las fuerzas no conservativas depende de la trayectoria seguida y puede transformar energía mecánica en otras formas de energía (como calor).
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./6.gif)
+:::
+
+## Fórmulas
+En un sistema conservativo, la energía mecánica total se conserva:
+$$ E_M = EC + EP = \text{constante} $$
+$$ \Delta E_M = \Delta EC + \Delta EP = 0 $$
+
+En un sistema no conservativo, la energía mecánica total no se conserva:
+$$ \Delta E_M = \Delta EC + \Delta EP \neq 0 $$
+Usualmente, la energía se disipa gracias a la fricción o la fuerza de un resorte:
+$$ \Delta E_M = W_{nc} $$
+
+## Ejercicio 4
+Si la altura original de la roca en la figura es $Y_1= h = 3\, \text{m}$, calcule la rapidez de la roca cuando va a 1.0 m sobre el suelo y la velocidad con la cual impacta el suelo.
+
+::: {style="text-align:center; width:40%; margin-left: auto; margin-right: auto;"}
+![](./7.png)
+:::
+
+##
+Para resolver este problema, utilizaremos el principio de conservación de la energía mecánica. La energía mecánica total en el punto más alto (cuando la roca está a 3 m) se convierte en energía cinética y potencial cuando la roca está a 1 m sobre el suelo.
+
+La energía mecánica total al inicio es la suma de la energía potencial gravitacional y la energía cinética. Al inicio, la roca está en reposo, por lo que su energía cinética inicial es cero:
+$$ E_{M_i} = EP_i + EC_i = mgh + 0 = mgh $$
+
+##
+Cuando la roca está a 1 m sobre el suelo, la energía mecánica total es:
+$$ E_{M_f} = EP_f + EC_f = mgh_f + \frac{1}{2} mv_f^2 $$
+Ya que la energía mecánica se conserva, podemos igualar las dos expresiones:
+$$ mgh = mgh_f + \frac{1}{2} mv_f^2 $$
+Simplificando las masas $m$ 
+$$ gh = gh_f + \frac{1}{2} v_f^2 $$
+
+##
+Despejando la velocidad final $v_f$:
+$$ v_f = \sqrt{2g(h - h_f)} $$
+Sustituyendo los valores:
+$$ v_f = \sqrt{2 \cdot 9.81 \, \text{m/s}^2 (3 \, \text{m} - 1 \, \text{m})} $$
+La velocidad final de la roca cuando está a 1 m sobre el suelo es:
+$$ v_f = 6.26 \, \text{m/s} $$
+
+##
+Para encontrar la velocidad de impacto cuando la roca toca el suelo, repetimos el proceso considerando que la altura final es 0 m:
+$$ v_{impacto} = \sqrt{2g(h - 0)} $$
+Sustituyendo los valores:
+$$ v_{impacto} = \sqrt{2 \cdot 9.81 \, \text{m/s}^2 (3 \, \text{m} - 0)} $$
+$$ v_{impacto} = \sqrt{58.86} \approx 7.67 \, \text{m/s} $$
+
+## Ejercicio 5
+Un cuerpo de 10kg choca contra un resorte de 250N/m, si el bloque comprime al resorte 14cm a partir de su posición de reposo y $\mu=0.25$, calcular la velocidad en el instante del choque. La energía potencial elástica del resorte se calcula como:
+$$ EP_{el} = \frac{1}{2} k x^2 $$
+
+::: {style="text-align:center; width:70%; margin-left: auto; margin-right: auto;"}
+![](./8.png)
+:::
+
+##
+Hay trabajo no conservativo en este sistema, ya que hay fricción entre el bloque y el resorte. El trabajo no conservativo se puede expresar como:
+$$ W_{nc} = \Delta EC + \Delta EP $$
+En este ejercicio no hay cambio en la energía potencial gravitacional, ya que el resorte no se mueve verticalmente. 
+
+Nosotros elegimos los puntos inicial y final, ya que queremos saber la velocidad en el choque, nos conviene que sea la inicial, podemos elegir el punto final como el momento en que el resorte está comprimido 14 cm.
+Al inicio no hay energía potencial, y al final no hay movimiento, por lo que la energía cinética es cero, pero si hay energía potencial elástica del resorte:
+$$ W_{nc} = \frac{1}{2} k x^2 - \frac{1}{2} m v^2 $$
+
+##
+El trabajo no conservativo sería la fricción:
+$$ W_{nc} = f_r \cdot d \cdot \cos(\theta) $$
+$$ W_{nc} = \mu \cdot m \cdot g \cdot d \cdot \cos(180°) $$
+$$ W_{nc} = -\mu \cdot m \cdot g \cdot d $$
+$$ W_{nc} = -0.25 \cdot 10 \, \text{kg} \cdot 9.81 \, \text{m/s}^2 \cdot 0.14 \, \text{m} $$
+$$ W_{nc} = -3.43 \, \text{J} $$
+
+##
+$$ W_{nc} = \frac{1}{2} k x^2 - \frac{1}{2} m v^2 $$
+
+
+Ya que queremos saber la velocidad en el instante del choque, podemos despejar $v$:
+$$ \frac{1}{2} m v^2 = \frac{1}{2} k x^2 - W_{nc} $$
+$$ v = \sqrt{\frac{k x^2 - 2 W_{nc}}{m}} $$
+Sustituyendo los valores:
+$$ v = \sqrt{\frac{250 \, \text{N/m} \cdot (0.14 \, \text{m})^2 - 2 \cdot (-3.43 \, \text{J})}{10 \, \text{kg}}} = 1.08$$
+
+# Gracias por su atención
 
