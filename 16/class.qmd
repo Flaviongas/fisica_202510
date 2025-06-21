@@ -1,0 +1,55 @@
+---
+title: Repaso Evaluación 3
+author: "Flavio Jara L."
+format:
+  revealjs:
+      transition: zoom
+      html-math-method: katex
+include-in-header:
+  - text: |
+      <style>
+      p,ul {
+        font-size: 0.70em;
+      }
+      </style>
+---
+
+## Ejercicio 1
+En el sistema se tienen dos masas unidas por una cuerda como se muestra en la figura, $m_1 = 3\, kg$ y $m_2 = 5 \, kg$, el bloque m, tiene un coeficiente de fricción entre la masa y el piso de $0.4$. El sistema parte del reposo. ¿Cuál es la rapidez de la masa $m_2$ después de caer $1.5 \,m$?
+
+::: {style="text-align:center; width:50%; margin-left: auto; margin-right: auto;"}
+![](./1.png)
+:::
+
+##
+En este ejercicio hay fricción por lo que la energía NO se conserva. La velocidad de la masa $m_2$ se puede calcular usando la segunda ley de Newton, pero también se puede usar la no conservación de la energía.
+
+Sabemos que $\Delta E_{mec} = E_f - E_i = W_{fric}$, por lo tanto $-f_r d = E_f - E_i$.
+
+Al inicio la masa está en reposo, pero tiene una cierta altura, por lo que la energía inicial es potencial gravitacional, $$E_i = m_2 g h$$ donde $h = 1.5 \, m$.
+
+Nos conviene tomar posición final como altura cero, por lo que la energía final de la masa es solo la cinética, es decir $$E_f = \frac{1}{2} m_2 v^2$$.
+
+##
+Entonces, utilizando la no conservación de la energía, tenemos que:
+$$-f_r d = \frac{1}{2} m_2 v^2 - m_2 g h$$
+
+Pero hay un detalle, las masas están unidas por una cuerda, por lo que tenemos que considerarlas dentro de la misma ecuación.
+$$-f_r d = \frac{1}{2} m_1 v^2 + \frac{1}{2} m_2 v^2 + m_1 g h - (m_2 g h + m_1 g h)$$
+La masa $m_1$ tiene una altura inicial que no cambia, por lo que los terminos se cancelan:
+$$-f_r d = \frac{1}{2} m_1  v^2+ \frac{1}{2} m_2 v^2 - m_2 g h $$
+$$-f_r d = \frac{1}{2} v^2 (m_1 + m_2) - m_2 g h$$
+
+##
+$$- \mu_s m_1 g d = \frac{1}{2} v^2 (m_1 + m_2) - m_2 g h$$
+Despejando la velocidad:
+$$v = \sqrt{\frac{-2 \mu_s m_1 g d + 2 m_2 g h}{m_1 + m_2}}$$
+$d$ es la distancia recorrida por la masa $m_2$, que en este caso es $1.5 \, m$, por lo que podemos escribirlo como $h$:
+$$v = \sqrt{\frac{-2 \mu_s m_1 g h + 2 m_2 g h}{m_1 + m_2}}$$
+
+##
+Factorizando:
+$$v = \sqrt{\frac{2 g h (m_2 - \mu_s m_1)}{m_1 + m_2}}$$
+Reemplazando:
+$$v = \sqrt{\frac{2 \cdot 9.81 \cdot 1.5 (5 - 0.4 \cdot 3)}{3 + 5}}$$
+$$v = 3.74 \, m/s$$
