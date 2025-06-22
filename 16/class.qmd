@@ -53,3 +53,58 @@ $$v = \sqrt{\frac{2 g h (m_2 - \mu_s m_1)}{m_1 + m_2}}$$
 Reemplazando:
 $$v = \sqrt{\frac{2 \cdot 9.81 \cdot 1.5 (5 - 0.4 \cdot 3)}{3 + 5}}$$
 $$v = 3.74 \, m/s$$
+
+## Ejercicio 2
+Un bloque de 10 kg se libera desde lo alto de 3 m sobre una rampa (punto A), la pista no tiene fricción excepto por un tramo de 6 m (tramo BC), al finalizar el recorrido el bloque golpea un resorte cuya constante es 2250 N/m y lo comprime 0,30 m desde su posición de equilibrio antes de llegar al reposo momentáneo. Determinar el coeficiente de fricción cinético entre el bloque y la superficie con fricción BC.
+
+::: {style="text-align:center; width:80%; margin-left: auto; margin-right: auto;"}
+![](./2.png)
+:::
+
+##
+Para empezar, nos podemos dar cuenta que la energía mecánica se conserva en el tramo AB, por lo que podemos calcular la velocidad al llegar al punto B:
+$$\Delta E_{mec} = E_f - E_i = 0$$
+$$mgh = \frac{1}{2} mv^2$$
+Despejando la velocidad:
+$$v = \sqrt{2gh}$$
+$$ v = \sqrt{2 \cdot 9.81 \cdot 3}$$
+$$ v = 7.67 \, m/s$$
+
+##
+Ahora, al llegar al tramo BC, la energía no se conserva debido a la fricción, por lo que podemos escribir:
+$$\Delta E_{mec} = E_f - E_i = W_{fric}$$
+Si establecemos el punto final como C, y el punto inicial como B, tenemos que:
+$$-f_r d = E_f - E_i$$
+$$-f_r d = \frac{1}{2} mv_c^2 - \frac{1}{2} mv_b^2$$
+Dado que la superficie es horizontal, la fuerza de fricción es:
+$$f_r = \mu_k N = \mu_k mg$$
+Por lo que podemos escribir:
+$$-\mu_k mg d = \frac{1}{2} mv_c^2 - \frac{1}{2} mv_b^2$$
+
+##
+Dividiendo ambos lados por $m$:
+$$-\mu_k g d = \frac{1}{2} v_c^2 - \frac{1}{2} v_b^2$$
+Despejando el coeficiente de fricción:
+$$\mu_k = -\frac{v_c^2 - v_b^2}{2 g d}$$
+Pero, necesitamos la velocidad al llegar al punto C, que es cuando el resorte está comprimido. La energía del resorte es:
+$$E_{resorte} = \frac{1}{2} k x^2$$
+
+##
+Y, dado que en ese punto no hay perdida de energía, podemos escribir:
+$$\Delta E_{mec} = \frac{k x^2}{2}- \frac{1}{2} mv_c^2=0$$
+Igualando y simplificando:
+$$k x^2 = mv_c^2$$
+Despejando la velocidad al llegar al punto C:
+$$v_c = \sqrt{\frac{k x^2}{m}}$$
+Reemplazando (ya que tenemos todos los valores):
+$$v_c = \sqrt{\frac{2250 \cdot 0.3^2}{10}} = 4.5 \, m/s$$
+
+##
+Ahora, reemplazamos en la ecuación del coeficiente de fricción:
+$$\mu_k = -\frac{v_c^2 - v_b^2}{2 g d}$$
+$$\mu_k = -\frac{4.5^2 - 7.67^2}{2 \cdot 9.81 \cdot 6}$$
+$$\mu_k = -(-0.33)$$
+$$\mu_k = 0.33$$
+
+## Ejercicio 3
+
