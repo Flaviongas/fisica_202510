@@ -171,7 +171,7 @@ Flavio Jara L.
 <p>En este ejercicio hay fricción por lo que la energía NO se conserva. La velocidad de la masa <span class="math inline">m_2</span> se puede calcular usando la segunda ley de Newton, pero también se puede usar la no conservación de la energía.</p>
 <p>Sabemos que <span class="math inline">\Delta E_{mec} = E_f - E_i = W_{fric}</span>, por lo tanto <span class="math inline">-f_r d = E_f - E_i</span>.</p>
 <p>Al inicio la masa está en reposo, pero tiene una cierta altura, por lo que la energía inicial es potencial gravitacional, <span class="math display">E_i = m_2 g h</span> donde <span class="math inline">h = 1.5 \, m</span>.</p>
-<p>Nos conviene tomar posición final como altura cero, por lo que la energía final de la masa es solo la cinética, es decir <span class="math display">E_f = \frac{1}{2} m_2 v^2</span>.</p>
+<p>Nos conviene tomar la posición final como altura cero, por lo que la energía final de la masa es solo la cinética, es decir <span class="math display">E_f = \frac{1}{2} m_2 v^2</span>.</p>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
@@ -180,11 +180,11 @@ Flavio Jara L.
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-<p><span class="math display">- \mu_s m_1 g d = \frac{1}{2} v^2 (m_1 + m_2) - m_2 g h</span> Despejando la velocidad: <span class="math display">v = \sqrt{\frac{-2 \mu_s m_1 g d + 2 m_2 g h}{m_1 + m_2}}</span> <span class="math inline">d</span> es la distancia recorrida por la masa <span class="math inline">m_2</span>, que en este caso es <span class="math inline">1.5 \, m</span>, por lo que podemos escribirlo como <span class="math inline">h</span>: <span class="math display">v = \sqrt{\frac{-2 \mu_s m_1 g h + 2 m_2 g h}{m_1 + m_2}}</span></p>
+<p><span class="math display">- \mu_k m_1 g d = \frac{1}{2} v^2 (m_1 + m_2) - m_2 g h</span> Despejando la velocidad: <span class="math display">v = \sqrt{\frac{-2 \mu_k m_1 g d + 2 m_2 g h}{m_1 + m_2}}</span> <span class="math inline">d</span> es la distancia recorrida por la masa <span class="math inline">m_2</span>, que en este caso es <span class="math inline">1.5 \, m</span>, por lo que podemos escribirlo como <span class="math inline">h</span>: <span class="math display">v = \sqrt{\frac{-2 \mu_k m_1 g h + 2 m_2 g h}{m_1 + m_2}}</span></p>
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
-<p>Factorizando: <span class="math display">v = \sqrt{\frac{2 g h (m_2 - \mu_s m_1)}{m_1 + m_2}}</span> Reemplazando: <span class="math display">v = \sqrt{\frac{2 \cdot 9.81 \cdot 1.5 (5 - 0.4 \cdot 3)}{3 + 5}}</span> <span class="math display">v = 3.74 \, m/s</span></p>
+<p>Factorizando: <span class="math display">v = \sqrt{\frac{2 g h (m_2 - \mu_k m_1)}{m_1 + m_2}}</span> Reemplazando: <span class="math display">v = \sqrt{\frac{2 \cdot 9.81 \cdot 1.5 (5 - 0.4 \cdot 3)}{3 + 5}}</span> <span class="math display">v = 3.74 \, m/s</span></p>
 </section>
 <section id="ejercicio-2" class="slide level2">
 <h2>Ejercicio 2</h2>
@@ -207,14 +207,97 @@ Flavio Jara L.
 </section>
 <section id="section-7" class="slide level2">
 <h2></h2>
-<p>Y, dado que en ese punto no hay perdida de energía, podemos escribir: <span class="math display">\Delta E_{mec} = \frac{k x^2}{2}- \frac{1}{2} mv_c^2=0</span> Igualando y simplificando: <span class="math display">k x^2 = mv_c^2</span> Despejando la velocidad al llegar al punto C: <span class="math display">v_c = \sqrt{\frac{k x^2}{m}}</span> Reemplazando (ya que tenemos todos los valores): <span class="math display">v_c = \sqrt{\frac{2250 \cdot 0.3^2}{10}} = 4.5 \, m/s</span></p>
+<p>Y, dado que en ese punto no hay pérdida de energía, podemos escribir: <span class="math display">\Delta E_{mec} = \frac{k x^2}{2}- \frac{1}{2} mv_c^2=0</span> Igualando y simplificando: <span class="math display">k x^2 = mv_c^2</span> Despejando la velocidad al llegar al punto C: <span class="math display">v_c = \sqrt{\frac{k x^2}{m}}</span> Reemplazando (ya que tenemos todos los valores): <span class="math display">v_c = \sqrt{\frac{2250 \cdot 0.3^2}{10}} = 4.5 \, m/s</span></p>
 </section>
 <section id="section-8" class="slide level2">
 <h2></h2>
 <p>Ahora, reemplazamos en la ecuación del coeficiente de fricción: <span class="math display">\mu_k = -\frac{v_c^2 - v_b^2}{2 g d}</span> <span class="math display">\mu_k = -\frac{4.5^2 - 7.67^2}{2 \cdot 9.81 \cdot 6}</span> <span class="math display">\mu_k = -(-0.33)</span> <span class="math display">\mu_k = 0.33</span></p>
 </section>
+<section id="torque" class="slide level2">
+<h2>Torque</h2>
+<p>Es una medida de la fuerza que puede hacer que un objeto gire alrededor de un eje. Así como en la cinemática lineal la fuerza es lo que hace que un objeto acelere, el torque es lo que provoca que un objeto adquiera aceleración angular. Es una cantidad vectorial. La dirección del vector de el torque depende de la dirección de la fuerza en el eje.</p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./3.png"></p>
+</div>
+</section>
+<section id="formula-de-torque" class="slide level2">
+<h2>Formula de Torque</h2>
+<p>El torque se define como el producto vectorial entre el vector de posición y la fuerza aplicada: <span class="math display">\tau = \vec{r} \times \vec{F}</span> Donde <span class="math inline">\vec{r}</span> es el vector de posición desde el eje de rotación hasta el punto donde se aplica la fuerza, y <span class="math inline">\vec{F}</span> es la fuerza aplicada. La magnitud del torque se puede calcular como: <span class="math display">\tau = r F \sin(\theta)</span></p>
+</section>
+<section id="equilibrio-rotacional" class="slide level2">
+<h2>Equilibrio Rotacional</h2>
+<p>Un cuerpo se encuentra en equilibrio rotacional si la suma de todos los torques que actúan sobre él es cero: <span class="math display">\sum \tau = 0</span> Puesto que la rotación no ocurre respecto a ningún punto, podemos elegir cualquier punto como eje de rotación.</p>
+<div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./6.png"></p>
+</div>
+</section>
 <section id="ejercicio-3" class="slide level2">
 <h2>Ejercicio 3</h2>
+<p>Encontrar los esfuerzos de reacción en cada uno de los puntos de apoyo de la siguiente viga, considerando que pesa 200 N.</p>
+<div style="text-align:center; width:50%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./4.png"></p>
+</div>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<p>Ya que es un problema de equilibrio, podemos aplicar la condición de equilibrio rotacional: <span class="math display">\sum \tau = 0</span></p>
+<div style="text-align:center; width:100%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./5.png"></p>
+</div>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p>Ya que cada fuerza genera un torque respecto a un punto, podemos escribir: <span class="math display">\sum M = M_A + M_{F_1} + M_W + M_{F_2} + M_{B} = 0</span> <span class="math display">\sum M = F_A \cdot r_A + F_1 \cdot r_1 + F_W \cdot r_W + F_2 \cdot r_2 + F_B \cdot r_B = 0</span> Necesitamos elegir un punto de referencia, en este caso elegiremos el punto A, ya que es el punto donde se encuentra el apoyo fijo, por lo que el torque de la fuerza <span class="math inline">F_A</span> es cero. <span class="math display">\sum M = 0 + (-3)\cdot(300N) + (-3.5)\cdot(200N) + (-5)\cdot(300N) + (7)\cdot(F_B) = 0</span> <span class="math display">\sum M = -900 - 700 - 1500 + 7F_B = 0</span></p>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p>Despejando la fuerza en el punto B: <span class="math display">7F_B = 3100</span> <span class="math display">F_B = 442.86 \, N</span></p>
+<h4 id="fuerza-en-el-punto-a">Fuerza en el punto A</h4>
+<p>Para sacar la fuerza, tenemos 2 opciones, podemos usar la condición de equilibrio de fuerzas, o podemos usar la condición de equilibrio rotacional respecto al punto B. Usar la condición de equilibrio de fuerzas es más directo: <span class="math display">\sum F = F_A + F_B - F_1 - F_W - F_2 = 0</span> <span class="math display">\sum F = F_A + 442.86  -300 - 200 - 300 = 0</span> <span class="math display">F_A = 357.14 \, N</span></p>
+</section>
+<section id="ejercicio-4" class="slide level2">
+<h2>Ejercicio 4</h2>
+<p>Suponga que la viga de la figura pesa 100 N y que el peso suspendido W es igual a 40 N. ¿Cuál es la tensión en la cuerda y cuáles son las componentes horizontal y vertical de la fuerza que ejerce el pivote colocado en el piso sobre la base de la viga?</p>
+<div style="text-align:center; width:80%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./7.png"></p>
+</div>
+</section>
+<section id="diagrama-de-cuerpo-libre" class="slide level2">
+<h2>Diagrama de cuerpo libre</h2>
+<div style="text-align:center; width:80%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./8.png"></p>
+</div>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<p>Si giramos todo el sistema para que la viga esté horizontal, esto se convierte en un problema de equilibrio de fuerzas y torques.</p>
+<div style="text-align:center; width:80%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./9.png"></p>
+</div>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<p>Para encontrar la tensión en la cuerda, podemos aplicar la condición de equilibrio rotacional respecto al punto C: <span class="math display">\sum M = M_{F_x} + M_{F_y} + M_{W_v} + M_T + M_W = 0</span> <span class="math display">\sum M = F_{x} \cdot r_x + F_{y} \cdot r_y + W_v \cdot r_{W_v} + T \cdot r_T + W \cdot r_W = 0</span> Dado que el punto C es el punto de apoyo, el torque de las fuerzas en ese punto es cero, por lo que podemos escribir: <span class="math display">\sum M = 0 + (-3)\cdot(100N)\cdot \sin(60^\circ) + (4)\cdot T \sin(30^\circ) + (-6)\cdot(40N)\cdot \sin(60^\circ) = 0</span> <span class="math display">\sum M = -300 \cdot 0.866 + 4T \cdot 0.5 - 240 \cdot 0.866 = 0</span> <span class="math display">\sum M = -259.8 + 2T - 207.85 = 0</span></p>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+<p>Despejando la tensión en la cuerda: <span class="math display">2T = 467.65</span> <span class="math display">T = 233.82 \, N</span></p>
+</section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+<p>Podemos utilizar el diagrama de cuerpo libre para encontrar las componentes de la fuerza en el punto C.</p>
+<div style="text-align:center; width:80%; margin-left: auto; margin-right: auto;">
+<p><img data-src="./8.png"></p>
+</div>
+<p><span class="math display">\sum F_x = 0 = F_{x} - T </span></p>
+</section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+<p><span class="math display">F_x = T</span> <span class="math display">F_x = 233.82 \, N</span></p>
+<p>Por otro lado, para la componente vertical debe ser igual al peso de la viga más el peso suspendido: <span class="math display">\sum F_y = 0 = F_{y} - W_v - W</span> <span class="math display">F_y = W + W_v</span> <span class="math display">F_y = 100 + 40</span> <span class="math display">F_y = 140 \, N</span></p>
+</section>
+<section id="gracias-por-su-atención" class="title-slide slide level1 center">
+<h1>Gracias por su atención</h1>
 
 </section>
     </div>
